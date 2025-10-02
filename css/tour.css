@@ -1,0 +1,324 @@
+/* temporary navbar */
+.navbar {
+    width: 100%;
+    height: 99px;
+    background-color: transparent;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin: 10px 0;
+}
+
+/* header */
+
+.header__banner {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../images/tour-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.header__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.header__breadcrumb {
+    text-align: center;
+    font-weight: 700;
+}
+
+/* tours */
+.tours {
+    padding: 3% 7%;
+}
+
+.tours__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.tours__category {
+    color: #F57C00;
+}
+
+.tours__title-name {
+    color: #1E88E5;
+}
+
+.tours__filter-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #1E88E5;
+    border-radius: 100px;
+}
+
+.tours__filter-item {
+    padding: 15px 30px;
+}
+
+.tours__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.tours__card {
+    width: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tours__card img {
+    width: 100%;
+}
+
+.tours__card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.tours__tour-name, .tours__tour-time, .tours__tour-content, .tours__tour-price {
+    margin-bottom: 10px;
+}
+
+.tours__tour-name {
+    font-size: 18px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.tours__tour-content {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+
+.tours__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tours__pagination-item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1E88E5;
+    border-radius: 100px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.tours__pagination-item > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* banner */
+.banner {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.banner__content {
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5% 17%;
+}
+
+.banner__quote-container {
+    width: 40%;
+}
+
+.banner__quote {
+    font-size: 38px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.banner__signature-name {
+    text-transform: uppercase; 
+    color: #F57C00; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.banner__intro-container {
+    margin-left: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner__title {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner__intro {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.banner__btn {
+    padding: 13px 20px;
+    border: 1px solid white;
+    background-color: #1E88E5;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* slider */
+.slider {
+    position: relative;
+    top: -225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__container {
+    width: 60%;
+    height: 450px;
+    margin: 0 30px;
+    padding: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.slider__container img {
+    width: 100%;
+}
+
+.slider__btn button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 7%;
+    background-image: url("../images/banner-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact__quote-container {
+    width: 40%;
+}
+
+.contact__quote {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.contact .contact__form-container {
+    width: 40%;
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+}
+
+.contact__form-title, .contact__form-sub-content, .contact__name-input, .contact__depacture-date-input, .contact__phone-input, .contact__email-input,  .contact__adult-number-input, .contact__children-number-input, .contact__content-input, .contact__content-input, .contact__get-tours-btn {
+    margin-bottom: 20px;
+}
+
+.contact__form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact__form-container form input, .contact__form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.contact__form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact__contact-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__guest-number-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__form-btn {
+    width: 100%;
+}
