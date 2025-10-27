@@ -126,8 +126,6 @@
     overflow: hidden;
 }
 
-
-
 .tours__pagination {
     display: flex;
     justify-content: center;
@@ -215,13 +213,18 @@
 
 .banner__btn {
     padding: 13px 20px;
-    border: 1px solid white;
+    border: none;
     background-color: var(--primary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
+}
+
+.banner__btn:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
 }
 
 /* slider */
@@ -249,6 +252,13 @@
 .slider__btn button {
     width: 50px;
     height: 50px;
+    color: var(--primary-color);
     border-radius: 100%;
+    border: 1px solid var(--primary-color);
 }
 
+.slider__btn button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
