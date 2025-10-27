@@ -13,7 +13,6 @@
 }
 
 /* header */
-
 .header__banner {
     width: 100vw;
     height: 50vh;
@@ -56,18 +55,18 @@
 }
 
 .tours__category {
-    color: #F57C00;
+    color: var(--secondary-color);
 }
 
 .tours__title-name {
-    color: #1E88E5;
+    color: var(--primary-color);
 }
 
 .tours__filter-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #1E88E5;
+    border: 1px solid var(--primary-color);
     border-radius: 100px;
 }
 
@@ -103,7 +102,10 @@
     padding: 10px 20px;
 }
 
-.tours__tour-name, .tours__tour-time, .tours__tour-content, .tours__tour-price {
+.tours__tour-name, 
+.tours__tour-time, 
+.tours__tour-content, 
+.tours__tour-price {
     margin-bottom: 10px;
 }
 
@@ -135,7 +137,7 @@
 .tours__pagination-item {
     width: 50px;
     height: 50px;
-    border: 1px solid #1E88E5;
+    border: 1px solid var(--primary-color);
     border-radius: 100px;
     position: relative;
     margin: 0 10px;
@@ -184,7 +186,7 @@
 
 .banner__signature-name {
     text-transform: uppercase; 
-    color: #F57C00; 
+    color: var(--secondary-color); 
     font-weight: bold;
     font-size: 18px;
 }
@@ -214,7 +216,7 @@
 .banner__btn {
     padding: 13px 20px;
     border: 1px solid white;
-    background-color: #1E88E5;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -250,75 +252,3 @@
     border-radius: 100%;
 }
 
-/* contact */
-.contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3% 7%;
-    background-image: url("../images/banner-3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-}
-
-.contact__quote-container {
-    width: 40%;
-}
-
-.contact__quote {
-    color: white;
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    display: block;
-}
-
-.contact .contact__form-container {
-    width: 40%;
-    background-color: white;
-    padding: 30px 40px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 20px;
-}
-
-.contact__form-title, .contact__form-sub-content, .contact__name-input, .contact__depacture-date-input, .contact__phone-input, .contact__email-input,  .contact__adult-number-input, .contact__children-number-input, .contact__content-input, .contact__content-input, .contact__get-tours-btn {
-    margin-bottom: 20px;
-}
-
-.contact__form-container form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact__form-container form input, .contact__form-container form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid grey;
-    border-radius: 10px;
-}
-
-.contact__form-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.contact__contact-input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact__guest-number-input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact__form-btn {
-    width: 100%;
-}

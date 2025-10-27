@@ -9,10 +9,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
     </style>
+    <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="header__banner">
+        <section class="header__banner">
             <nav class="navbar">
             
             </nav>
@@ -20,12 +21,12 @@
                 <h1 class="header__title">Tour thiết kế sẵn</h1>
                 <p class="header__breadcrumb">Homepage > Tour thiết kế sẵn</p>
             </div>
-        </div>
+        </section>
     </header>
 
     <main>
         <!-- tours -->
-        <div class="tours">
+        <section class="tours">
             <div class="tours__title-container">
                 <div class="tours__title">
                     <h4 class="tours__category" style="text-transform: uppercase;">tour packages</h4>
@@ -42,14 +43,14 @@
             </div>
 
             <div class="tours__list-container">
-                <div class="tours__cards">
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-1.jpg" alt="">
+                <div class="tours__cards card-list">
+                    <div class="tours__card card">
+                        <div class="tours__card-header card-header">
+                            <img src="../images/tour-1.jpg" alt="" class="card-img">
                         </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Khám Phá Đông Âu: Đức – Áo – Slovakia – Séc</span>
-                            <span class="tours__tour-time">10 ngày 9 đêm</span>
+                        <div class="tours__card-body card-body">
+                            <p class="tours__tour-name">Khám Phá Đông Âu: Đức – Áo – Slovakia – Séc</p>
+                            <p class="tours__tour-time">10 ngày 9 đêm</p>
                             <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
                             <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
                             <button class="tours__book-btn primary-btn">Đặt tour</button>
@@ -104,10 +105,10 @@
                     <li class="tours__pagination-item"><span>3</span></li>
                 </ul>
             </div>
-        </div>
+        </section>
 
         <!-- banner -->
-        <div class="banner">
+        <section class="banner">
             <img class="banner__img" src="../images/banner-2.jpg" alt="">
             <div class="banner__content">
                 <div class="banner__quote-container">
@@ -122,10 +123,10 @@
                     <button class="banner__btn">Tất cả dịch vụ</button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- slider -->
-        <div class="slider">
+        <section class="slider">
             <div class="slider__btn">
                 <button class="slider__prev-btn"><</button>
             </div>
@@ -135,15 +136,15 @@
             <div class="slider__btn">
                 <button class="slider__next-btn">></button>
             </div>
-        </div>
+        </section>
 
         <!-- gallery -->
-        <div class="gallery">
+        <section class="gallery">
             <span>gallery</span>
-        </div>
+        </section>
 
         <!-- contact -->
-        <div class="contact">
+        <section class="contact">
             <div class="contact__quote-container">
                 <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi để giúp mọi thứ tốt hơn !?</span>
                 <button class="contact__get-tours-btn primary-btn">Xem các tour</button>
@@ -182,12 +183,12 @@
                     </div>
                     <div class="contact__content-input">
                         <label for="">Nội dung</label>
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Nhập nội dung cần liên hệ" class="contact__form-input"></textarea>
+                        <textarea name="" id="" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ" class="contact__form-input"></textarea>
                     </div>
                     <button class="contact__form-btn primary-btn">Nhận tư vấn</button>
                 </form>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
