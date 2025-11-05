@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
+    --primary-color: #8AA831;
+    --secondary-color: #F57C00;
+    --sub-color: #E0E0E0;
 }
 
 h1, h2, h3 {
@@ -19,7 +22,7 @@ a {
 }
 
 .primary-btn {
-    background-color: #1E88E5;
+    background-color: var(--primary-color);
     border-radius: 50px;
     padding: 10px 15px;
     text-align: center;
@@ -36,6 +39,79 @@ a {
 }
 
 .current {
-    background-color: #1E88E5;
+    background-color: var(--primary-color);
     color: white;
+}
+
+/* ================ contact ================ */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 7%;
+    background-image: url("../images/banner-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact__quote-container {
+    width: 40%;
+}
+
+.contact__quote {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.contact .contact__form-container {
+    width: 40%;
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+}
+
+.contact__form-title, .contact__form-sub-content, .contact__name-input, .contact__depacture-date-input, .contact__phone-input, .contact__email-input,  .contact__adult-number-input, .contact__children-number-input, .contact__content-input, .contact__content-input, .contact__get-tours-btn {
+    margin-bottom: 15px;
+}
+
+.contact__form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact__form-container form input, .contact__form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.contact__form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact__contact-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__guest-number-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__form-btn {
+    width: 100%;
 }
