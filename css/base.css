@@ -6,6 +6,7 @@
     --primary-color: #8AA831;
     --secondary-color: #F57C00;
     --sub-color: #E0E0E0;
+    --default-border-radius: 12px;
 }
 
 h1, h2, h3 {
