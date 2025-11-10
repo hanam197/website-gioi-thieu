@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("/fonts/SVN-Poppins\ Light.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("/fonts/SVN-Poppins.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("/fonts/SVN-Poppins\ Medium.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("/fonts/SVN-Poppins\ SemiBold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+:root {
+  --color-1: #4e5f39;
+  --color-2: #edefeb;
+  --color-3: #89a831;
+  --color-4: #e16f26;
+  --color-5: #e4e7e2;
+  --color-6: #6f6f6f;
+}
+
+body {
+  font-family: "SVN-Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-content {
+  width: 50%;
+}
+
+.blog-image {
+  width: 50%;
+  background-color:#6f6f6f;
+}
+
+.blog-image .image {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  margin-left: 30%;
+  margin-top: 100px;
+  margin-right: 80px;
+}
+
+.content-category {
+  color:#e16f26;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.content-divider {
+  border-bottom: 1.5px solid  #cdcdcd;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.content-title {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.content-description {
+  line-height: 1.5;
+  margin-bottom: 21px;
+  color: #848383;
+}
+
+.button{
+  color:#ffffff; /*màu chữ*/
+  background-color: #4e5f39; /*màu nút*/
+  text-decoration: none; /*bỏ underline*/
+  padding: 10px 16px 10px 16px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
