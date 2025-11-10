@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
     </style>
+    <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- breadcrumb -->
@@ -26,8 +27,15 @@
     <section class="heading">
         <h1 class="heading__tour-title">Du lịch Hè – Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h1>
         <div class="heading__tour-info">
-            <span class="heading__tour-duration">4 ngày 3 đêm</span>
-            <span class="heading__tour-share"></span>
+            <div class="heading__tour-duration">4 ngày 3 đêm</div>
+            <div class="heading__tour-share">
+                <ul class="heading__tour-share-list">
+                    <li class="heading__tour-share-item"><i class="fa-brands fa-facebook-f"></i></li>
+                    <li class="heading__tour-share-item"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="heading__tour-share-item"><i class="fa-brands fa-pinterest-p"></i></li>
+                    <li class="heading__tour-share-item"><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -51,7 +59,7 @@
             </div>
         </div>
         <div class="gallery__button">
-            <button>Xem tất cả hình ảnh</button>
+            <button class="view-all-btn">Xem tất cả hình ảnh</button>
         </div>
     </section>
 
@@ -93,85 +101,95 @@
                     </div>
 
                     <!-- tour schedule -->
-                    <div class="tour-content__accordion-item">
-                        <div class="tour-content__accordion-header">
+                    <div class="tour-schedule__accordion-item">
+                        <div class="tour-schedule__accordion-header">
                             <h2 class="accordion-header">
                                 <button class="accordion-button">
                                     Lịch trình
                                 </button>
                             </h2>
                         </div>
-                        <div class="tour-content__accordion-body">
-                            <div class="tour-content__schedule-container">
-                                <div class="tour-content__schedule-row">
-                                    <div class="tour-content__schedule-icon"></div>
-                                    <div class="tour-content__schedule-description">
-                                        <h3 class="tour-content__schedule-title">Ngày 1: Sài Gòn – Tuy Hòa (Ăn trưa, tối)</h3>
-                                        <span class="tour-content__schedule-time">7 giờ 30 sáng</span>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                        <div class="tour-schedule__accordion-body">
+                            <div class="tour-schedule__container">
+                                <div class="tour-schedule__row">
+                                    <div class="tour-schedule__icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <div class="tour-schedule__vertical-line"></div>
+                                    </div>
+                                    <div class="tour-schedule__description">
+                                        <h3 class="tour-schedule__title">Ngày 1: Sài Gòn – Tuy Hòa (Ăn trưa, tối)</h3>
+                                        <p class="tour-schedule__time">7 giờ 30 sáng</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                    </div>
+                                </div>
+                                <div class="tour-schedule__row">
+                                    <div class="tour-schedule__icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <div class="tour-schedule__vertical-line"></div>
+                                    </div>
+                                    <div class="tour-schedule__description">
+                                        <h3 class="tour-schedule__title">Ngày 1: Sài Gòn – Tuy Hòa (Ăn trưa, tối)</h3>
+                                        <p class="tour-schedule__time">7 giờ 30 sáng</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                    </div>
+                                </div>
+                                <div class="tour-schedule__row">
+                                    <div class="tour-schedule__icon">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <div class="tour-schedule__vertical-line"></div>
+                                    </div>
+                                    <div class="tour-schedule__description">
+                                        <h3 class="tour-schedule__title">Ngày 1: Sài Gòn – Tuy Hòa (Ăn trưa, tối)</h3>
+                                        <p class="tour-schedule__time">7 giờ 30 sáng</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
+                                        <p class="tour-schedule__text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
                                     </div>
                                 </div>
 
-                                <div class="tour-content__schedule-row">
-                                    <div class="tour-content__schedule-icon"></div>
-                                    <div class="tour-content__schedule-description">
-                                        <h3 class="tour-content__schedule-title">Ngày 1: Sài Gòn – Tuy Hòa (Ăn trưa, tối)</h3>
-                                        <span class="tour-content__schedule-time">7 giờ 30 sáng</span>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                    </div>
-                                </div>
-
-                                <div class="tour-content__schedule-row">
-                                    <div class="tour-content__schedule-icon"></div>
-                                    <div class="tour-content__schedule-description">
-                                        <h3 class="tour-content__schedule-title">Ngày 1: Sài Gòn – Tuy Hòa (Ăn trưa, tối)</h3>
-                                        <span class="tour-content__schedule-time">7 giờ 30 sáng</span>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                        <p class="tour-content__schedule-text"><span>09h20:</span> Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- tour notice terms -->
-                    <div class="tour-content__accordion-item">
-                        <div class="tour-content__accordion-header">
+                    <!-- tour notice and terms -->
+                    <div class="tour-notice__accordion-item">
+                        <div class="tour-notice__accordion-header">
                             <h2 class="accordion-header">
                                 <button class="accordion-button">
                                     Chú ý và điều khoản
                                 </button>
                             </h2>
                         </div>
-                        <div class="tour-content__accordion-body">
-                            <div class="tour-content__notice-terms">
-                                <!-- Guest number price info  -->
-                                <div class="tour-content__guest-number-price">
-                                    <table border="1" class="tour-content__guest-price-table">
-                                        <tr>
+                        <div class="tour-notice__accordion-body">
+                            <div class="tour-notice__container">
+                                <!-- Tour price info  -->
+                                <div class="tour-price-info">
+                                    <table border="1" class="tour-price-info__table">
+                                        <thead>
                                             <th>Số lượng khách</th>
                                             <th>Giá tour</th>
-                                        </tr>
-                                        <tr>
-                                            <td>1 khách trở lên</td>
-                                            <td>825.000đ/khách</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2 khách trở lên</td>
-                                            <td>1.650.000đ/khách</td>
-                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1 khách trở lên</td>
+                                                <td>825.000đ/khách</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2 khách trở lên</td>
+                                                <td>1.650.000đ/khách</td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
 
                                 <!-- Services included -->
-                                <div class="tour-content__services-included">
-                                    <h3 class="tour-content__services-included-title">Giá bao gồm</h3>
-                                    <table>
+                                <div class="tour-services-included">
+                                    <h3 class="tour-services-included__title">Dịch vụ bao gồm</h3>
+                                    <table border="1" class="tour-services-included__table">
                                         <tr>
                                             <td>Xe vận chuyển chất lượng cao điều hòa xuyên suốt</td>
                                             <td>Quà tặng du lịch</td>
@@ -191,9 +209,9 @@
                                 </div>
 
                                 <!-- notices -->
-                                <div class="tour-content__notices">
-                                    <h3 class="tour-content__notices-title">Lưu ý</h3>
-                                    <table>
+                                <div class="tour-notice">
+                                    <h3 class="tour-notice__title">Lưu ý</h3>
+                                    <table border="1" class="tour-notice__notice-table">
                                         <tr>
                                             <td>Tour hoạt động</td>
                                             <td>Quanh năm trừ những ngày bão lũ</td>
@@ -220,7 +238,7 @@
                                         </tr>
                                     </table>
 
-                                    <table>
+                                    <table border="1" class="tour-notice__prepare-table">
                                         <thead>
                                             <tr>
                                                 <th>Chúng tôi sẽ cung cấp</th>
@@ -264,28 +282,28 @@
             <!-- tour overview -->
             <div class="tour-content__price-info">
                 <h3 class="tour-content__price-title">Giá tour trọn gói</h3>
-                <div class="tour-content__price"><span>6.868,686</span>VND/khách</div>
+                <div class="tour-content__price"><span style="color: #F57C00; font-size: 24px; margin-right: 5px;">6.868,686</span>VND/khách</div>
                 <div class="tour-content__old-price">7.000.000 VND</div>
 
-                <br>
+                <div class="divider"></div>
 
                 <div class="tour-content__depart-info">
-                    <div class="tour-content__depart-info-place">Khởi hành từ: <span>TP. Hồ Chí Minh</span></div>
-                    <div class="tour-content__depart-info-destination">Phú Yên</div>
-                    <div class="tour-content__depart-info-duration">3 ngày 2 đêm</div>
-                    <div class="tour-content__depart-info-date">15/11/2025</div>
+                    <div class="tour-content__depart-info-place"><i class="fa-solid fa-plane-departure"></i>Khởi hành từ: <span class="info">TP. Hồ Chí Minh</span></div>
+                    <div class="tour-content__depart-info-destination"><i class="fa-solid fa-location-dot"></i>Điểm đến: <span class="info">Phú Yên</span></div>
+                    <div class="tour-content__depart-info-duration"><i class="fa-solid fa-calendar"></i>Thời gian: <span class="info">3 ngày 2 đêm</span></div>
+                    <div class="tour-content__depart-info-date"><i class="fa-solid fa-calendar"></i>Ngày xuất phát: <span class="info">15/11/2025</span></div>
                 </div>
 
-                <br>
+                <div class="divider"></div>
 
                 <div class="tour-content__gifts">
-                    <p>Tặng 1 tấm ảnh lớn tập thể Đoàn (từ 20 khách)</p>
-                    <p>Tặng áo cờ đỏ sao vàng chinh phục Mũi Cực Đông</p>
-                    <p>Quà tặng hoạt náo trên xe</p>
-                    <p>Vé check in Ô Loan Chill</p>
+                    <p><i class="fa-solid fa-gift"></i>Tặng 1 tấm ảnh lớn tập thể Đoàn (từ 20 khách)</p>
+                    <p><i class="fa-solid fa-gift"></i>Tặng áo cờ đỏ sao vàng chinh phục Mũi Cực Đông</p>
+                    <p><i class="fa-solid fa-gift"></i>Quà tặng hoạt náo trên xe</p>
+                    <p><i class="fa-solid fa-gift"></i>Vé check in Ô Loan Chill</p>
                 </div>
 
-                <br>
+                <div class="divider"></div>
 
                 <button class="tour-content__contact-now-btn">Liên hệ ngay</button>
             </div>
@@ -294,9 +312,8 @@
             <div class="tour-content__contact">
                 <h3 class="tour-content__contact-title">Hotline hỗ trợ</h3>
                 <button class="tour-content__contact-phone">0909 123 456</button>
-                <br>
                 <p>Hoặc để lại thông tin tư vấn</p>
-                <input type="text" name="" id="">
+                <input class="tour-content__contact-input" type="text" name="" id="" placeholder="Nhập email của bạn">
                 <p>Chúng tôi sẽ liên hệ với bạn trong vài giờ khi nhận thông tin</p>
             </div>
         </div>
@@ -306,42 +323,102 @@
     <section class="related-tours">
         <h2 class="related-tours__title">Tour liên quan</h2>
         <div class="related-tours__slider">
-            <button class="related-tour__slider-prev-btn"></button>
+            <button class="related-tour__slider-prev-btn"><i class="fa-solid fa-angle-left"></i></button>
             <div class="related-tour__slider-container">
-                <div class="related-tours__slider-item">
-                    <div class="related-tours__slider-item-image">
+                <div class="related-tours__card">
+                    <div class="related-tours__card-header">
                         <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                     </div>
-                    <h3 class="related-tours__slider-item-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
-                    <div class="related-tours__slider-item-duration">4 ngày 3 đêm</div>
-                    <div class="related-tours__slider-item-price">6.868.686 VND/khách</div>
+                    <div class="related-tours__card-body">
+                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
+                    </div>
                 </div>
-                <div class="related-tours__slider-item">
-                    <div class="related-tours__slider-item-image">
+                <div class="related-tours__card">
+                    <div class="related-tours__card-header">
                         <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                     </div>
-                    <h3 class="related-tours__slider-item-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
-                    <div class="related-tours__slider-item-duration">4 ngày 3 đêm</div>
-                    <div class="related-tours__slider-item-price">6.868.686 VND/khách</div>
+                    <div class="related-tours__card-body">
+                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
+                    </div>
                 </div>
-                <div class="related-tours__slider-item">
-                    <div class="related-tours__slider-item-image">
+                <div class="related-tours__card">
+                    <div class="related-tours__card-header">
                         <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                     </div>
-                    <h3 class="related-tours__slider-item-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
-                    <div class="related-tours__slider-item-duration">4 ngày 3 đêm</div>
-                    <div class="related-tours__slider-item-price">6.868.686 VND/khách</div>
+                    <div class="related-tours__card-body">
+                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
+                    </div>
+                </div>
+                <div class="related-tours__card">
+                    <div class="related-tours__card-header">
+                        <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="related-tours__card-body">
+                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
+                    </div>
                 </div>
             </div>
-            <button class="related-tour__slider-next-btn"></button>
+            <button class="related-tour__slider-next-btn"><i class="fa-solid fa-angle-right"></i></button>
         </div>
     </section>
 
     <!-- gallery -->
-    <section class="gallery"></section>
+    <!-- <section class="gallery"></section> -->
 
     <!-- contact -->
-    <section class="contact"></section>
+    <section class="contact">
+        <div class="contact__quote-container">
+            <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi để giúp mọi thứ tốt hơn !?</span>
+            <button class="contact__get-tours-btn primary-btn">Xem các tour</button>
+        </div>
+        <div class="contact__form-container">
+            <form action="">
+                <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+                <p class="contact__form-sub-content">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
+                <div class="contact__name-input">
+                    <label for="">Họ và tên *</label>
+                    <input type="text" placeholder="Nhập họ và tên" class="contact__form-input">
+                </div>
+                <div class="contact__depacture-date-input">
+                    <label for="">Ngày đi (dự kiến)</label>
+                    <input type="date" placeholder="Chọn ngày đi dự kiến" class="contact__form-input">
+                </div>
+                <div class="contact__contact-input">
+                    <div class="contact__phone-input">
+                        <label for="">Số điện thoại *</label>
+                        <input type="text" placeholder="Nhập số điện thoại" class="contact__form-input">
+                    </div>
+                    <div class="contact__email-input">
+                        <label for="">Email *</label>
+                        <input type="email" placeholder="Nhập email" class="contact__form-input">
+                    </div>
+                </div>
+                <div class="contact__guest-number-input">
+                    <div class="contact__adult-number-input">
+                        <label for="">Số lượng</label>
+                        <input type="number" placeholder="Người lớn" class="contact__form-input">
+                    </div>
+                    <div class="contact__children-number-input">
+                        <label for="">Trẻ em</label>
+                        <input type="number" placeholder="Trẻ em" class="contact__form-input">
+                    </div>
+                </div>
+                <div class="contact__content-input">
+                    <label for="">Nội dung</label>
+                    <textarea name="" id="" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ" class="contact__form-input"></textarea>
+                </div>
+                <button class="contact__form-btn primary-btn">Nhận tư vấn</button>
+            </form>
+        </div>
+    </section>
 
 </body>
 </html>
