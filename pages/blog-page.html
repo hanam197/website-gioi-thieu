@@ -10,9 +10,56 @@
 </head>
 
 <body>
-  <header>
-    <h1>Tin tức và Khám phá</h1>
-    <nav><a href="#">Trang chủ</a> | <a href="#">Tin tức và Khám phá</a></nav>
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="">
+          <img
+            src="https://happystation.vn/wp-content/uploads/2025/04/z5977869934236_75dd2eeadbd293120bc6fddddd2bf1ab-1.png"
+            alt="Happy Station - Trạm hạnh phúc" width="150">
+        </a>
+      </div>
+
+      <!-- Nút menu mobile -->
+      <div class="burger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu chính -->
+      <nav class="nav">
+        <ul>
+          <li><a href="">Giới thiệu</a></li>
+          <li>
+            <a href="">Tour</a>
+            <ul>
+              <li><a href="">Tour ngắn ngày</a></li>
+              <li><a href="">Tour dài ngày</a></li>
+              <li><a href="">Workshop</a></li>
+            </ul>
+          </li>
+          <li><a href="">Tour cá nhân hóa</a></li>
+          <li><a href="">Các dịch vụ</a></li>
+          <li><a href="">Tin tức & khám phá</a></li>
+          <li><a href="">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nút liên hệ -->
+      <div class="contact">
+        <a href="tel:0393728287"> Liên hệ ngay</a>
+      </div>
+    </div>
+
+    <!-- Ô tìm kiếm -->
+    <div class="search-box" id="searchBox" style="display:none;">
+      <form method="get" action="">
+        <input type="search" name="s" placeholder="Tìm kiếm...">
+        <button type="submit">🔍</button>
+      </form>
+    </div>
   </header>
 
   <main>
@@ -35,13 +82,92 @@
             tay góp phần xây dựng cộng đồng hướng về thiên nhiên.
           </p>
 
-          <a href="#" class="button" tabindex="1" role="button">Khám phá thêm</a>
+          <a href="#" class="button">Khám phá thêm</a>
         </div>
       </div>
       <div class="blog-image">
         <img class="image" src="../images/blog-page/image-1.jpg" alt="Happy Station" />
       </div>
     </div>
+
+    <div class="blog-container-1">
+      <div class="blog-image">
+        <img class="image-1" src="../images/blog-page/image-3.jpeg" alt="Happy Station_Spa" />
+      </div>
+      <div class="blog-content">
+        <div class="content-1">
+          <span class="content-category">Wellness Experiences</span>
+          <div class="content-divider"></div>
+          <span class="content-title">SPA & TRỊ LIỆU</span>
+          <p class="content-description">
+            Được hướng dẫn & đồng hành cùng các chuyên gia, nhân sự chuyên môn là cộng đồng người yếu thế được đào tạo
+            bài bản.
+          </p>
+          <p class="content-description">
+            Mang lại trải nghiệm chăm sóc sức khoẻ bằng cách tích hợp sức khoẻ toàn diện vào kỳ nghỉ của bạn thông qua
+            các phương pháp điều trị và hoạt động chăm sóc sức khoẻ được kết hợp để kích hoạt năng lượng sáng tạo cốt
+            lõi của bạn.
+          </p>
+          <a href="#" class="button">Khám phá thêm</a>
+          <div class="blog-image">
+            <img class="image-1_1" src="../images/blog-page/image-4.jpeg" alt="Happy Station_Spa" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-container">
+      <div class="blog-content">
+        <div class="content-2">
+          <span class="content-category">Food & Feeling</span>
+          <div class="content-divider"></div>
+          <span class="content-title">ẨM THỰC ĐỊA PHƯƠNG</span>
+          <p class="content-description">
+            Tham quan khu vực sản xuất, chế biến tại địa phương như Làng rau Ngọc Lãng, Cảng Cá Đông Tác. Để có trải
+            nghiệm quy trình sản xuất lành, sạch cũng như điều kiện đặc trưng của thực phẩm Phú Yên. 100% thực phẩm
+            sạch, organic được trồng tại địa phương.
+          </p>
+          <p class="content-description">
+            Thực đơn được thiết kế riêng theo khẩu vị và nhu cầu cũng như sức khoẻ của Khách hàng.
+          </p>
+          <a href="#" class="button">Khám phá thêm</a>
+        </div>
+      </div>
+      <div class="blog-image-2">
+        <img class="image-2" src="../images/blog-page/image-5.jpeg" alt="Happy Station_Food" />
+        <img class="image-2" src="../images/blog-page/image-6.jpeg" alt="Happy Station_Food" />
+      </div>
+    </div>
+
+    <div class="blog-container-1">
+      <div class="blog-content">
+        <div class="content-2">
+          <span class="content-category">Blog & News</span>
+          <div class="content-divider"></div>
+          <span class="content-title">CÓ THỂ BẠN QUAN TÂM</span>
+          <div class="content-card">
+            <div class="content-card-item">
+              <img class="image-3" src="../images/blog-page/image-5.jpeg" alt="Happy Station_Card" />
+              <div class="content-card-item-info">
+                <span class="content-card-author">taylor swift</span>
+                <div class="content-card-divider"></div>
+                <span class="content-card-date">12/11/2025</span>
+                <span class="content-card-title">7 lý do bạn nên du lịch Phú Yên</span>
+                <span class="content-card-description">Đến Phú Yên bạn không chỉ đắm mình vào làn nước trong xanh như
+                  pha lê, mà còn rèn luyện...</span>
+                <a href="#" class="see-more">Xem thêm</a>
+              </div>
+
+            </div>
+            <div class="content-card-item"></div>
+            <div class="content-card-item"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
   </main>
 </body>
 
