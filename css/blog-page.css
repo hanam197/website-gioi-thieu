@@ -77,10 +77,17 @@ body {
   margin-top: 60px;
   width: 100%;
   height: 300px;
+  object-fit: cover; /* tự động căn chỉnh kích thước ảnh */
 }
 .blog-image-2 .image-2:nth-child(2) {
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+.image-3 {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
 
 .content {
@@ -135,4 +142,87 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
+}
+
+.content-card-author {
+  font-weight: 600;
+  display: inline-block;
+  text-align: left; 
+}
+
+.content-card-date {
+  color:#6f6f6f;
+  font-weight: 600;
+}
+
+.content-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.content-card-description {
+  color: #848383;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.see-more {
+  color:#4d4c4c;
+  text-decoration: none;
+  display: block;
+}
+
+.see-more:hover {
+  text-decoration: underline;
+}
+
+.content-card-divider {
+  border-left: 1.25px solid #797979;
+  height: 16px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content-card-item {
+  background-color: #ffffff;
+  width: 30%;
+  border-radius: 12px;
+  overflow: hidden; /* ẩn nội dung bị tràn ra ngoài vùng hiển thị */
+}
+
+.content-wrap {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-card-item-info {
+  padding: 16px 14px;
+}
+
+.content-card {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blog-container-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  padding: 50px 60px;
+}
+
+.blog-container-2 .content-divider {
+  width: 350px;
+}
+
+
+.blog-container-2 .content-title {
+ margin-bottom: 40px;
 }
