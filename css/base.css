@@ -39,7 +39,7 @@ a {
     background-color: #F57C00;
 }
 
-.current {
+.current-pagination-item {
     background-color: var(--primary-color);
     color: white;
 }

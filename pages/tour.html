@@ -35,7 +35,7 @@
                 </div>
                 <div class="tours__filter">
                     <ul class="tours__filter-list">
-                        <li class="tours__filter-item">All</li>
+                        <li class="tours__filter-item filter-item-active">All</li>
                         <li class="tours__filter-item">Tour nội địa</li>
                         <li class="tours__filter-item">Tour quốc tế</li>
                     </ul>
@@ -43,13 +43,69 @@
             </div>
 
             <div class="tours__list-container">
-                <div class="tours__cards card-list">
+                <!-- page 1 -->
+                <div class="tours__cards card-list page active">
                     <div class="tours__card card">
                         <div class="tours__card-header card-header">
                             <img src="../images/tour-1.jpg" alt="" class="card-img">
                         </div>
                         <div class="tours__card-body card-body">
-                            <p class="tours__tour-name">Khám Phá Đông Âu: Đức – Áo – Slovakia – Séc</p>
+                            <p class="tours__tour-name">Đảo Hòn Nưa – Vũng Rô – Hải Đăng – Bãi Môn</p>
+                            <p class="tours__tour-time">2 ngày 1 đêm</p>
+                            <p class="tours__tour-content">Trải nghiệm cano, tắm biển, khám phá lịch sử tàu không số, ngắm bình minh cực Đông và thưởng thức hải sản tươi ngon.</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">750.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tours__card">
+                        <div class="tours__card-header">
+                            <img src="../images/tour-2.jpg" alt="">
+                        </div>
+                        <div class="tours__card-body">
+                            <span class="tours__tour-name">Quảng Đức Xưa – Nhà thờ Mằng Lăng – Gành Đá Đĩa – Bãi Xép</span>
+                            <span class="tours__tour-time">2 ngày 1 đêm</span>
+                            <p class="tours__tour-content">Khám phá văn hóa Phú Yên, chiêm ngưỡng kỳ quan thiên nhiên, thưởng thức hải sản Ô Loan và vui chơi tại phim trường Bãi Xép.</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">680.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
+                        </div>
+                    </div>
+
+                    <div class="tours__card">
+                        <div class="tours__card-header">
+                            <img src="../images/tour-3.jpg" alt="">
+                        </div>
+                        <div class="tours__card-body">
+                            <span class="tours__tour-name">Tour cắm trại dã ngoại đảo Hòn Chùa – Câu cá – Tắm biển</span>
+                            <span class="tours__tour-time">2 ngày 1 đêm</span>
+                            <p class="tours__tour-content">Trải nghiệm tắm biển, lặn ngắm san hô, câu cá, chèo thuyền thúng, ngắm hoàng hôn, sinh hoạt lửa trại và khám phá hệ sinh thái Hòn Chùa – Hòn Dứa.</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
+                        </div>
+                    </div>
+
+                    <div class="tours__card">
+                        <div class="tours__card-header">
+                            <img src="../images/tour-4.jpg" alt="">
+                        </div>
+                        <div class="tours__card-body">
+                            <span class="tours__tour-name">Tour trải nghiệm khám phá đảo Hòn Chùa – Cao Nguyên Vân Hòa</span>
+                            <span class="tours__tour-time">2 ngày 1 đêm</span>
+                            <p class="tours__tour-content">Tắm biển, lặn ngắm san hô, khám phá hệ sinh thái biển, thưởng thức hải sản, tham quan nhà thờ Bác Hồ, địa đạo Gò Thì Thùng và vườn đỏ Vân Hòa.</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- page 2 -->
+                <div class="tours__cards card-list page">
+                    <div class="tours__card card">
+                        <div class="tours__card-header card-header">
+                            <img src="../images/tour-1.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="tours__card-body card-body">
+                            <p class="tours__tour-name">Khám Phá Đông Âu 2: Đức – Áo – Slovakia – Séc</p>
                             <p class="tours__tour-time">10 ngày 9 đêm</p>
                             <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
                             <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
@@ -85,7 +141,7 @@
 
                     <div class="tours__card">
                         <div class="tours__card-header">
-                            <img src="../images/tour-3.jpg" alt="">
+                            <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                         </div>
                         <div class="tours__card-body">
                             <span class="tours__tour-name">Hành trình Hoa và Biển: Đà Lạt - Nha Trang</span>
@@ -97,10 +153,63 @@
                     </div>
                 </div>
 
-                
+                <!-- page 3 -->
+                <div class="tours__cards card-list page">
+                    <div class="tours__card card">
+                        <div class="tours__card-header card-header">
+                            <img src="../images/tour-1.jpg" alt="" class="card-img">
+                        </div>
+                        <div class="tours__card-body card-body">
+                            <p class="tours__tour-name">Khám Phá Đông Âu 3: Đức – Áo – Slovakia – Séc</p>
+                            <p class="tours__tour-time">10 ngày 9 đêm</p>
+                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn">Đặt tour</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tours__card">
+                        <div class="tours__card-header">
+                            <img src="../images/tour-2.jpg" alt="">
+                        </div>
+                        <div class="tours__card-body">
+                            <span class="tours__tour-name">Khám Phá Trung Quốc: Đại Lý - Côn Minh - Lệ Giang - Shangrila</span>
+                            <span class="tours__tour-time">7 ngày 6 đêm</span>
+                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn">Đặt tour</button>
+                        </div>
+                    </div>
+
+                    <div class="tours__card">
+                        <div class="tours__card-header">
+                            <img src="../images/tour-3.jpg" alt="">
+                        </div>
+                        <div class="tours__card-body">
+                            <span class="tours__tour-name">Hành trình Hoa và Biển: Đà Lạt - Nha Trang</span>
+                            <span class="tours__tour-time">5 ngày 4 đêm</span>
+                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn">Đặt tour</button>
+                        </div>
+                    </div>
+
+                    <div class="tours__card">
+                        <div class="tours__card-header">
+                            <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="tours__card-body">
+                            <span class="tours__tour-name">Hành trình Hoa và Biển: Đà Lạt - Nha Trang</span>
+                            <span class="tours__tour-time">5 ngày 4 đêm</span>
+                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
+                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
+                            <button class="tours__book-btn primary-btn">Đặt tour</button>
+                        </div>
+                    </div>
+                </div>
 
                 <ul class="tours__pagination">
-                    <li class="tours__pagination-item current"><span>1</span></li>
+                    <li class="tours__pagination-item current-pagination-item"><span>1</span></li>
                     <li class="tours__pagination-item"><span>2</span></li>
                     <li class="tours__pagination-item"><span>3</span></li>
                 </ul>
@@ -122,19 +231,6 @@
                     <p class="banner__intro">Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề tài chính có đang khiến bạn trở nên căng thẳng.. Bạn có nghĩ đến lúc cho thân – tâm – trí được phục hồi để giúp mọi thứ tốt hơn !? Chúng tôi sẽ cá nhân hóa lộ trình theo tình trạng sức khỏe và tinh thần của BẠN. Hãy sạc thêm năng lượng bình an và hạnh phúc cho con đường phía trước</p>
                     <button class="banner__btn">Tất cả dịch vụ</button>
                 </div>
-            </div>
-        </section>
-
-        <!-- slider -->
-        <section class="slider">
-            <div class="slider__btn">
-                <button class="slider__prev-btn"><i class="fa-solid fa-angle-left"></i></button>
-            </div>
-            <div class="slider__container">
-                <img src="../images/slider-1.jpg" alt="">
-            </div>
-            <div class="slider__btn">
-                <button class="slider__next-btn"><i class="fa-solid fa-angle-right"></i></button>
             </div>
         </section>
 
@@ -194,5 +290,7 @@
     <footer>
 
     </footer>
+
+    <script src="../js/tour-page.js"></script>
 </body>
 </html>
