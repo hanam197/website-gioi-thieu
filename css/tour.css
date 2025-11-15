@@ -130,6 +130,7 @@
 }
 
 .tours__tour-name {
+    height: 50px;
     font-size: 18px;
     font-weight: bold;
     display: -webkit-box;
