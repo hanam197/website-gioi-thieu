@@ -1,0 +1,37 @@
+.detailed-blog-image {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+article {
+    padding: 30px 25%;
+}
+
+.detailed-blog-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.detailed-blog-content {
+    line-height: 1.5;
+}
+
+.detailed-blog-sub-title {
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+.detailed-blog-highlight {
+    color: #4e5f39;
+    border-left: 6px solid #89a831;
+    line-height: 1.5;
+    padding-left: 17px;
+    word-spacing: 3px;
+    padding-top: 4px;
+}
