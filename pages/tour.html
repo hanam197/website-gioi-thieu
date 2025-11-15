@@ -17,7 +17,7 @@
   <body>
     <header>
       <section class="header__banner">
-        <nav class="navbar">+-</nav>
+        <nav class="navbar"></nav>
         <div class="header__container">
           <h1 class="header__title">Tour thiết kế sẵn</h1>
           <p class="header__breadcrumb">Homepage > Tour thiết kế sẵn</p>
@@ -115,82 +115,114 @@
           </button>
         </div>
         <div class="contact__form-container">
-          <form action="">
+          <form id="contactForm" action="">
             <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
             <p class="contact__form-sub-content">
               Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
             </p>
+            
             <div class="contact__name-input">
               <label for="">Họ và tên *</label>
               <input
+                id = "fullName" 
                 type="text"
                 placeholder="Nhập họ và tên"
                 class="contact__form-input"
               />
+              <small class="error-msg"></small>
             </div>
+            
             <div class="contact__depacture-date-input">
-              <label for="">Ngày đi (dự kiến)</label>
+              <label for="">Ngày đi (dự kiến) *</label>
               <input
+                id="departureDate" 
                 type="date"
                 placeholder="Chọn ngày đi dự kiến"
                 class="contact__form-input"
               />
+              <small class="error-msg"></small>
             </div>
+
             <div class="contact__contact-input">
               <div class="contact__phone-input">
                 <label for="">Số điện thoại *</label>
                 <input
+                  id="phone" 
                   type="text"
                   placeholder="Nhập số điện thoại"
                   class="contact__form-input"
                 />
+                <small class="error-msg"></small>
               </div>
+
               <div class="contact__email-input">
                 <label for="">Email *</label>
                 <input
+                  id="email" 
                   type="email"
                   placeholder="Nhập email"
                   class="contact__form-input"
                 />
+                <small class="error-msg"></small>
               </div>
             </div>
+
             <div class="contact__guest-number-input">
               <div class="contact__adult-number-input">
-                <label for="">Số lượng</label>
+                <label for="">Người lớn</label>
                 <input
+                  id="adults" 
                   type="number"
                   placeholder="Người lớn"
                   class="contact__form-input"
                 />
+                <small class="error-msg"></small>
               </div>
               <div class="contact__children-number-input">
                 <label for="">Trẻ em</label>
                 <input
+                  id="children" 
                   type="number"
                   placeholder="Trẻ em"
                   class="contact__form-input"
                 />
+                <small class="error-msg"></small>
               </div>
             </div>
+
             <div class="contact__content-input">
               <label for="">Nội dung</label>
               <textarea
-                name=""
-                id=""
+                id="content"
                 cols="30"
                 rows="3"
                 placeholder="Nhập nội dung cần liên hệ"
                 class="contact__form-input"
               ></textarea>
             </div>
-            <button class="contact__form-btn primary-btn">Nhận tư vấn</button>
+
+            <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
           </form>
         </div>
       </section>
+
+      <div id="successPopup" class="contact__popup">
+        <div class="contact__popup-content">
+          <!-- <div class="contact__popup-close"><i class="fa-solid fa-circle-xmark"></i></div> -->
+          <p class="contact__popup-message">
+            <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
+            <i class="fa-regular fa-circle-check"></i> 
+            <br> 
+            Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+          </p>
+          <button id="closePopup">Đóng</button>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
 
     <script src="../js/tour-page.js"></script>
+    <script src="../js/form-validation.js"></script>
   </body>
 </html>

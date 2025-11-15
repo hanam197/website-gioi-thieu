@@ -33,11 +33,11 @@
     },
     {
         "id": 5,
-        "name": "Tour trải nghiệm khám phá đảo Hòn Chùa – Cao Nguyên Vân Hòa",
-        "meta": "Tắm biển, lặn ngắm san hô, khám phá hệ sinh thái biển, thưởng thức hải sản, tham quan nhà thờ Bác Hồ, địa đạo Gò Thì Thùng và vườn đỏ Vân Hòa.",
-        "time": "2 ngày 1 đêm",
-        "price": "750.000đ",
-        "image": "../images/tour-4.jpg"
+        "name": "Phú Yên - Kỳ Co",
+        "meta": "Khám phá Núi Nhạn, Bãi Xép, Eo Gió, Kỳ Co, Ghềnh Đá Đĩa, Vũng Rô, Hòn Nưa, Mũi Điện; tắm biển, ngắm san hô và thưởng thức đặc sản miền Trung.",
+        "time": "3 ngày 2 đêm",
+        "price": "2.750.000đ",
+        "image": "../images/tour-5.jpg"
     },
     {
         "id": 6,

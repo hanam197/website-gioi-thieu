@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="tours__card-body">
                     <p class="tours__tour-name">${tour.name}</p>
                     <p class="tours__tour-time">${tour.time}</p>
+                    <p class="tours__tour-content">${tour.meta}</p>
                     <p class="tours__tour-price">
                         <span style="color: red; font-weight: bold; font-size: 20px;">
                             ${tour.price}

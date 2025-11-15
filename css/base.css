@@ -78,7 +78,17 @@ a {
     border-radius: 20px;
 }
 
-.contact__form-title, .contact__form-sub-content, .contact__name-input, .contact__depacture-date-input, .contact__phone-input, .contact__email-input,  .contact__adult-number-input, .contact__children-number-input, .contact__content-input, .contact__content-input, .contact__get-tours-btn {
+.contact__form-title, 
+.contact__form-sub-content, 
+.contact__name-input, 
+.contact__depacture-date-input, 
+.contact__phone-input, 
+.contact__email-input,  
+.contact__adult-number-input, 
+.contact__children-number-input, 
+.contact__content-input, 
+.contact__content-input, 
+.contact__get-tours-btn {
     margin-bottom: 15px;
 }
 
@@ -88,7 +98,8 @@ a {
     font-weight: bold;
 }
 
-.contact__form-container form input, .contact__form-container form textarea {
+.contact__form-container form input, 
+.contact__form-container form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid grey;
@@ -113,6 +124,68 @@ a {
     align-items: center;
 }
 
+.contact__contact-input div,
+.contact__guest-number-input div {
+    width: 48%;
+}
+
 .contact__form-btn {
     width: 100%;
+}
+
+/* ========= contact form popup =========== */
+.contact__popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 450px;
+    height: 250px;
+    text-align: center;
+}
+
+.contact__popup-content span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact__popup-content i {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.contact__popup-content button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contact__popup-content button:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.error-msg {
+    font-size: 0.9rem;
+    color: red;
+    display: none;
 }
