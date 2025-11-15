@@ -1,0 +1,69 @@
+
+
+.service-page-header {
+text-align: center;
+background-image:url('../images/banner-3.jpg');
+background-size:cover;
+height: 400px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+color:white;
+}
+
+.link {
+    text-decoration: none;
+    color:white;
+}
+
+.service-card {
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 60px 200px;
+}
+
+.content-service-card-name {
+    margin-top: 5px;
+}
+
+.content-service-card-title {
+    margin-top: 5px;
+    color:#89a831;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content-service-card-description {
+    color: #848383;
+    margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.content-service-card-schedule {
+    margin-top: 10px;
+}
+
+.call {
+    color:#ffffff; /*màu chữ*/
+  background-color: #4e5f39; /*màu nút*/
+  text-decoration: none; /*bỏ underline*/
+  padding: 10px 16px 10px 16px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 16px;
+  display: block;
+  width:fit-content;
+}
+
+.content-service-card-item {
+    background-color:  #fdf2db;
+    border-radius: 12px;
+}
+
+.content-service-card-item-info {
+    padding: 12px 10px;
+}
