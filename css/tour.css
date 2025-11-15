@@ -83,7 +83,7 @@
     cursor: pointer;
 }
 
-.tours__cards {
+.tours__cards .card-list {
     width: 100%;
     display: flex;
     justify-content: space-between;

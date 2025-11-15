@@ -1,296 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/tour.css">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/tour.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
     </style>
-    <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/c39bd3b109.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <section class="header__banner">
-            <nav class="navbar">
-            
-            </nav>
-            <div class="header__container">
-                <h1 class="header__title">Tour thiết kế sẵn</h1>
-                <p class="header__breadcrumb">Homepage > Tour thiết kế sẵn</p>
-            </div>
-        </section>
+      <section class="header__banner">
+        <nav class="navbar">+-</nav>
+        <div class="header__container">
+          <h1 class="header__title">Tour thiết kế sẵn</h1>
+          <p class="header__breadcrumb">Homepage > Tour thiết kế sẵn</p>
+        </div>
+      </section>
     </header>
 
     <main>
-        <!-- tours -->
-        <section class="tours">
-            <div class="tours__title-container">
-                <div class="tours__title">
-                    <h4 class="tours__category" style="text-transform: uppercase;">tour packages</h4>
-                    <div class="line"></div>
-                    <h2 class="tours__title-name" style="text-transform: uppercase;">Hành trình thú vị</h2>
-                </div>
-                <div class="tours__filter">
-                    <ul class="tours__filter-list">
-                        <li class="tours__filter-item filter-item-active">All</li>
-                        <li class="tours__filter-item">Tour nội địa</li>
-                        <li class="tours__filter-item">Tour quốc tế</li>
-                    </ul>
-                </div>
+      <!-- tours -->
+      <section class="tours">
+        <div class="tours__title-container">
+          <div class="tours__title">
+            <h4 class="tours__category" style="text-transform: uppercase">
+              tour packages
+            </h4>
+            <div class="line"></div>
+            <h2 class="tours__title-name" style="text-transform: uppercase">
+              Hành trình thú vị
+            </h2>
+          </div>
+          <div class="tours__filter">
+            <ul class="tours__filter-list">
+              <li class="tours__filter-item filter-item-active">All</li>
+              <li class="tours__filter-item">Tour nội địa</li>
+              <li class="tours__filter-item">Tour quốc tế</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tours__list-container">
+          <div class="tours__cards page active" data-page="1">
+            <div class="card-list"></div>
+          </div>
+
+          <div class="tours__cards page" data-page="2">
+            <div class="card-list"></div>
+          </div>
+
+          <div class="tours__cards page" data-page="3">
+            <div class="card-list"></div>
+          </div>
+
+          <ul class="tours__pagination">
+            <li class="tours__pagination-item current-pagination-item">
+              <span>1</span>
+            </li>
+            <li class="tours__pagination-item"><span>2</span></li>
+            <li class="tours__pagination-item"><span>3</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- banner -->
+      <section class="banner">
+        <img class="banner__img" src="../images/banner-2.jpg" alt="" />
+        <div class="banner__content">
+          <div class="banner__quote-container">
+            <p class="banner__quote">
+              Hành trình <span style="color: #f57c00">chữa lành</span>: Con
+              đường dẫn đến sức khỏe toàn diện của bạn
+            </p>
+            <div class="banner__signature-container">
+              <span class="banner__signature-name">Happy Station</span>
             </div>
+          </div>
+          <div class="banner__intro-container">
+            <span class="banner__title">Các dịch vụ</span>
+            <p class="banner__intro">
+              Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề
+              tài chính có đang khiến bạn trở nên căng thẳng.. Bạn có nghĩ đến
+              lúc cho thân – tâm – trí được phục hồi để giúp mọi thứ tốt hơn !?
+              Chúng tôi sẽ cá nhân hóa lộ trình theo tình trạng sức khỏe và tinh
+              thần của BẠN. Hãy sạc thêm năng lượng bình an và hạnh phúc cho con
+              đường phía trước
+            </p>
+            <button class="banner__btn">Tất cả dịch vụ</button>
+          </div>
+        </div>
+      </section>
 
-            <div class="tours__list-container">
-                <!-- page 1 -->
-                <div class="tours__cards card-list page active">
-                    <div class="tours__card card">
-                        <div class="tours__card-header card-header">
-                            <img src="../images/tour-1.jpg" alt="" class="card-img">
-                        </div>
-                        <div class="tours__card-body card-body">
-                            <p class="tours__tour-name">Đảo Hòn Nưa – Vũng Rô – Hải Đăng – Bãi Môn</p>
-                            <p class="tours__tour-time">2 ngày 1 đêm</p>
-                            <p class="tours__tour-content">Trải nghiệm cano, tắm biển, khám phá lịch sử tàu không số, ngắm bình minh cực Đông và thưởng thức hải sản tươi ngon.</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">750.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
-                        </div>
-                    </div>
-                    
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-2.jpg" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Quảng Đức Xưa – Nhà thờ Mằng Lăng – Gành Đá Đĩa – Bãi Xép</span>
-                            <span class="tours__tour-time">2 ngày 1 đêm</span>
-                            <p class="tours__tour-content">Khám phá văn hóa Phú Yên, chiêm ngưỡng kỳ quan thiên nhiên, thưởng thức hải sản Ô Loan và vui chơi tại phim trường Bãi Xép.</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">680.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
-                        </div>
-                    </div>
+      <!-- gallery -->
+      <section class="gallery">
+        <span>gallery</span>
+      </section>
 
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-3.jpg" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Tour cắm trại dã ngoại đảo Hòn Chùa – Câu cá – Tắm biển</span>
-                            <span class="tours__tour-time">2 ngày 1 đêm</span>
-                            <p class="tours__tour-content">Trải nghiệm tắm biển, lặn ngắm san hô, câu cá, chèo thuyền thúng, ngắm hoàng hôn, sinh hoạt lửa trại và khám phá hệ sinh thái Hòn Chùa – Hòn Dứa.</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
-                        </div>
-                    </div>
-
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-4.jpg" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Tour trải nghiệm khám phá đảo Hòn Chùa – Cao Nguyên Vân Hòa</span>
-                            <span class="tours__tour-time">2 ngày 1 đêm</span>
-                            <p class="tours__tour-content">Tắm biển, lặn ngắm san hô, khám phá hệ sinh thái biển, thưởng thức hải sản, tham quan nhà thờ Bác Hồ, địa đạo Gò Thì Thùng và vườn đỏ Vân Hòa.</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- page 2 -->
-                <div class="tours__cards card-list page">
-                    <div class="tours__card card">
-                        <div class="tours__card-header card-header">
-                            <img src="../images/tour-1.jpg" alt="" class="card-img">
-                        </div>
-                        <div class="tours__card-body card-body">
-                            <p class="tours__tour-name">Khám Phá Đông Âu 2: Đức – Áo – Slovakia – Séc</p>
-                            <p class="tours__tour-time">10 ngày 9 đêm</p>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-                    
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-2.jpg" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Khám Phá Trung Quốc: Đại Lý - Côn Minh - Lệ Giang - Shangrila</span>
-                            <span class="tours__tour-time">7 ngày 6 đêm</span>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-3.jpg" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Hành trình Hoa và Biển: Đà Lạt - Nha Trang</span>
-                            <span class="tours__tour-time">5 ngày 4 đêm</span>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Hành trình Hoa và Biển: Đà Lạt - Nha Trang</span>
-                            <span class="tours__tour-time">5 ngày 4 đêm</span>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- page 3 -->
-                <div class="tours__cards card-list page">
-                    <div class="tours__card card">
-                        <div class="tours__card-header card-header">
-                            <img src="../images/tour-1.jpg" alt="" class="card-img">
-                        </div>
-                        <div class="tours__card-body card-body">
-                            <p class="tours__tour-name">Khám Phá Đông Âu 3: Đức – Áo – Slovakia – Séc</p>
-                            <p class="tours__tour-time">10 ngày 9 đêm</p>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-                    
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-2.jpg" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Khám Phá Trung Quốc: Đại Lý - Côn Minh - Lệ Giang - Shangrila</span>
-                            <span class="tours__tour-time">7 ngày 6 đêm</span>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">59.990.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="../images/tour-3.jpg" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Hành trình Hoa và Biển: Đà Lạt - Nha Trang</span>
-                            <span class="tours__tour-time">5 ngày 4 đêm</span>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-
-                    <div class="tours__card">
-                        <div class="tours__card-header">
-                            <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                        </div>
-                        <div class="tours__card-body">
-                            <span class="tours__tour-name">Hành trình Hoa và Biển: Đà Lạt - Nha Trang</span>
-                            <span class="tours__tour-time">5 ngày 4 đêm</span>
-                            <p class="tours__tour-content">Hành trình khám phá các thành phố “đẹp như cổ tích” của Châu Âu với các giá trị văn hóa đặc sắc</p>
-                            <div class="tours__tour-price"><span style="color: red; font-weight: bold; font-size: 20px;">4.790.000đ</span>&nbsp;/khách</div>
-                            <button class="tours__book-btn primary-btn">Đặt tour</button>
-                        </div>
-                    </div>
-                </div>
-
-                <ul class="tours__pagination">
-                    <li class="tours__pagination-item current-pagination-item"><span>1</span></li>
-                    <li class="tours__pagination-item"><span>2</span></li>
-                    <li class="tours__pagination-item"><span>3</span></li>
-                </ul>
+      <!-- contact -->
+      <section class="contact">
+        <div class="contact__quote-container">
+          <span class="contact__quote"
+            >Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+            để giúp mọi thứ tốt hơn !?</span
+          >
+          <button class="contact__get-tours-btn primary-btn">
+            Xem các tour
+          </button>
+        </div>
+        <div class="contact__form-container">
+          <form action="">
+            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+            <p class="contact__form-sub-content">
+              Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+            </p>
+            <div class="contact__name-input">
+              <label for="">Họ và tên *</label>
+              <input
+                type="text"
+                placeholder="Nhập họ và tên"
+                class="contact__form-input"
+              />
             </div>
-        </section>
-
-        <!-- banner -->
-        <section class="banner">
-            <img class="banner__img" src="../images/banner-2.jpg" alt="">
-            <div class="banner__content">
-                <div class="banner__quote-container">
-                    <p class="banner__quote">Hành trình <span style="color: #F57C00;">chữa lành</span>: Con đường dẫn đến sức khỏe toàn diện của bạn</p>
-                    <div class="banner__signature-container">
-                        <span class="banner__signature-name">Happy Station</span>
-                    </div>
-                </div>
-                <div class="banner__intro-container">
-                    <span class="banner__title">Các dịch vụ</span>
-                    <p class="banner__intro">Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề tài chính có đang khiến bạn trở nên căng thẳng.. Bạn có nghĩ đến lúc cho thân – tâm – trí được phục hồi để giúp mọi thứ tốt hơn !? Chúng tôi sẽ cá nhân hóa lộ trình theo tình trạng sức khỏe và tinh thần của BẠN. Hãy sạc thêm năng lượng bình an và hạnh phúc cho con đường phía trước</p>
-                    <button class="banner__btn">Tất cả dịch vụ</button>
-                </div>
+            <div class="contact__depacture-date-input">
+              <label for="">Ngày đi (dự kiến)</label>
+              <input
+                type="date"
+                placeholder="Chọn ngày đi dự kiến"
+                class="contact__form-input"
+              />
             </div>
-        </section>
-
-        <!-- gallery -->
-        <section class="gallery">
-            <span>gallery</span>
-        </section>
-
-        <!-- contact -->
-        <section class="contact">
-            <div class="contact__quote-container">
-                <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi để giúp mọi thứ tốt hơn !?</span>
-                <button class="contact__get-tours-btn primary-btn">Xem các tour</button>
+            <div class="contact__contact-input">
+              <div class="contact__phone-input">
+                <label for="">Số điện thoại *</label>
+                <input
+                  type="text"
+                  placeholder="Nhập số điện thoại"
+                  class="contact__form-input"
+                />
+              </div>
+              <div class="contact__email-input">
+                <label for="">Email *</label>
+                <input
+                  type="email"
+                  placeholder="Nhập email"
+                  class="contact__form-input"
+                />
+              </div>
             </div>
-            <div class="contact__form-container">
-                <form action="">
-                    <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-                    <p class="contact__form-sub-content">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
-                    <div class="contact__name-input">
-                        <label for="">Họ và tên *</label>
-                        <input type="text" placeholder="Nhập họ và tên" class="contact__form-input">
-                    </div>
-                    <div class="contact__depacture-date-input">
-                        <label for="">Ngày đi (dự kiến)</label>
-                        <input type="date" placeholder="Chọn ngày đi dự kiến" class="contact__form-input">
-                    </div>
-                    <div class="contact__contact-input">
-                        <div class="contact__phone-input">
-                            <label for="">Số điện thoại *</label>
-                            <input type="text" placeholder="Nhập số điện thoại" class="contact__form-input">
-                        </div>
-                        <div class="contact__email-input">
-                            <label for="">Email *</label>
-                            <input type="email" placeholder="Nhập email" class="contact__form-input">
-                        </div>
-                    </div>
-                    <div class="contact__guest-number-input">
-                        <div class="contact__adult-number-input">
-                            <label for="">Số lượng</label>
-                            <input type="number" placeholder="Người lớn" class="contact__form-input">
-                        </div>
-                        <div class="contact__children-number-input">
-                            <label for="">Trẻ em</label>
-                            <input type="number" placeholder="Trẻ em" class="contact__form-input">
-                        </div>
-                    </div>
-                    <div class="contact__content-input">
-                        <label for="">Nội dung</label>
-                        <textarea name="" id="" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ" class="contact__form-input"></textarea>
-                    </div>
-                    <button class="contact__form-btn primary-btn">Nhận tư vấn</button>
-                </form>
+            <div class="contact__guest-number-input">
+              <div class="contact__adult-number-input">
+                <label for="">Số lượng</label>
+                <input
+                  type="number"
+                  placeholder="Người lớn"
+                  class="contact__form-input"
+                />
+              </div>
+              <div class="contact__children-number-input">
+                <label for="">Trẻ em</label>
+                <input
+                  type="number"
+                  placeholder="Trẻ em"
+                  class="contact__form-input"
+                />
+              </div>
             </div>
-        </section>
+            <div class="contact__content-input">
+              <label for="">Nội dung</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="3"
+                placeholder="Nhập nội dung cần liên hệ"
+                class="contact__form-input"
+              ></textarea>
+            </div>
+            <button class="contact__form-btn primary-btn">Nhận tư vấn</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 
     <script src="../js/tour-page.js"></script>
-</body>
+  </body>
 </html>
