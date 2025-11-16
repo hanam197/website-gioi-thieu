@@ -24,11 +24,14 @@ function handleEmailQuick(event) {
 
     const email = document.getElementById('emailQuick').value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email === "")
+    if (email === "") {
         valid = showError('emailQuick', "Vui lòng nhập email.");
-    else if (!emailPattern.test(email))
+        return;
+    } else if (!emailPattern.test(email)) {
         valid = showError('emailQuick', "Email không hợp lệ.");
-
+        return;
+    }
+    
     showPopup();
     document.getElementById('contactForm').reset();
 }
