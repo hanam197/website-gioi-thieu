@@ -30,10 +30,10 @@
             <div class="heading__tour-duration">4 ngày 3 đêm</div>
             <div class="heading__tour-share">
                 <ul class="heading__tour-share-list">
-                    <li class="heading__tour-share-item"><i class="fa-brands fa-facebook-f"></i></li>
-                    <li class="heading__tour-share-item"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="heading__tour-share-item"><i class="fa-brands fa-pinterest-p"></i></li>
-                    <li class="heading__tour-share-item"><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="heading__tour-share-item"><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="heading__tour-share-item"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="heading__tour-share-item"><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    <li class="heading__tour-share-item"><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -313,7 +313,11 @@
                 <h3 class="tour-content__contact-title">Hotline hỗ trợ</h3>
                 <button class="tour-content__contact-phone">0909 123 456</button>
                 <p>Hoặc để lại thông tin tư vấn</p>
-                <input class="tour-content__contact-input" type="text" name="" id="" placeholder="Nhập email của bạn">
+                <div class="tour-content__email-input">
+                    <input class="tour-content__contact-input" type="text" name="" id="emailQuick" placeholder="Nhập email của bạn">
+                    <button id="emailSubmitBtn" class="tour-content__contact-submit-btn">Gửi</button>
+                    <small class="error-msg"></small>
+                </div>
                 <p>Chúng tôi sẽ liên hệ với bạn trong vài giờ khi nhận thông tin</p>
             </div>
         </div>
@@ -322,51 +326,47 @@
     <!-- related tours -->
     <section class="related-tours">
         <h2 class="related-tours__title">Tour liên quan</h2>
-        <div class="related-tours__slider">
-            <button class="related-tour__slider-prev-btn"><i class="fa-solid fa-angle-left"></i></button>
-            <div class="related-tour__slider-container">
-                <div class="related-tours__card">
-                    <div class="related-tours__card-header">
-                        <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </div>
-                    <div class="related-tours__card-body">
-                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
-                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
-                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
-                    </div>
+        <div class="related-tours__list-container">
+            <div class="related-tours__card">
+                <div class="related-tours__card-header">
+                    <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                 </div>
-                <div class="related-tours__card">
-                    <div class="related-tours__card-header">
-                        <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </div>
-                    <div class="related-tours__card-body">
-                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
-                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
-                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
-                    </div>
-                </div>
-                <div class="related-tours__card">
-                    <div class="related-tours__card-header">
-                        <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </div>
-                    <div class="related-tours__card-body">
-                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
-                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
-                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
-                    </div>
-                </div>
-                <div class="related-tours__card">
-                    <div class="related-tours__card-header">
-                        <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    </div>
-                    <div class="related-tours__card-body">
-                        <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
-                        <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
-                        <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
-                    </div>
+                <div class="related-tours__card-body">
+                    <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                    <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                    <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
                 </div>
             </div>
-            <button class="related-tour__slider-next-btn"><i class="fa-solid fa-angle-right"></i></button>
+            <div class="related-tours__card">
+                <div class="related-tours__card-header">
+                    <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="related-tours__card-body">
+                    <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                    <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                    <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
+                </div>
+            </div>
+            <div class="related-tours__card">
+                <div class="related-tours__card-header">
+                    <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="related-tours__card-body">
+                    <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                    <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                    <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
+                </div>
+            </div>
+            <div class="related-tours__card">
+                <div class="related-tours__card-header">
+                    <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="related-tours__card-body">
+                    <h3 class="related-tours__card-title">Tour Du lịch Quy Nhơn – Phú Yên 4 ngày 3 đêm từ Sài Gòn 2024</h3>
+                    <div class="related-tours__card-tour-duration">4 ngày 3 đêm</div>
+                    <div class="related-tours__card-tour-price">6.868.686 VND/khách</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -374,119 +374,122 @@
     <!-- <section class="gallery"></section> -->
 
     <!-- contact -->
-      <section class="contact">
-        <div class="contact__quote-container">
-          <span class="contact__quote"
-            >Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
-            để giúp mọi thứ tốt hơn !?</span
-          >
-          <button class="contact__get-tours-btn primary-btn">
-            Xem các tour
-          </button>
+    <section class="contact">
+    <div class="contact__quote-container">
+        <span class="contact__quote"
+        >Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+        để giúp mọi thứ tốt hơn !?</span
+        >
+        <button class="contact__get-tours-btn primary-btn">
+        Xem các tour
+        </button>
+    </div>
+    <div class="contact__form-container">
+        <form id="contactForm" action="">
+        <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+        <p class="contact__form-sub-content">
+            Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+        </p>
+        
+        <div class="contact__name-input">
+            <label for="">Họ và tên *</label>
+            <input
+            id = "fullName" 
+            type="text"
+            placeholder="Nhập họ và tên"
+            class="contact__form-input"
+            />
+            <small class="error-msg"></small>
         </div>
-        <div class="contact__form-container">
-          <form id="contactForm" action="">
-            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-            <p class="contact__form-sub-content">
-              Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
-            </p>
-            
-            <div class="contact__name-input">
-              <label for="">Họ và tên *</label>
-              <input
-                id = "fullName" 
+        
+        <div class="contact__depacture-date-input">
+            <label for="">Ngày đi (dự kiến) *</label>
+            <input
+            id="departureDate" 
+            type="date"
+            placeholder="Chọn ngày đi dự kiến"
+            class="contact__form-input"
+            />
+            <small class="error-msg"></small>
+        </div>
+
+        <div class="contact__contact-input">
+            <div class="contact__phone-input">
+            <label for="">Số điện thoại *</label>
+            <input
+                id="phone" 
                 type="text"
-                placeholder="Nhập họ và tên"
+                placeholder="Nhập số điện thoại"
                 class="contact__form-input"
-              />
-              <small class="error-msg"></small>
+            />
+            <small class="error-msg"></small>
             </div>
-            
-            <div class="contact__depacture-date-input">
-              <label for="">Ngày đi (dự kiến) *</label>
-              <input
-                id="departureDate" 
-                type="date"
-                placeholder="Chọn ngày đi dự kiến"
+
+            <div class="contact__email-input">
+            <label for="">Email *</label>
+            <input
+                id="email" 
+                type="email"
+                placeholder="Nhập email"
                 class="contact__form-input"
-              />
-              <small class="error-msg"></small>
+            />
+            <small class="error-msg"></small>
             </div>
-
-            <div class="contact__contact-input">
-              <div class="contact__phone-input">
-                <label for="">Số điện thoại *</label>
-                <input
-                  id="phone" 
-                  type="text"
-                  placeholder="Nhập số điện thoại"
-                  class="contact__form-input"
-                />
-                <small class="error-msg"></small>
-              </div>
-
-              <div class="contact__email-input">
-                <label for="">Email *</label>
-                <input
-                  id="email" 
-                  type="email"
-                  placeholder="Nhập email"
-                  class="contact__form-input"
-                />
-                <small class="error-msg"></small>
-              </div>
-            </div>
-
-            <div class="contact__guest-number-input">
-              <div class="contact__adult-number-input">
-                <label for="">Người lớn</label>
-                <input
-                  id="adults" 
-                  type="number"
-                  placeholder="Người lớn"
-                  class="contact__form-input"
-                />
-                <small class="error-msg"></small>
-              </div>
-              <div class="contact__children-number-input">
-                <label for="">Trẻ em</label>
-                <input
-                  id="children" 
-                  type="number"
-                  placeholder="Trẻ em"
-                  class="contact__form-input"
-                />
-                <small class="error-msg"></small>
-              </div>
-            </div>
-
-            <div class="contact__content-input">
-              <label for="">Nội dung</label>
-              <textarea
-                id="content"
-                cols="30"
-                rows="3"
-                placeholder="Nhập nội dung cần liên hệ"
-                class="contact__form-input"
-              ></textarea>
-            </div>
-
-            <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
-          </form>
         </div>
-      </section>
-      <!-- contact popup -->
-      <div id="successPopup" class="contact__popup">
+
+        <div class="contact__guest-number-input">
+            <div class="contact__adult-number-input">
+            <label for="">Người lớn</label>
+            <input
+                id="adults" 
+                type="number"
+                placeholder="Người lớn"
+                class="contact__form-input"
+            />
+            <small class="error-msg"></small>
+            </div>
+            <div class="contact__children-number-input">
+            <label for="">Trẻ em</label>
+            <input
+                id="children" 
+                type="number"
+                placeholder="Trẻ em"
+                class="contact__form-input"
+            />
+            <small class="error-msg"></small>
+            </div>
+        </div>
+
+        <div class="contact__content-input">
+            <label for="">Nội dung</label>
+            <textarea
+            id="content"
+            cols="30"
+            rows="3"
+            placeholder="Nhập nội dung cần liên hệ"
+            class="contact__form-input"
+            ></textarea>
+        </div>
+
+        <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
+        </form>
+    </div>
+    </section>
+    <!-- contact popup -->
+    <div id="successPopup" class="contact__popup">
         <div class="contact__popup-content">
-          <p class="contact__popup-message">
+            <p class="contact__popup-message">
             <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
             <i class="fa-regular fa-circle-check"></i> 
             <br> 
             Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
-          </p>
-          <button id="closePopup">Đóng</button>
+            </p>
+            <button id="closePopup">Đóng</button>
         </div>
-      </div>
+    </div>
+
+    <script src="../js/detailed-tour-page.js"></script>
+    <script src="../js/form-validation.js"></script>
 
 </body>
 </html>

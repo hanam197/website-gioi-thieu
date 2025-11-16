@@ -1,7 +1,8 @@
 .heading, 
 .breadcrumb, 
 .gallery, 
-.tour-content {
+.tour-content,
+.related-tours {
     padding: 3% 7%;
 }
 
@@ -237,7 +238,13 @@
     padding: 30px;
 }
 
-.tour-content__price-title, .tour-content__old-price, .tour-content__depart-info, .tour-content__gifts, .tour-content__contact-phone, .tour-content__contact-phone + p, .tour-content__contact-input {
+.tour-content__price-title, 
+.tour-content__old-price, 
+.tour-content__depart-info, 
+.tour-content__gifts, 
+.tour-content__contact-phone, 
+.tour-content__contact-phone + p, 
+.tour-content__email-input {
     margin-bottom: 20px;
 }
 
@@ -264,7 +271,8 @@
     font-weight: bold;
 }
 
-.tour-content__contact-now-btn, .tour-content__contact-phone {
+.tour-content__contact-now-btn, 
+.tour-content__contact-phone {
     width: 100%;
     padding: 10px 0;
     background-color: var(--primary-color);
@@ -276,7 +284,8 @@
     text-transform: uppercase;
 }
 
-.tour-content__contact-now-btn:hover, .tour-content__contact-phone:hover {
+.tour-content__contact-now-btn:hover, 
+.tour-content__contact-phone:hover {
     background-color: var(--secondary-color);
     cursor: pointer;
 }
@@ -302,11 +311,33 @@
     margin-bottom: 20px;
 }
 
+.tour-content__email-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .tour-content__contact-input {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--sub-color);
-    border-radius: 10px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.tour-content__contact-submit-btn {
+    padding: 10px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.tour-content__contact-submit-btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 /* ======== Related tours ======== */
@@ -318,15 +349,12 @@
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 30px;
-    padding: 0 7%;
 }
 
-.related-tours__slider {
+.related-tours__list-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: auto;
-    padding: 0 7% 3%;
 }
 
 .related-tour__slider-container {
