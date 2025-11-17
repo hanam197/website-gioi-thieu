@@ -41,26 +41,106 @@
     },
     {
         "id": 6,
-        "name": "Tour trải nghiệm khám phá đảo Hòn Chùa – Cao Nguyên Vân Hòa",
-        "meta": "Tắm biển, lặn ngắm san hô, khám phá hệ sinh thái biển, thưởng thức hải sản, tham quan nhà thờ Bác Hồ, địa đạo Gò Thì Thùng và vườn đỏ Vân Hòa.",
-        "time": "2 ngày 1 đêm",
-        "price": "750.000đ",
-        "image": "../images/tour-4.jpg"
+        "name": "Mũi Điện",
+        "meta": "Mũi Điện – còn gọi là Mũi Đại Lãnh – là nơi đón ánh bình minh đầu tiên trên đất liền Việt Nam, được ví như “nóc nhà phương Đông” của Tổ quốc.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-6.jpg"
     },
     {
         "id": 7,
-        "name": "Tour trải nghiệm khám phá đảo Hòn Chùa – Cao Nguyên Vân Hòa",
-        "meta": "Tắm biển, lặn ngắm san hô, khám phá hệ sinh thái biển, thưởng thức hải sản, tham quan nhà thờ Bác Hồ, địa đạo Gò Thì Thùng và vườn đỏ Vân Hòa.",
-        "time": "2 ngày 1 đêm",
-        "price": "750.000đ",
-        "image": "../images/tour-4.jpg"
+        "name": "Hải đăng Đại Lãnh",
+        "meta": "Hải đăng Đại Lãnh được xây dựng từ thời Pháp thuộc, là một trong những ngọn hải đăng cổ nhất Việt Nam.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-7.jpg"
     },
     {
         "id": 8,
-        "name": "Tour trải nghiệm khám phá đảo Hòn Chùa – Cao Nguyên Vân Hòa",
-        "meta": "Tắm biển, lặn ngắm san hô, khám phá hệ sinh thái biển, thưởng thức hải sản, tham quan nhà thờ Bác Hồ, địa đạo Gò Thì Thùng và vườn đỏ Vân Hòa.",
-        "time": "2 ngày 1 đêm",
-        "price": "750.000đ",
-        "image": "../images/tour-4.jpg"
+        "name": "Đường xuống Bãi Môn",
+        "meta": "Đường xuống Bãi Môn là một trong những cung đường ven biển đẹp nhất Phú Yên, uốn lượn qua triền núi xanh mướt, mở ra khung cảnh biển trời bao la và dốc cát trắng mịn.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Tháp Nghinh Phong",
+        "meta": "Tháp Nghinh Phong là công trình kiến trúc hiện đại nổi bật của Phú Yên, được xây dựng và đưa vào sử dụng từ năm 2021.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Hòn Nưa",
+        "meta": "Hòn Nưa là một hòn đảo nhỏ hoang sơ cách trung tâm thành phố Tuy Hòa khoảng 35km về phía Nam, nổi bật với những ghềnh đá hình thù kỳ dị và làn nước trong xanh màu ngọc bích.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Hòn Yến",
+        "meta": "Hòn Yến là điểm đến nổi bật của Phú Yên, nổi tiếng với cảnh sắc thiên nhiên hoang sơ và đặc biệt là những rạn san hô lộ thiên hiếm có.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Ghềnh Đá Đĩa",
+        "meta": "Ghềnh Đá Đĩa (Gành Đá Đĩa) được mệnh danh là kỳ quan thiên nhiên độc đáo của Phú Yên với hàng nghìn khối đá bazan hình lục giác xếp chồng lên nhau như tổ ong khổng lồ.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Gành Đèn",
+        "meta": "Gành Đèn là một ghềnh đá nằm gần bờ biển, nổi bật với những tảng đá lớn nhẵn bóng xếp chồng tự nhiên tạo nên khung cảnh độc đáo, thơ mộng.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-13.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Thác Vực Hòm",
+        "meta": "Thác Vực Hòm là điểm tham quan sinh thái nằm sâu trong rừng núi Phú Yên, nổi tiếng với dòng thác cao chảy mạnh, tung bọt trắng xóa tạo nên khung cảnh hùng vĩ và mát lạnh.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Bãi Tiên",
+        "meta": "Bãi Tiên là một bãi biển hoang sơ và thanh bình nằm cách trung tâm thành phố Tuy Hòa khoảng 35km về phía Bắc.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-15.jpeg"
+    },
+    {
+        "id": 16,
+        "name": "Cầu gỗ Ông Cọp",
+        "meta": "Cầu gỗ Ông Cọp - Cây cầu gỗ dài nhất Việt Nam, bắc qua sông Bình Bá, mang đậm nét văn hóa địa phương và lịch sử lâu đời của vùng đất Phú Yên.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-16.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Cù lao Mái Nhà",
+        "meta": "Cầu gỗ Ông Cọp - Cây cầu gỗ dài nhất Việt Nam, bắc qua sông Bình Bá, mang đậm nét văn hóa địa phương và lịch sử lâu đời của vùng đất Phú Yên.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-17.png"
+    },
+    {
+        "id": 18,
+        "name": "Bờ kè xóm Rớ",
+        "meta": "Bờ kè xóm Rớ là một trong những điểm check-in độc đáo và hút khách bậc nhất tại Phú Yên, đặc biệt vào mùa rêu xanh phủ đầy.",
+        "time": "Trong ngày",
+        "price": "250.000đ",
+        "image": "../images/tour-18.jpg"
     }
 ]
