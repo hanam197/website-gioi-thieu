@@ -152,6 +152,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .tours__pagination-item {
@@ -194,8 +195,12 @@
 
 /* banner */
 .banner {
+    background-image: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
 }
@@ -211,8 +216,12 @@
     position: absolute;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding: 5% 17%;
+    justify-content: space-between;
+    gap: 150px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
 }
 
 .banner__quote-container {
@@ -256,7 +265,7 @@
 }
 
 .banner__btn {
-    padding: 13px 20px;
+    padding: 10px 15px;
     border: none;
     background-color: var(--primary-color);
     color: white;
@@ -308,23 +317,35 @@
 }
 
 /* ========== responsive ============ */
-/* ---------- TABLET (iPad) ---------- */
+/* ---------- TABLET ---------- */
 @media screen and (max-width: 1024px) {
+    /* main title */
+    .header__banner {
+        height: 30vh;
+    }
+
+    .header__container {
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .header__container .header__title,
+    .header__container .header__breadcrumb {
+        text-align: center;
+    }
+
+    /* tours */
     .tours {
         padding: 3% 5%;
     }
 
     .tours__title-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .tours__filter-list {
         flex-wrap: wrap;
         gap: 10px;
-        justify-content: flex-start;
     }
 
     .tours__cards .card-list {
@@ -332,41 +353,74 @@
     }
 
     .tours__card {
-        width: calc(33.33% - 20px); /* 3 cards per row */
+        width: calc(33.33% - 20px);
+    }
+
+    /* banner */
+    .banner {
+        padding: 5% 3%;
+    }
+
+    .banner__content {
+        width: 80%;
+        gap: 40px;
+    }
+
+    .banner__quote {
+        font-size: 28px;
     }
 }
 
-/* ---------- MOBILE (phones) ---------- */
+/* ---------- MOBILE ---------- */
 @media screen and (max-width: 768px) {
+    /* main title */
+    .header__banner {
+        height: 30vh;
+    }
+
+    .header__container {
+        padding: 5% 3%;
+        width: 100%;
+    }
+
+    .header__container .header__title,
+    .header__container .header__breadcrumb {
+        text-align: center;
+    }
+
+    .header__container .header__title {
+        font-size: 28px;
+    }
+
+    /* tours */
     .tours {
         padding: 5% 3%;
     }
 
     .tours__title-container {
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .tours__filter-list {
-        flex-direction: column;
         width: 100%;
         border: none;
+        margin-top: 30px;
     }
 
     .tours__filter-item {
-        width: 100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 5px 15px;
         border: 1px solid var(--primary-color);
         border-radius: 50px;
-        margin-bottom: 10px;
     }
 
     .tours__cards .card-list {
-        gap: 20px;
+        gap: 30px;
     }
 
     .tours__card {
-        width: 100%; /* 1 card per row */
+        width: 100%; 
     }
 
     .tours__card-body {
@@ -378,33 +432,38 @@
         height: 40px;
         margin: 0 5px;
     }
-}
 
-/* ---------- SMALL MOBILE (phones under 480px) ---------- */
-@media screen and (max-width: 480px) {
-    .tours__title-name {
-        font-size: 24px;
-    }
-
-    .tours__tour-name {
-        font-size: 16px;
-        height: auto;
-    }
-
-    .tours__tour-content {
-        font-size: 14px;
-    }
-
-    .tours__card {
+    /* banner */
+    .banner .banner__content {
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 75%;
+        margin-top: 50px;
     }
 
-    .tours__card-header {
-        height: 150px;
+    .banner .banner__quote {
+        width: 100%;
+        margin: 0;
     }
 
-    .tours__filter-item {
-        padding: 8px 0;
-        font-size: 14px;
+    .banner .banner__signature-name {
+        margin-top: 10px;
+    }
+
+    .banner .banner__quote-container,
+    .banner .banner__intro-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner .banner__title {
+        display: none;
+    }
+
+    .banner .banner__btn {
+        width: 60%;
+        margin-top: 10px;
     }
 }
