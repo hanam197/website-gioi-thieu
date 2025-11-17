@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     showImage();
+    showRelatedTour();
 
     // SHOW IMAGE IN GALLERY
     function showImage() {
@@ -138,5 +139,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    
+    // SHOW RELATED TOURS
+    function showRelatedTour() {
+        const container = document.querySelector(".related-tours__list-container");
+
+    fetch("../data/tour-data.json")
+        .then(res => res.json())
+        .then(data => {
+            // TAKE FIRST 4 TOURS
+            const relatedTours = data.slice(0, 4);
+
+            container.innerHTML = ""; // remove static HTML
+
+            relatedTours.forEach(tour => {
+                const card = document.createElement("div");
+                card.classList.add("related-tours__card");
+
+                card.innerHTML = `
+                    <div class="related-tours__card-header">
+                        <img src="${tour.image}" alt="${tour.name}">
+                    </div>
+                    <div class="related-tours__card-body">
+                        <h3 class="related-tours__card-title">${tour.name}</h3>
+                        <div class="related-tours__card-tour-duration">${tour.time}</div>
+                        <div class="related-tours__card-tour-price">${tour.price}</div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        })
+        .catch(err => console.error("Error loading tour list:", err));
+    }
 });
