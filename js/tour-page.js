@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     filterItems.forEach(item => {
         item.addEventListener('click', () => {
-            // update UI
             document.querySelector('.filter-item-active')?.classList.remove('filter-item-active');
             item.classList.add('filter-item-active');
 
