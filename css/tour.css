@@ -86,13 +86,14 @@
 .tours__cards .card-list {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* move to a new row if they don’t fit on the same row */
+    gap: 40px 20px;
     align-items: center;
     margin-bottom: 50px;
 }
 
 .tours__card {
-    width: 300px;
+    width: calc(25% - 20px);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex;
     flex-direction: column;

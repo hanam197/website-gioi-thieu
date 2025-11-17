@@ -1,77 +1,67 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     const filterItems = document.querySelectorAll('.tours__filter-item');
-//     const paginationItems = document.querySelectorAll('.tours__pagination-item');
-//     const pages = document.querySelectorAll('.tours__cards.page');
-
-//     // Safety: if no pages found, do nothing
-//     if (!pages || pages.length === 0) return;
-
-//     // Toggle filter active class (your sliding highlight code can be used separately)
-//     filterItems.forEach(item => {
-//     item.addEventListener('click', () => {
-//         filterItems.forEach(i => i.classList.remove('filter-item-active'));
-//         item.classList.add('filter-item-active');
-//     });
-//     });
-
-//     // Show a page by index (0-based)
-    // function showPage(index) {
-    // if (index < 0 || index >= pages.length) return;
-
-    // pages.forEach((page, i) => {
-    //     if (i === index) {
-    //     page.classList.add('active');
-    //     } else {
-    //     page.classList.remove('active');
-    //     }
-    // });
-
-    // // update pagination active state
-    // paginationItems.forEach((p, i) => {
-    //     p.classList.toggle('current-pagination-item', i === index);
-    // });
-    // }
-
-    // Wire up pagination clicks
-    // paginationItems.forEach((item, index) => {
-    // item.addEventListener('click', () => {
-    //     showPage(index);
-    // });
-    // });
-
-//     // Initialize: show first page (or the one already marked active)
-//     const initialIndex = Array.from(pages).findIndex(p => p.classList.contains('active'));
-//     showPage(initialIndex >= 0 ? initialIndex : 0);
-
-//     document.querySelectorAll('.tours__book-btn').forEach(btn => {
-//             btn.addEventListener('click', () => {
-//             const link = btn.dataset.link;
-//             window.location.href = link;
-//         });
-//     });
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
     const pages = document.querySelectorAll('.tours__cards.page');
     const paginationItems = document.querySelectorAll('.tours__pagination-item');
+    const filterItems = document.querySelectorAll('.tours__filter-item');
 
     let toursData = [];
-    const itemsPerPage = 4; // how many tours per page
+    let filteredData = [];
+    let filteredTours = [];
+    const itemsPerPage = 8; // how many tours per page
 
     fetch('../data/tour-data.json')
         .then(response => response.json())
         .then(data => {
             toursData = data;
+            filteredData = data; // default show all
+            updatePagination();
             renderPage(0); // show page 1 by default
         })
         .catch(error => console.error("Error loading JSON:", error));
 
+    filterItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // update UI
+            document.querySelector('.filter-item-active')?.classList.remove('filter-item-active');
+            item.classList.add('filter-item-active');
+
+            const filterText = item.textContent.trim();
+
+            if (filterText === "All") {
+                filteredTours = [...toursData];
+            } else if (filterText === "Tour trong ngày") {
+                filteredTours = toursData.filter(t => t.time.includes("Trong ngày"));
+            } else if (filterText === "Tour dài ngày") {
+                filteredTours = toursData.filter(t => !t.time.includes("Trong ngày"));
+            }
+
+            // When filter changes → rebuild pagination + reset to page 1
+            updatePagination();
+
+            // Clear all pages before re-rendering filtered results
+            pages.forEach(p => {
+                const list = p.querySelector('.card-list');
+                if (list) list.innerHTML = "";
+            });
+
+            renderPage(0, filteredTours);
+        });
+    });
+
+    // UPDATE PAGINATION
+    function updatePagination() {
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+        paginationItems.forEach((item, index) => {
+            item.style.display = index < totalPages ? 'inline-block' : 'none';
+        });
+    }
+
     // RENDER ONE PAGE ONLY
-    function renderPage(pageIndex) {
+    function renderPage(pageIndex, data = filteredTours.length ? filteredTours : toursData) {
         const start = pageIndex * itemsPerPage;
         const end = start + itemsPerPage;
 
-        const pageData = toursData.slice(start, end);
+        const pageData = data.slice(start, end);
 
         const activePage = pages[pageIndex];
         if (!activePage) return;
@@ -101,6 +91,9 @@ document.addEventListener('DOMContentLoaded', () => {
             cardList.innerHTML += card;
         });
 
+        // DYNAMIC PAGINATION
+        handleDynamicPagination(data.length, pageIndex, data);
+
         showPage(pageIndex);
         viewTourDetails();
     }
@@ -124,5 +117,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = link;
             });
         });
+    }
+
+    // HANDLE DYNAMIC PAGINATION
+    function handleDynamicPagination(totalItems, currentPage, data) {
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        const paginationContainer = document.querySelector('.tours__pagination');
+        paginationContainer.innerHTML = "";
+
+        for (let i = 0; i < totalPages; i++) {
+            const li = document.createElement('li');
+            li.className = 'tours__pagination-item' + (i === currentPage ? ' current-pagination-item' : '');
+            li.innerHTML = `<span>${i + 1}</span>`;
+            li.addEventListener('click', () => renderPage(i, data));
+            paginationContainer.appendChild(li);
+        }
     }
 });
