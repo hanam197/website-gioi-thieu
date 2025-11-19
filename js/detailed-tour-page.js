@@ -162,7 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="related-tours__card-body">
                         <h3 class="related-tours__card-title">${tour.name}</h3>
                         <div class="related-tours__card-tour-duration">${tour.time}</div>
-                        <div class="related-tours__card-tour-price">${tour.price}</div>
+                        <div class="related-tours__card-tour-price">${tour.price} <span style="font-weight:normal; color: black">/khách</span></div>
+                        <button class="related-tours__card-book-btn primary-btn" data-link="../pages/detailed-tour-page.html">Đặt tour</button>
                     </div>
                 `;
 
