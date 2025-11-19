@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --primary-color: #8aa831;
+    --secondary-color: #f57c00;
+    --sub-color: #e0e0e0;
+    --text-dark: #4e5f39;
+    --text-light: #666;
+    --default-border-radius: 12px;
+    --section-spacing: 3%;
 }
 
 @font-face {
@@ -11,20 +22,30 @@
     font-style: normal;
 }
 
-:root {
-    --section-spacing: 3%;
-    --border-radius: 12px;
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     font-family: 'SVN-Poppins', 'Poppins', Arial, sans-serif;
-    color: #4e5f39;
+    color: var(--text-dark);
     line-height: 1.6;
-    background-color: var(--sub-color);
+    background-color: white;
     font-size: 1rem;
 }
 
-/* Hero Section */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HERO SECTION */
 .hero {
     background-size: cover;
     background-position: center;
@@ -67,6 +88,7 @@ body {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .hero__breadcrumb {
@@ -74,7 +96,7 @@ body {
     opacity: 0.9;
 }
 
-/* Story Section */
+/* STORY SECTION */
 .story {
     padding: var(--section-spacing) 0;
 }
@@ -97,14 +119,14 @@ body {
 
 .story__title {
     font-size: 2rem;
-    color: #4e5f39;
+    color: var(--text-dark);
     margin-bottom: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .story__description {
-    color: #666;
+    color: var(--text-light);
     max-width: 900px;
     margin: 0 auto;
     font-size: 1rem;
@@ -121,7 +143,7 @@ body {
 .story__card {
     position: relative;
     overflow: hidden;
-    border-radius: var(--border-radius);
+    border-radius: var(--default-border-radius);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     height: 350px;
 }
@@ -160,14 +182,14 @@ body {
 }
 
 .story__footer-text {
-    color: #666;
+    color: var(--text-light);
     max-width: 900px;
     margin: 0 auto;
     font-size: 1rem;
     line-height: 1.8;
 }
 
-/* Mission Section */
+/* MISSION SECTION */
 .mission {
     background: #edefeb;
     padding: var(--section-spacing) 0;
@@ -189,7 +211,7 @@ body {
 /* Mission Slider */
 .mission__slider {
     position: relative;
-    border-radius: var(--border-radius);
+    border-radius: var(--default-border-radius);
     overflow: hidden;
     height: 500px;
 }
@@ -281,10 +303,8 @@ body {
 }
 
 /* Mission Text */
-.mission__text {}
-
 .mission__title {
-    color: #4e5f39;
+    color: var(--text-dark);
     font-size: 1.75rem;
     margin-bottom: 1.75rem;
     font-weight: 700;
@@ -308,16 +328,16 @@ body {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #89a831;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1.25rem;
 }
 
 .mission__certificate {
     padding: 1.5rem;
-    background: linear-gradient(135deg, #89a831 0%, #6b8625 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #6b8625 100%);
     color: white;
-    border-radius: var(--border-radius);
+    border-radius: var(--default-border-radius);
     display: flex;
     align-items: center;
     gap: 1.25rem;
@@ -340,10 +360,6 @@ body {
     border-radius: 8px;
 }
 
-.mission__certificate-main {
-    flex: 1;
-}
-
 .mission__certificate-main-title {
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
@@ -357,7 +373,7 @@ body {
     opacity: 0.95;
 }
 
-/* Service-intro Section */
+/* SERVICES INTRO SECTION */
 .services-intro {
     width: 100vw;
     height: 100vh;
@@ -457,7 +473,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* Image-carousel Section */
+/* IMAGE CAROUSEL SECTION */
 .image-carousel {
     position: relative;
     z-index: 10;
@@ -482,7 +498,7 @@ body {
     width: 70%;
     height: 450px;
     background-color: var(--sub-color);
-    border-radius: var(--border-radius);
+    border-radius: var(--default-border-radius);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     position: relative;
@@ -509,7 +525,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--border-radius);
+    border-radius: var(--default-border-radius);
 }
 
 .image-carousel__btn {
@@ -538,7 +554,88 @@ body {
     transform: scale(0.95);
 }
 
-/* Gallery Section */
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+
+    .story__grid,
+    .mission__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mission__slider {
+        height: 400px;
+    }
+
+    .services-intro__content {
+        flex-direction: column;
+        padding: 5% 7%;
+    }
+
+    .services-intro__quote-container,
+    .services-intro__intro-container {
+        width: 100%;
+    }
+
+    .services-intro__quote {
+        font-size: 2rem;
+    }
+
+    .image-carousel__container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .story__title,
+    .mission__title,
+    .services-intro__title {
+        font-size: 1.5rem;
+    }
+
+    .story__description,
+    .story__footer-text,
+    .mission__list-item,
+    .services-intro__intro {
+        font-size: 0.9375rem;
+    }
+
+    .story__card {
+        height: 280px;
+    }
+
+    .mission__slider {
+        height: 320px;
+    }
+
+    .services-intro {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .services-intro__quote {
+        font-size: 1.75rem;
+    }
+
+    .image-carousel {
+        margin-top: -10rem;
+        margin-bottom: 2rem;
+    }
+
+    .image-carousel__container {
+        width: 85%;
+        height: 300px;
+    }
+
+    .image-carousel__btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* GALLERY SECTION */
 .gallery {
     background-color: var(--sub-color);
     padding: var(--section-spacing) 0;
@@ -599,48 +696,133 @@ body {
     height: 100%;
     width: auto;
     object-fit: cover;
-    border-radius: var(--border-radius);
+    border-radius: var(--default-border-radius);
 }
 
-/* Responsive */
+/* CONTACT SECTION */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 7%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/about-us/scence/5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+
+.contact__quote-container {
+    width: 40%;
+}
+
+.contact__quote {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.contact__quote span {
+    color: var(--secondary-color);
+}
+
+.contact__get-tours-btn {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__get-tours-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact__form-container {
+    width: 45%;
+    background-color: white;
+    padding: 2.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    color: var(--text-dark);
+}
+
+.contact__form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact__form-sub-content {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.contact__form-group {
+    margin-bottom: 1.2rem;
+}
+
+.contact__form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact__form-group input,
+.contact__form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact__form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact__form-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__form-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* RESPONSIVE - GLOBAL */
 @media (max-width: 1024px) {
     .hero__title {
         font-size: 2.5rem;
     }
 
-    .story__grid,
-    .mission__content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .mission__slider {
-        height: 400px;
-    }
-
-    .services-intro__content {
-        flex-direction: column;
-        padding: 5% 7%;
-    }
-
-    .services-intro__quote-container,
-    .services-intro__intro-container {
-        width: 100%;
-    }
-
-    .services-intro__quote {
+    .section-title {
         font-size: 2rem;
-    }
-
-    .image-carousel__container {
-        width: 80%;
     }
 }
 
 @media (max-width: 768px) {
     .hero {
         height: 400px;
-        margin-top: 60px;
         padding-bottom: 80px;
     }
 
@@ -652,50 +834,26 @@ body {
         font-size: 1rem;
     }
 
-    .story__title,
-    .mission__title,
-    .services-intro__title {
-        font-size: 1.5rem;
+    .section-title {
+        font-size: 1.8rem;
     }
 
-    .story__description,
-    .story__footer-text,
-    .mission__list-item,
-    .services-intro__intro {
+    .section-description {
         font-size: 0.9375rem;
     }
 
-    .story__card {
-        height: 280px;
+    .contact {
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .mission__slider {
-        height: 320px;
+    .contact__quote-container,
+    .contact__form-container {
+        width: 100%;
     }
 
-    .services-intro {
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .services-intro__quote {
-        font-size: 1.75rem;
-    }
-
-    .image-carousel {
-        margin-top: -10rem;
-        margin-bottom: 2rem;
-    }
-
-    .image-carousel__container {
-        width: 85%;
-        height: 300px;
-    }
-
-    .image-carousel__btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+    .contact__quote {
+        font-size: 1.8rem;
     }
 
     .gallery {
@@ -704,5 +862,19 @@ body {
 
     .gallery__item {
         height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .contact__quote {
+        font-size: 1.5rem;
     }
 }

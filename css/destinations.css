@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --primary-color: #8aa831;
+    --secondary-color: #f57c00;
+    --sub-color: #e0e0e0;
+    --text-dark: #4e5f39;
+    --text-light: #666;
+    --default-border-radius: 12px;
+    --section-spacing: 3%;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: local('Poppins'), local('Arial');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'SVN-Poppins', 'Poppins', Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: white;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HERO SECTION */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero__breadcrumb {
+    font-size: 1.125rem;
+    opacity: 0.9;
+}
+
+/* ATRACTION SECTION */
+.attraction {
+    padding: 5% 7%;
+    background-color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-description {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.attraction-card {
+    position: relative;
+    border-radius: var(--default-border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px;
+    cursor: pointer;
+}
+
+.attraction-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.attraction-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(135deg, #4e5f39 0%, #8aa831 100%);
+}
+
+.attraction-card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(78, 95, 57, 0.95), transparent);
+    padding: 2rem 1.5rem;
+    color: white;
+}
+
+.attraction-card__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.attraction-card__description {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* FESTIVAL SECTION */
+.festivals {
+    padding: 5% 7%;
+    background: linear-gradient(135deg, #edefeb 0%, #f5f7f3 100%);
+}
+
+.festival-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.festival-card {
+    background: white;
+    border-radius: var(--default-border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.festival-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.festival-card__image-wrapper {
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f57c00 0%, #ff9800 100%);
+}
+
+.festival-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.festival-card:hover .festival-card__image {
+    transform: scale(1.1);
+}
+
+.festival-card__content {
+    padding: 2rem;
+}
+
+.festival-card__date {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.festival-card__title {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.festival-card__description {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* VILLAGES SECTION */
+.villages {
+    padding: 5% 7%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.villages-slider-container {
+    position: relative;
+    margin-top: 3rem;
+    padding: 0 60px;
+}
+
+.villages-slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 1rem 0 2rem 0;
+}
+
+.villages-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.village-card-slider {
+    min-width: 400px;
+    background: white;
+    border-radius: var(--default-border-radius);
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.village-card-slider:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.village-card-slider__image-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4e5f39 0%, #8aa831 100%);
+}
+
+.village-card-slider__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.village-card-slider:hover .village-card-slider__image {
+    transform: scale(1.1);
+}
+
+.village-card-slider__content {
+    padding: 2rem;
+    background: white;
+}
+
+.village-card-slider__title {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.village-card-slider__description {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.slider-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.slider-btn--prev {
+    left: 0;
+}
+
+.slider-btn--next {
+    right: 0;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--sub-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.slider-dot.active {
+    background: var(--primary-color);
+    width: 35px;
+    border-radius: 6px;
+}
+
+/* GALLERY SECTION */
+.gallery {
+    background-color: var(--sub-color);
+    padding: var(--section-spacing) 0;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.gallery__flow {
+    display: flex;
+    gap: 0.625rem;
+    width: max-content;
+    margin-bottom: 0.625rem;
+}
+
+.gallery__flow-row-1 {
+    animation: scrollLeft 40s linear infinite;
+}
+
+.gallery__flow-row-2 {
+    animation: scrollRight 40s linear infinite;
+}
+
+.gallery__flow-row-3 {
+    animation: scrollLeft 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.gallery__flow:hover {
+    animation-play-state: paused;
+}
+
+.gallery__item {
+    flex-shrink: 0;
+    height: 300px;
+}
+
+.gallery__item-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: var(--default-border-radius);
+}
+
+/* CONTACT SECTION */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 7%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/about-us/scence/5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+
+.contact__quote-container {
+    width: 40%;
+}
+
+.contact__quote {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.contact__quote span {
+    color: var(--secondary-color);
+}
+
+.contact__get-tours-btn {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__get-tours-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact__form-container {
+    width: 45%;
+    background-color: white;
+    padding: 2.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    color: var(--text-dark);
+}
+
+.contact__form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact__form-sub-content {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.contact__form-group {
+    margin-bottom: 1.2rem;
+}
+
+.contact__form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact__form-group input,
+.contact__form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact__form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact__form-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__form-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+        padding-bottom: 80px;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__breadcrumb {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-description {
+        font-size: 0.9375rem;
+    }
+
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .villages-slider-container {
+        padding: 0 50px;
+    }
+
+    .village-card-slider {
+        min-width: 350px;
+    }
+
+    .slider-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact__quote-container,
+    .contact__form-container {
+        width: 100%;
+    }
+
+    .contact__quote {
+        font-size: 1.8rem;
+    }
+
+    .gallery {
+        padding: 5% 0;
+    }
+
+    .gallery__item {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .villages-slider-container {
+        padding: 0 40px;
+    }
+
+    .village-card-slider {
+        min-width: 300px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .contact__quote {
+        font-size: 1.5rem;
+    }
+}
