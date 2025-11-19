@@ -36,6 +36,22 @@ body {
   font-size: 14px;
 }
 
+.blog-page-header {
+  text-align: center;
+  background-image: url('../images/banner-3.jpg');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
 .blog-container {
   display: flex;
   flex-direction: row;
@@ -57,7 +73,9 @@ body {
 
 .blog-image .image {
   width: 90%;
-  height: 90%;
+  height: 80%;
+  border-radius: 12px;
+  margin-top: 60px;
 }
 
 .blog-image .image-1 {
@@ -65,12 +83,14 @@ body {
   margin-left: 180px;
   width: 80%;
   height: 81%;
+  border-radius: 12px;
 }
 
 .blog-image .image-1_1 {
   margin-top: 60px;
   width: 200%;
   height: 20%;
+  border-radius: 12px;
 }
 
 .blog-image-2 .image-2 {
@@ -84,6 +104,7 @@ body {
 .blog-image-2 .image-2:nth-child(2) {
   margin-top: 30px;
   margin-bottom: 60px;
+  border-radius: 12px;
 }
 
 .image-3 {
@@ -163,6 +184,7 @@ body {
   font-weight: 600;
   display: block;
   margin-bottom: 14px;
+  line-height: 1.5;
 }
 
 .content-card-description {

@@ -25,6 +25,7 @@ color:white;
 
 .content-service-card-name {
     margin-top: 5px;
+    font-weight: bold;
 }
 
 .content-service-card-title {
@@ -46,7 +47,7 @@ color:white;
 }
 
 .call {
-    color:#ffffff; /*màu chữ*/
+color:#ffffff; /*màu chữ*/
   background-color: #4e5f39; /*màu nút*/
   text-decoration: none; /*bỏ underline*/
   padding: 10px 16px 10px 16px;
@@ -60,7 +61,7 @@ color:white;
 }
 
 .content-service-card-item {
-    background-color:  #fdf2db;
+    background-color:  #f2fae9;
     border-radius: 12px;
 }
 
