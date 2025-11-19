@@ -1,0 +1,441 @@
+/* ========== HEADER ========== */
+:root {
+  --header-height-desktop: auto;
+  --header-height-mobile: auto;
+  --header-bg-scrolled: #4e5f39;
+  --color-primary: #4e5f39;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height-desktop);
+  background: transparent;
+  z-index: 1100;
+  /* thin border is transparent by default and will show when not scrolled */
+  border-bottom: 1px solid transparent;
+  transition: background .22s ease, box-shadow .22s ease, color .18s ease, border-color .18s ease;
+}
+
+/* When the page scrolls, make the header solid so it reads better on other sections */
+.header.scrolled {
+  background: var(--header-bg-scrolled);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  border-bottom-color: transparent;
+}
+
+/* show a subtle bottom border when header is overlaying the hero (no scroll) */
+.header:not(.scrolled) {
+  border-bottom-color: rgba(255,255,255,0.20);
+}
+
+/* Adjust page padding based on header height */
+body {
+  padding-top: var(--header-height-desktop);
+}
+
+.container {
+  width: 90%; /* use 90% of viewport width */
+  max-width: none;
+  margin: 10px auto;
+  padding: 0 auto;
+}
+
+/* Đẩy nội dung trang xuống tránh bị che bởi header (đặt bằng chiều cao header thực tế) */
+/* ========== NAV DÙNG GRID (LEFT - CENTER - RIGHT) ========== */
+.nav {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr);
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  position: relative;
+}
+
+/* căn trái / phải nội dung */
+.nav-left {
+  justify-self: start;
+}
+
+.nav-right {
+  justify-self: end;
+}
+
+.logo {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* danh sách menu */
+.nav-left ul,
+.nav-right ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-shrink: 2;
+  flex-direction: row;
+}
+
+/* link chung */
+.nav-left a,
+.nav-right a:not(.contact a) {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  transition: color .18s, transform .12s;
+  position: relative; /* for underline animation */
+}
+
+.nav-left a:hover,
+.nav-right a:not(.contact a):hover {
+  color: #89a831;
+  transform: translateY(-2px);
+}
+
+/* underline animation */
+.nav-left a::after,
+.nav-right a:not(.contact a)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .18s ease, opacity .18s ease;
+  opacity: 0;
+}
+.nav-left a:hover::after,
+.nav-right a:not(.contact a):hover::after,
+.nav-left a:focus::after,
+.nav-right a:not(.contact a):focus::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+/* underline colors depend on header state (overlay vs scrolled) */
+.header:not(.scrolled) .nav-left a::after,
+.header:not(.scrolled) .nav-right a::after {
+  background: #89a831
+}
+.header.scrolled .nav-left a::after,
+.header.scrolled .nav-right a::after {
+  background: var(--color-primary);
+}
+
+/* caret icon next to submenu */
+.caret {
+  margin-left: 8px;
+  font-size: 0.75em;
+  vertical-align: middle;
+  transition: transform .18s ease;
+}
+
+/* rotate caret when submenu is expanded (mobile or desktop aria state) */
+.has-submenu[aria-expanded="true"] > a .caret {
+  transform: rotate(180deg);
+}
+
+/* rotate caret on hover and when focused for keyboard users */
+.has-submenu:hover > a .caret,
+.has-submenu:focus-within > a .caret {
+  transform: rotate(180deg);
+}
+
+/* Logo size — không dùng absolute, logo giữ vị trí trung tâm nhờ grid */
+.logo img {
+  display: block;
+  max-height: 72px;
+  /* đảm bảo logo cân đối so với header */
+  width: auto;
+  transition: transform .18s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.03);
+}
+
+/* ========== SUBMENU (TOUR) ========== */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 180px;
+  background: #ffff;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  padding: 8px 0;
+  margin: 0;
+  z-index: 1200;
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+/* show khi hover */
+.has-submenu:hover .submenu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+.submenu li {
+  padding: 8px 18px;
+}
+
+.submenu li a {
+  color: #333;
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+}
+
+.submenu li:hover a {
+  color: #89a831;
+}
+
+/* ========== ICON SEARCH & CONTACT ========== */
+.search-toggle{
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit; /* inherit color from nav state */
+}
+
+.search-toggle:focus{ outline: 2px solid rgba(137,168,49,0.18); outline-offset: 2px; border-radius: 50%; }
+
+.search-toggle i{
+  font-size: 18px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #edefeb;
+  color: #2f3a2a;
+  transition: background .15s, color .15s, transform .12s;
+}
+
+.search-toggle:hover i{
+  background: #89a831;
+  color: #fff;
+}
+
+.contact a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 24px;
+  background: #e16f26;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.12);
+}
+
+.contact a:hover {
+  background: #89a831;
+  color: #fff;
+}
+
+
+
+
+/* ========== RESPONSIVE NHỎ (cơ bản) ========== */
+/* Mobile menu toggle button */
+.nav-toggle {
+  display: none;
+  /* Hidden on desktop */
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-toggle-icon {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  transition: .2s;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  transition: .2s;
+}
+
+.nav-toggle-icon::before {
+  top: -8px;
+}
+
+.nav-toggle-icon::after {
+  bottom: -8px;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-icon::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 920px) {
+  .header {
+    height: var(--header-height-mobile);
+  }
+
+  body {
+    padding-top: var(--header-height-mobile);
+  }
+
+  .nav {
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+  }
+
+  .nav-left ul,
+  .nav-right ul {
+    gap: 12px;
+    font-size: 15px;
+  }
+
+  .logo img {
+    max-height: 48px;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-toggle {
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  .nav {
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
+  }
+
+  /* Hide contact text and show icon on mobile */
+  .contact a span {
+    display: none;
+  }
+
+  .contact a::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f095";  /* Phone icon */
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  .contact a {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  /* Mobile menu */
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height-mobile);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height-mobile));
+    background: var(--header-bg-scrolled);
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    overflow-y: auto;
+  }
+
+  .nav-menu[aria-expanded="true"] {
+    transform: translateX(0);
+  }
+
+  .nav-left ul
+  .nav-right ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-left a {
+    display: block;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+
+  /* Submenu adjustments for mobile */
+  .submenu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    padding-left: 16px;
+    margin-top: 8px;
+    opacity: 1;
+    transform: none;
+  }
+
+  .has-submenu[aria-expanded="true"] .submenu {
+    display: block;
+  }
+
+  /* Hide desktop items */
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+}

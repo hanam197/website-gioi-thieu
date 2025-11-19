@@ -1,0 +1,1114 @@
+/* ========================================
+   1. RESET CƠ BẢN
+======================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* ========================================
+/* 5. BANNER
+======================================== */
+/* 5. BANNER
+======================================== */
+.banner-home {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.banner-slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .8s ease, visibility .8s ease;
+}
+
+.banner-slider .slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.banner-slider .slide-bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner-slider .slide-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Overlay tối để text dễ đọc hơn */
+.banner-slider .slide::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  z-index: 1;
+}
+
+/* Content đè lên banner */
+.slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  color: #fff;
+}
+
+.slide-content .container {
+  position: relative;
+  max-width: 86%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Left Content - Căn giữa bên trái */
+.left-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+
+.left-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease;
+}
+
+.left-content h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  opacity: 0.95;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.left-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  opacity: 0.9;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+/* Blockquote - Góc dưới phải */
+blockquote {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-left: 4px solid #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeInRight 1s ease 0.6s both;
+}
+
+blockquote p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+blockquote footer {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+/* ========================================
+   6. SECTIONS & COMPONENTS
+======================================== */
+section {
+    padding: 7% 3%;
+}
+
+.heading-sec {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.heading-sec h2 {
+    font-size: clamp(28px, 4vw, 36px);
+    color: #2f3a2a;
+    margin: 0 0 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.heading-sec h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #89a831;
+}
+
+.heading-sec .stt {
+    font-size: 14px;
+    color: #89a831;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Tour Cards */
+.prod-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.prod-item {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.prod-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.prod-thumb {
+    display: block;
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.prod-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.prod-item:hover .prod-thumb img {
+    transform: scale(1.1);
+}
+
+.prod-content {
+    padding: 25px;
+}
+
+.prod-content h3 {
+    font-size: clamp(18px, 2vw, 20px);
+    margin: 0 0 15px;
+}
+
+.prod-content h3 a {
+    color: #2f3a2a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.prod-content h3 a:hover {
+    color: #89a831;
+}
+
+.prod-content .info {
+    color: #89a831;
+    font-size: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.prod-content .info::before {
+    content: '\f017';  /* Clock icon - requires Font Awesome */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+.prod-content .desc {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.prod-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price-old {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.price-discount {
+    color: #e16f26;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.prod-action .btn {
+    padding: 8px 20px;
+    background: #4e5f39;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.prod-action .btn:hover {
+    background: #89a831;
+    transform: translateY(-2px);
+}
+
+
+.mean-home-sec {
+    padding: 80px 0;
+}
+
+.mean-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.mean-row .col-left {
+    flex: 1;
+    position: relative;
+}
+
+.mean-row .col-left .thumb-bot {
+    width: 160px;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.mean-row .col-right {
+    flex: 1;
+}
+
+.mean-row .col-right .side-img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+
+/* Text */
+.mean-block h2 {
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.mean-block p {
+    font-size: 17px;
+    line-height: 1.65;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* ============================
+   2. HEALTH HOME SECTION
+=============================== */
+.health-home-sec {
+    padding: 100px 0;
+}
+
+.health-row {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thumb-main {
+    flex: 1;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 4 / 5;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.health-content {
+    flex: 1;
+    position: relative;
+}
+
+.health-content span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.health-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.health-content p {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 25px;
+}
+
+.health-content .thumb-sub {
+    width: 160px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+/* ===== Section ===== */
+.top-destinations-sec {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ===== Container ===== */
+.top-destinations-sec .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ===== Header ===== */
+.section-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header-left h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-left .highlight {
+    color: #ff6b6b;
+}
+
+.header-right p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.header-nav button {
+    background: #ff6b6b;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.header-nav button:hover {
+    background: #ff4757;
+}
+
+/* ===== Slider ===== */
+.destinations-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.dest-card {
+    position: relative;
+    min-width: 280px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.dest-card img {
+    width: 100%;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.dest-card:hover img {
+    transform: scale(1.1);
+}
+
+/* ===== Overlay ===== */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.dest-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-overlay h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.card-overlay .btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card-overlay .btn:hover {
+    background: #ff4757;
+}
+
+/* ===== Scrollbar hidden ===== */
+.destinations-slider::-webkit-scrollbar {
+    display: none;
+}
+.destinations-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* ============================
+   4. BLOG HOME
+=============================== */
+.blog-home {
+    padding: 100px 0;
+}
+
+.heading-sec {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading-sec .stt {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #999;
+}
+.heading-sec h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.blog-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    width: calc(33.333% - 20px);
+}
+
+.blog-thumb img {
+    width: 100%;
+    border-radius: 18px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.blog-content {
+    margin-top: 15px;
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+}
+
+.blog-name a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+}
+
+.blog-item p.desc {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ============================
+   5. MARQUEE SECTION
+=============================== */
+.sec-marquee {
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.marquee-panel {
+    overflow: hidden;
+}
+
+.marquee-row {
+    display: flex;
+    gap: 25px;
+    animation: marquee 22s linear infinite;
+}
+
+.marquee-it img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+    .mean-row,
+    .health-row,
+    .ser-content,
+    .blog-list {
+        flex-direction: column;
+    }
+
+    .ser-card,
+    .blog-item {
+        width: 100%;
+    }
+
+    .ser-card-list {
+        gap: 20px;
+    }
+}
+
+/* ========================================
+   7. GRID CƠ BẢN
+======================================== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+}
+
+.col-5 {
+    flex: 0 0 41.6667%;
+}
+
+.col-7 {
+    flex: 0 0 58.3333%;
+}
+
+/* ========================================
+   8. IMAGE RESPONSIVE
+======================================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   9. FORM CHUNG
+======================================== */
+form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form .group {
+    flex: 1;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ========================================
+   10. FOOTER
+======================================== */
+.ft {
+    background: #222;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.ft a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ft a:hover {
+    color: #89a831;
+}
+
+.ft-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Mission Section */
+.mission-home-sec {
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.mission-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+.mission-content-wrap {
+    max-width: 540px;
+}
+
+.mission-content .titleAni {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.mission-content .stt {
+    color: #89a831;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mission-content .title-pri {
+    font-size: clamp(32px, 4vw, 42px);
+    color: #2f3a2a;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.mona-content {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.box-content-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    transition: transform 0.3s ease;
+}
+
+.box-content-brand:hover {
+    transform: translateY(-5px);
+}
+
+.box-content-brand .logo {
+    flex-shrink: 0;
+    width: 88px;
+    height: 80px;
+}
+
+.box-content-brand .brand-name {
+    font-size: 18px;
+    color: #2f3a2a;
+    margin-bottom: 10px;
+}
+
+.box-content-brand .desc {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.mission-thumb {
+    position: relative;
+}
+
+.mission-thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Wellness Section */
+.health-home-sec {
+    background: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.health-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+.health-thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.health-content {
+    max-width: 540px;
+}
+
+.health-content span {
+    color: #89a831;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.health-content h2 {
+    font-size: clamp(32px, 4vw, 42px);
+    color: #2f3a2a;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.health-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 7%;
+    background-image: url("../images/banner-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact__quote-container {
+    width: 40%;
+}
+
+.contact__quote {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.contact .contact__form-container {
+    width: 40%;
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+}
+
+.contact__form-title, .contact__form-sub-content, .contact__name-input, .contact__depacture-date-input, .contact__phone-input, .contact__email-input,  .contact__adult-number-input, .contact__children-number-input, .contact__content-input, .contact__content-input, .contact__get-tours-btn {
+    margin-bottom: 20px;
+}
+
+.contact__form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact__form-container form input, .contact__form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.contact__form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact__contact-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__guest-number-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__form-btn {
+    width: 100%;
+}
+
+/* ========================================
+   11. RESPONSIVE
+======================================== */
+@media (max-width: 1200px) {
+    .mission-row,
+    .health-row {
+        gap: 40px;
+    }
+    
+    .mission-content-wrap,
+    .health-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .mission-row,
+    .health-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-thumb,
+    .health-thumb {
+        order: -1;
+    }
+    
+    .mission-content,
+    .health-content {
+        text-align: center;
+    }
+    
+    .box-content-brand {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .box-content-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .box-content-brand .logo {
+        margin: 0 auto;
+    }
+    
+    .col-6,
+    .col-5,
+    .col-7 {
+        flex: 0 0 100%;
+    }
+    
+    .header {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-content .title-pri,
+    .health-content h2 {
+        font-size: 28px;
+    }
+    
+    .prod-thumb {
+        height: 200px;
+    }
+}
