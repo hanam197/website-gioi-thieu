@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour thiết kế sẵn</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/tour.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/c39bd3b109.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <section class="header__banner">
+        <nav class="navbar"></nav>
+        <div class="header__container">
+          <h1 class="header__title">Tour thiết kế sẵn</h1>
+          <p class="header__breadcrumb">Homepage > Tour thiết kế sẵn</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- tours -->
+      <section class="tours">
+        <div class="tours__title-container">
+          <div class="tours__title">
+            <h4 class="tours__category" style="text-transform: uppercase">
+              tour packages
+            </h4>
+            <div class="line"></div>
+            <h2 class="tours__title-name" style="text-transform: uppercase">
+              Hành trình thú vị
+            </h2>
+          </div>
+          <div class="tours__filter">
+            <ul class="tours__filter-list">
+              <li class="tours__filter-item filter-item-active">All</li>
+              <li class="tours__filter-item">Tour trong ngày</li>
+              <li class="tours__filter-item">Tour dài ngày</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tours__list-container">
+          <div class="tours__cards page active" data-page="1">
+            <div class="card-list"></div>
+          </div>
+
+          <div class="tours__cards page" data-page="2">
+            <div class="card-list"></div>
+          </div>
+
+          <div class="tours__cards page" data-page="3">
+            <div class="card-list"></div>
+          </div>
+
+          <ul class="tours__pagination">
+            <li class="tours__pagination-item current-pagination-item">
+              <span>1</span>
+            </li>
+            <li class="tours__pagination-item"><span>2</span></li>
+            <li class="tours__pagination-item"><span>3</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- banner -->
+      <section class="banner">
+        <div class="banner__content">
+          <div class="banner__quote-container">
+            <p class="banner__quote">
+              Hành trình <span style="color: #f57c00">chữa lành</span>: Con
+              đường dẫn đến sức khỏe toàn diện của bạn
+            </p>
+            <p class="banner__signature-name"><i class="fa-solid fa-minus"></i>&nbsp; Happy Station</p>
+          </div>
+          <div class="banner__intro-container">
+            <h3 class="banner__title">Các dịch vụ</h3>
+            <p class="banner__intro">
+              Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề
+              tài chính có đang khiến bạn trở nên căng thẳng.. Bạn có nghĩ đến
+              lúc cho thân – tâm – trí được phục hồi để giúp mọi thứ tốt hơn !?
+              Chúng tôi sẽ cá nhân hóa lộ trình theo tình trạng sức khỏe và tinh
+              thần của BẠN. Hãy sạc thêm năng lượng bình an và hạnh phúc cho con
+              đường phía trước
+            </p>
+            <button class="banner__btn">Tất cả dịch vụ</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="gallery">
+        <span>gallery</span>
+      </section>
+
+      <!-- contact -->
+      <section class="contact">
+        <div class="contact__quote-container">
+          <span class="contact__quote"
+            >Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+            để giúp mọi thứ tốt hơn !?</span
+          >
+          <button class="contact__get-tours-btn primary-btn">
+            <a href="../pages/tour.html" style="width: 100%;">Xem các tour</a>
+          </button>
+        </div>
+        <div class="contact__form-container">
+          <form id="contactForm" action="">
+            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+            <p class="contact__form-sub-content">
+              Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+            </p>
+            
+            <div class="contact__name-input">
+              <label for="">Họ và tên *</label>
+              <input
+                id = "fullName" 
+                type="text"
+                placeholder="Nhập họ và tên"
+                class="contact__form-input"
+              />
+              <small class="error-msg"></small>
+            </div>
+            
+            <div class="contact__depacture-date-input">
+              <label for="">Ngày đi (dự kiến) *</label>
+              <input
+                id="departureDate" 
+                type="date"
+                placeholder="Chọn ngày đi dự kiến"
+                class="contact__form-input"
+              />
+              <small class="error-msg"></small>
+            </div>
+
+            <div class="contact__contact-input">
+              <div class="contact__phone-input">
+                <label for="">Số điện thoại *</label>
+                <input
+                  id="phone" 
+                  type="text"
+                  placeholder="Nhập số điện thoại"
+                  class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+              </div>
+
+              <div class="contact__email-input">
+                <label for="">Email *</label>
+                <input
+                  id="email" 
+                  type="email"
+                  placeholder="Nhập email"
+                  class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+              </div>
+            </div>
+
+            <div class="contact__guest-number-input">
+              <div class="contact__adult-number-input">
+                <label for="">Người lớn</label>
+                <input
+                  id="adults" 
+                  type="number"
+                  placeholder="Người lớn"
+                  class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+              </div>
+              <div class="contact__children-number-input">
+                <label for="">Trẻ em</label>
+                <input
+                  id="children" 
+                  type="number"
+                  placeholder="Trẻ em"
+                  class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+              </div>
+            </div>
+
+            <div class="contact__content-input">
+              <label for="">Nội dung</label>
+              <textarea
+                id="content"
+                cols="30"
+                rows="3"
+                placeholder="Nhập nội dung cần liên hệ"
+                class="contact__form-input"
+              ></textarea>
+            </div>
+
+            <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
+          </form>
+        </div>
+      </section>
+      <!-- contact popup -->
+      <div id="successPopup" class="contact__popup">
+        <div class="contact__popup-content">
+          <p class="contact__popup-message">
+            <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
+            <i class="fa-regular fa-circle-check"></i> 
+            <br> 
+            Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+          </p>
+          <button id="closePopup">Đóng</button>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../js/tour-page.js"></script>
+    <script src="../js/form-validation.js"></script>
+  </body>
+</html>

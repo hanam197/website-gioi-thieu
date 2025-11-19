@@ -1,0 +1,469 @@
+/* temporary navbar */
+.navbar {
+    width: 100%;
+    height: 99px;
+    background-color: transparent;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin: 10px 0;
+}
+
+/* header */
+.header__banner {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../images/tour-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.header__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.header__breadcrumb {
+    text-align: center;
+    font-weight: 700;
+}
+
+/* tours */
+.tours {
+    padding: 3% 7%;
+}
+
+.tours__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.tours__category {
+    color: var(--secondary-color);
+}
+
+.tours__title-name {
+    color: var(--primary-color);
+}
+
+.tours__filter-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+}
+
+.tours__filter-item {
+    padding: 15px 30px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-item-active {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.tours__cards .card-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* move to a new row if they don’t fit on the same row */
+    gap: 40px 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.tours__card {
+    width: calc(25% - 20px);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: var(--default-border-radius);
+}
+
+.tours__card-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: var(--default-border-radius);
+    border-top-right-radius: var(--default-border-radius);
+}
+
+.tours__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tours__card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.tours__tour-name, 
+.tours__tour-time, 
+.tours__tour-content, 
+.tours__tour-price {
+    margin-bottom: 10px;
+}
+
+.tours__tour-name {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.tours__tour-content {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.tours__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.tours__pagination-item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.tours__pagination-item:hover {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+}
+
+.tours__pagination-item > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* banner */
+.banner {
+    background-image: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.banner__content {
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 150px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.banner__quote-container {
+    width: 40%;
+}
+
+.banner__quote {
+    font-size: 38px;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.banner__signature-name {
+    text-transform: uppercase; 
+    color: var(--secondary-color); 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.banner__intro-container {
+    margin-left: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner__title {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner__intro {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.banner__btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.banner__btn:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* slider */
+.slider {
+    position: relative;
+    top: -225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__container {
+    width: 60%;
+    height: 450px;
+    margin: 0 30px;
+    padding: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.slider__container img {
+    width: 100%;
+}
+
+.slider__btn button {
+    width: 50px;
+    height: 50px;
+    color: var(--primary-color);
+    border-radius: 100%;
+    border: 1px solid var(--primary-color);
+}
+
+.slider__btn button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* ========== responsive ============ */
+/* ---------- TABLET ---------- */
+@media screen and (max-width: 1024px) {
+    /* main title */
+    .header__banner {
+        height: 30vh;
+    }
+
+    .header__container {
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .header__container .header__title,
+    .header__container .header__breadcrumb {
+        text-align: center;
+    }
+
+    /* tours */
+    .tours {
+        padding: 3% 5%;
+    }
+
+    .tours__title-container {
+        margin-bottom: 50px;
+    }
+
+    .tours__filter-list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tours__cards .card-list {
+        gap: 30px 15px;
+    }
+
+    .tours__card {
+        width: calc(33.33% - 20px);
+    }
+
+    /* banner */
+    .banner {
+        padding: 5% 3%;
+    }
+
+    .banner__content {
+        width: 80%;
+        gap: 40px;
+    }
+
+    .banner__quote {
+        font-size: 28px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media screen and (max-width: 768px) {
+    /* main title */
+    .header__banner {
+        height: 30vh;
+    }
+
+    .header__container {
+        padding: 5% 3%;
+        width: 100%;
+    }
+
+    .header__container .header__title,
+    .header__container .header__breadcrumb {
+        text-align: center;
+    }
+
+    .header__container .header__title {
+        font-size: 28px;
+    }
+
+    /* tours */
+    .tours {
+        padding: 5% 3%;
+    }
+
+    .tours__title-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tours__filter-list {
+        width: 100%;
+        border: none;
+        margin-top: 30px;
+    }
+
+    .tours__filter-item {
+        text-align: center;
+        padding: 5px 15px;
+        border: 1px solid var(--primary-color);
+        border-radius: 50px;
+    }
+
+    .tours__cards .card-list {
+        gap: 30px;
+    }
+
+    .tours__card {
+        width: 100%; 
+    }
+
+    .tours__card-body {
+        padding: 10px;
+    }
+
+    .tours__pagination-item {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+
+    /* banner */
+    .banner .banner__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 75%;
+        margin-top: 50px;
+    }
+
+    .banner .banner__quote {
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner .banner__signature-name {
+        margin-top: 10px;
+    }
+
+    .banner .banner__quote-container,
+    .banner .banner__intro-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner .banner__title {
+        display: none;
+    }
+
+    .banner .banner__btn {
+        width: 60%;
+        margin-top: 10px;
+    }
+}
