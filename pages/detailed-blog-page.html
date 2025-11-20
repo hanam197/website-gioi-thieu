@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tin tức và Khám phá</title>
+    <link rel="stylesheet" type="text/css" href="../css/about-us.css" />
     <link rel="stylesheet" type="text/css" href="../css/detailed-blog-page.css" />
     <link rel="stylesheet" type="text/css" href="../css/blog-page.css" />
     <link rel="icon" type="image/png" href="/images/logo.png">
@@ -108,6 +109,8 @@
                 thích
                 vẻ đẹp hoang sơ, kỳ bí, khám phá những vùng đất mới hơn là đến các khu nghỉ dưỡng ven biển.
             </p>
+            <img class="detailed-blog-image" src="/images/blog-page/image-18.png" alt="Đảo Hòn Nưa_1" />
+
             <p class="detailed-blog-content">Nhìn từ trên cao giống như một chú khủng long nhỏ màu xanh đang nghỉ ngơi
                 thảnh thơi giữa đất trời bao
                 la. Vẻ
@@ -115,7 +118,6 @@
                 này
                 đến vậy.
             </p>
-            <img class="detailed-blog-image" src="/images/blog-page/image-12.jpg" alt="Đảo Hòn Nưa_1" />
 
             <h2 class="detailed-blog-sub-title">Đảo Hòn Nưa ở đâu?
             </h2>
@@ -213,54 +215,57 @@
                 </div>
             </div>
         </div>
+
+        <!-- Contact Section -->
         <section class="contact">
             <div class="contact__quote-container">
-                <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi để giúp
-                    mọi thứ
-                    tốt hơn !?</span>
-                <button class="button">Xem các tour</button>
+                <p class="contact__quote">
+                    Bạn có nghĩ đến lúc cho <span>Thân - Tâm - Trí</span> được phục hồi để giúp mọi
+                    thứ tốt hơn !?
+                </p>
+                <button class="contact__get-tours-btn">Xem các tour</button>
             </div>
             <div class="contact__form-container">
-                <form action="">
-                    <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-                    <p class="contact__form-sub-content">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
-                    <div class="contact__name-input">
-                        <label for="">Họ và tên *</label>
-                        <input type="text" placeholder="Nhập họ và tên" class="contact__form-input">
+                <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+                <p class="contact__form-sub-content">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
+                <form>
+                    <div class="contact__form-group">
+                        <label>Họ và tên *</label>
+                        <input type="text" placeholder="Nhập họ và tên">
                     </div>
-                    <div class="contact__depacture-date-input">
-                        <label for="">Ngày đi (dự kiến)</label>
-                        <input type="date" placeholder="Chọn ngày đi dự kiến" class="contact__form-input">
+                    <div class="contact__form-group">
+                        <label>Ngày đi (dự kiến)</label>
+                        <input type="date" placeholder="Chọn ngày đi dự kiến">
                     </div>
-                    <div class="contact__contact-input">
-                        <div class="contact__phone-input">
-                            <label for="">Số điện thoại *</label>
-                            <input type="text" placeholder="Nhập số điện thoại" class="contact__form-input">
+                    <div class="contact__form-row">
+                        <div class="contact__form-group">
+                            <label>Số điện thoại *</label>
+                            <input type="text" placeholder="Nhập số điện thoại">
                         </div>
-                        <div class="contact__email-input">
-                            <label for="">Email *</label>
-                            <input type="email" placeholder="Nhập email" class="contact__form-input">
-                        </div>
-                    </div>
-                    <div class="contact__guest-number-input">
-                        <div class="contact__adult-number-input">
-                            <label for="">Số lượng</label>
-                            <input type="number" placeholder="Người lớn" class="contact__form-input">
-                        </div>
-                        <div class="contact__children-number-input">
-                            <label for="">Trẻ em</label>
-                            <input type="number" placeholder="Trẻ em" class="contact__form-input">
+                        <div class="contact__form-group">
+                            <label>Email *</label>
+                            <input type="email" placeholder="Nhập email">
                         </div>
                     </div>
-                    <div class="contact__content-input">
-                        <label for="">Nội dung</label>
-                        <textarea name="" id="" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ"
-                            class="contact__form-input"></textarea>
+                    <div class="contact__form-row">
+                        <div class="contact__form-group">
+                            <label>Số lượng người lớn</label>
+                            <input type="number" placeholder="Người lớn">
+                        </div>
+                        <div class="contact__form-group">
+                            <label>Trẻ em</label>
+                            <input type="number" placeholder="Trẻ em">
+                        </div>
                     </div>
-                    <button class="button">Nhận tư vấn</button>
+                    <div class="contact__form-group">
+                        <label>Nội dung</label>
+                        <textarea rows="3" placeholder="Nhập nội dung cần liên hệ"></textarea>
+                    </div>
+                    <button type="submit" class="contact__form-btn">Nhận tư vấn</button>
                 </form>
             </div>
         </section>
+
     </main>
     <footer class="ft">
         <div class="container">

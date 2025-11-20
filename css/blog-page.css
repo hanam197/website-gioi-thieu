@@ -22,13 +22,11 @@
   font-weight: 700;
 }
 
-:root {
-  --color-1: #4e5f39;
-  --color-2: #edefeb;
-  --color-3: #89a831;
-  --color-4: #e16f26;
-  --color-5: #e4e7e2;
-  --color-6: #6f6f6f;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SVN-Poppins", sans-serif;
 }
 
 body {
@@ -38,7 +36,7 @@ body {
 
 .blog-page-header {
   text-align: center;
-  background-image: url('../images/banner-3.jpg');
+  background-image: url("../images/banner-3.jpg");
   background-size: cover;
   height: 400px;
   display: flex;
@@ -134,14 +132,14 @@ body {
 }
 
 .content-category {
-  color:#e16f26;
+  color: #e16f26;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
 }
 
 .content-divider {
-  border-bottom: 1.5px solid  #cdcdcd;
+  border-bottom: 1.5px solid #cdcdcd;
   margin-top: 10px;
   margin-bottom: 22px;
 }
@@ -157,25 +155,32 @@ body {
   color: #848383;
 }
 
-.button{
-  color:#ffffff; /*màu chữ*/
-  background-color: #4e5f39; /*màu nút*/
+.button {
+  color: #ffffff; /*màu chữ*/
+  background-color: #8aa831; /*màu nút*/
   text-decoration: none; /*bỏ underline*/
-  padding: 10px 16px 10px 16px;
-  border-radius: 20px;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 50px;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  line-height: 1;
+}
+
+.button:hover {
+  background-color: #f57c00;
 }
 
 .content-card-author {
   font-weight: 600;
   display: inline-block;
-  text-align: left; 
+  text-align: left;
 }
 
 .content-card-date {
-  color:#6f6f6f;
+  color: #6f6f6f;
   font-weight: 600;
 }
 
@@ -194,7 +199,7 @@ body {
 }
 
 .see-more {
-  color:#4d4c4c;
+  color: #4d4c4c;
   text-decoration: none;
   display: block;
 }
@@ -219,7 +224,7 @@ body {
 }
 
 .content-wrap {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
@@ -231,7 +236,7 @@ body {
 
 .content-card {
   width: 100%;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -247,9 +252,8 @@ body {
   width: 350px;
 }
 
-
 .blog-container-2 .content-title {
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 /* ================ contact ================ */
@@ -333,3 +337,27 @@ body {
 .contact__form-btn {
   width: 100%;
 }
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) and (max-width: 768px) {
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) and (max-width: 1200px) {
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */

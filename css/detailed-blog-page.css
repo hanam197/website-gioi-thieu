@@ -1,3 +1,10 @@
+
+h1,
+h2,
+h3 {
+   font-family: "SVN-Poppins", sans-serif;
+}
+
 .detailed-blog-image {
     height: 400px;
     width: 100%;
@@ -19,18 +26,19 @@ article {
 }
 
 .detailed-blog-content {
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .detailed-blog-sub-title {
     font-size: 26px;
     margin-top: 40px;
+    margin-bottom: 16px;
 }
 
 .detailed-blog-highlight {
     color: #4e5f39;
     border-left: 6px solid #89a831;
-    line-height: 1.5;
+    line-height: 1.8;
     padding-left: 17px;
     word-spacing: 3px;
     padding-top: 4px;
