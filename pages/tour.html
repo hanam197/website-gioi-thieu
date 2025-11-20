@@ -6,6 +6,9 @@
     <title>Tour thiết kế sẵn</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/tour.css" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
     </style>
@@ -15,7 +18,56 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header class="header">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <!-- Mobile menu button -->
+                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
+                    <span class="nav-toggle-icon"></span>
+                    <span class="nav-toggle-label">Menu</span>
+                </button>
+
+                <!-- Menu trái -->
+                <div class="nav-left nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li class="has-submenu">
+                            <a href="" aria-expanded="false" aria-controls="tour-submenu">Tour <i
+                                    class="fa-solid fa-caret-down caret" aria-hidden="true"></i></a>
+                            <ul class="submenu" id="tour-submenu">
+                                <li><a href="">Tour ngắn ngày</a></li>
+                                <li><a href="">Tour dài ngày</a></li>
+                                <li><a href="">Workshop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Tour cá nhân hóa</a></li>
+                        <li><a href="">Các dịch vụ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logo ở giữa -->
+                <div class="logo">
+                    <a href="">
+                        <img src="/images/logo.png" alt="Happy Station - Trạm hạnh phúc" width="150">
+                    </a>
+                </div>
+
+                <!-- Menu phải -->
+                <div class="nav-right">
+                    <ul>
+                        <li class="hide-mobile"><a href="">Tin tức & khám phá</a></li>
+                        <li class="hide-mobile"><a href="">Liên hệ</a></li>
+                        <li><button type="button" class="search-toggle" aria-label="Tìm kiếm">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            </button></li>
+                        <li class="primary-btn"><a href="tel:0393728287"><span>Liên hệ ngay</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
       <section class="header__banner">
         <nav class="navbar"></nav>
         <div class="header__container">
@@ -23,9 +75,7 @@
           <p class="header__breadcrumb">Homepage > Tour thiết kế sẵn</p>
         </div>
       </section>
-    </header>
 
-    <main>
       <!-- tours -->
       <section class="tours">
         <div class="tours__title-container">
@@ -95,10 +145,185 @@
         </div>
       </section>
 
-      <!-- gallery -->
-      <section class="gallery">
-        <span>gallery</span>
-      </section>
+      <!-- Gallery Section -->
+    <section class="gallery">
+        <!-- Row 1 -->
+        <div class="gallery__flow gallery__flow-row-1">
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/1.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/1.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/1.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/2.jpg" alt="Gallery 4">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 5">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 6">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/3.jpg" alt="Gallery 7">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 8">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 9">
+            </div>
+
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/1.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/1.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/1.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/2.jpg" alt="Gallery 4">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 5">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 6">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/3.jpg" alt="Gallery 7">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 8">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 9">
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gallery__flow gallery__flow-row-2">
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/4.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/4.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/4.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/5.jpg" alt="Gallery 4">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/5.jpg" alt="Gallery 5">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/5.jpg" alt="Gallery 6">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/6.jpg" alt="Gallery 7">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/6.jpg" alt="Gallery 8">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/6.jpg" alt="Gallery 9">
+            </div>
+
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/4.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/4.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/4.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/5.jpg" alt="Gallery 4">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/5.jpg" alt="Gallery 5">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/5.jpg" alt="Gallery 6">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/6.jpg" alt="Gallery 7">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/6.jpg" alt="Gallery 8">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/6.jpg" alt="Gallery 9">
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gallery__flow gallery__flow-row-3">
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/7.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/7.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/7.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/8.jpg" alt="Gallery 4">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/8.jpg" alt="Gallery 5">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/8.jpg" alt="Gallery 6">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/9.jpg" alt="Gallery 7">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/9.jpg" alt="Gallery 8">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
+            </div>
+
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/7.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/7.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/7.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/8.jpg" alt="Gallery 4">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/8.jpg" alt="Gallery 5">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/8.jpg" alt="Gallery 6">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/activity/9.jpg" alt="Gallery 7">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/food/9.jpg" alt="Gallery 8">
+            </div>
+            <div class="gallery__item">
+                <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
+            </div>
+        </div>
+    </section>
 
       <!-- contact -->
       <section class="contact">
@@ -216,9 +441,79 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer class="ft">
+        <div class="container">
+            <div class="ft-wrap">
+
+                <div class="ft-logo">
+                    <a href="">
+                        <img src="/images/logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="ft-menu">
+                    <ul class="menu">
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Tour thiết kế sẵn</a></li>
+                        <li><a href="">Tour cá nhân hóa</a></li>
+                        <li><a href="">Dịch vụ</a></li>
+                        <li><a href="">Sản phẩm địa phương</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-if">
+                    <div class="ft-if-it">
+                        <span class="t-text">ĐỊA CHỈ</span>
+                        <div class="t-gr">
+                            <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank">
+                                Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ft-if-it">
+                        <span class="t-text">LIÊN HỆ</span>
+                        <div class="t-gr">
+                            <a href="tel:0393728287">Hotline: 0393728287</a>
+                        </div>
+                    </div>
+                    <div class="ft-if-it">
+                        <span class="t-text">EMAIL</span>
+                        <div class="t-gr">
+                            <a href="mailto:tramhanhphuc.f4@gmail.com">tramhanhphuc.f4@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ft-sc">
+                    <div class="i-list">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook" width="28" height="29"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram" width="28" height="29"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-bot">
+                <div class="ft-sign">
+                    <span class="t-text">@All Right Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-to-top backToTop">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+    </div>
 
     <script src="../js/tour-page.js"></script>
     <script src="../js/form-validation.js"></script>
+    <script src="../js/header-hero.js"></script>
+    <script src="../js/about-us.js" defer></script>
+    <script src="/js/js.js"></script>
   </body>
 </html>
