@@ -21,9 +21,10 @@
 
 /* When the page scrolls, make the header solid so it reads better on other sections */
 .header.scrolled {
-  background: var(--header-bg-scrolled);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  background: #4e5f39;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-bottom-color: transparent;
+  backdrop-filter: blur(5px);
 }
 
 /* show a subtle bottom border when header is overlaying the hero (no scroll) */
