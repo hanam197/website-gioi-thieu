@@ -63,6 +63,7 @@ color:#ffffff; /*màu chữ*/
 .content-service-card-item {
     background-color:  #f2fae9;
     border-radius: 12px;
+    overflow:hidden;
 }
 
 .content-service-card-item-info {
