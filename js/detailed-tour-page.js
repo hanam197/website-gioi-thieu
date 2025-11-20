@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // SHOW IMAGE IN GALLERY
     function showImage() {
-        const galleryImages = Array.from(document.querySelectorAll('.gallery__container img'));
+        const galleryImages = Array.from(document.querySelectorAll('.tour-gallery__container img'));
         const viewAllBtn = document.querySelector('.view-all-btn');
         let currentIndex = 0;
 

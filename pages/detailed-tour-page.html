@@ -6,451 +6,752 @@
     <title>Tour Đảo Hòn Nưa – Vũng Rô – Hải Đăng – Bãi Môn (2N1Đ)</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/detailed-tour-page.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- breadcrumb -->
-    <section class="breadcrumb">
-        <a href="">Trang chủ</a>
-        <span>/</span>
-        <a href="">Tour thiết kế sẵn</a>
-        <span>/</span>
-        <a href="">Tour dài ngày</a>
-        <span>/</span>
-        <span href="">Chi tiết tour</span>
-    </section>
+    <header class="header" style="background-color: var(--text-dark);">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <!-- Mobile menu button -->
+                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
+                    <span class="nav-toggle-icon"></span>
+                    <span class="nav-toggle-label">Menu</span>
+                </button>
 
-    <!-- heading -->
-    <section class="heading">
-        <h1 class="heading__tour-title">Tour Đảo Hòn Nưa – Vũng Rô – Hải Đăng – Bãi Môn (2N1Đ)</h1>
-        <div class="heading__tour-info">
-            <div class="heading__tour-duration">2 ngày 1 đêm</div>
-            <div class="heading__tour-share">
-                <ul class="heading__tour-share-list">
-                    <li class="heading__tour-share-item"><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li class="heading__tour-share-item"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li class="heading__tour-share-item"><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                    <li class="heading__tour-share-item"><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
+                <!-- Menu trái -->
+                <div class="nav-left nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li class="has-submenu">
+                            <a href="" aria-expanded="false" aria-controls="tour-submenu">Tour <i
+                                    class="fa-solid fa-caret-down caret" aria-hidden="true"></i></a>
+                            <ul class="submenu" id="tour-submenu">
+                                <li><a href="">Tour ngắn ngày</a></li>
+                                <li><a href="">Tour dài ngày</a></li>
+                                <li><a href="">Workshop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Tour cá nhân hóa</a></li>
+                        <li><a href="">Các dịch vụ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logo ở giữa -->
+                <div class="logo">
+                    <a href="">
+                        <img src="/images/logo.png" alt="Happy Station - Trạm hạnh phúc" width="150">
+                    </a>
+                </div>
+
+                <!-- Menu phải -->
+                <div class="nav-right">
+                    <ul>
+                        <li class="hide-mobile"><a href="">Tin tức & khám phá</a></li>
+                        <li class="hide-mobile"><a href="">Liên hệ</a></li>
+                        <li><button type="button" class="search-toggle" aria-label="Tìm kiếm">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            </button></li>
+                        <li class="primary-btn"><a href="tel:0393728287"><span>Liên hệ ngay</span></a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <!-- gallery -->
-    <section class="gallery">
-        <div class="gallery__container">
-            <div class="gallery__main-item">
-                <img src="../images/tour-1.jpg" alt="">
+    <main>
+        <!-- heading -->
+        <section class="heading">
+            <div class="breadcrumb">
+                <a href="">Trang chủ</a>
+                <span>></span>
+                <a href="">Tour thiết kế sẵn</a>
+                <span>></span>
+                <a href="">Tour dài ngày</a>
+                <span>></span>
+                <span href="">Chi tiết tour</span>
             </div>
-            <div class="gallery__sub-item">
-                <img src="../images/tour-1.1.jpg" alt="">
+            <h1 class="heading__tour-title">Tour Đảo Hòn Nưa – Vũng Rô – Hải Đăng – Bãi Môn (2N1Đ)</h1>
+            <div class="heading__tour-info">
+                <div class="heading__tour-duration">2 ngày 1 đêm</div>
+                <div class="heading__tour-share">
+                    <ul class="heading__tour-share-list">
+                        <li class="heading__tour-share-item"><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="heading__tour-share-item"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="heading__tour-share-item"><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li class="heading__tour-share-item"><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="gallery__sub-item">
-                <img src="../images/tour-1.2.jpg" alt="">
-            </div>
-            <div class="gallery__sub-item">
-                <img src="../images/tour-1.3.jpg" alt="">
-            </div>
-            <div class="gallery__sub-item">
-                <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-            </div>
-        </div>
-        <div class="gallery__button">
-            <button class="view-all-btn">Xem tất cả hình ảnh</button>
-        </div>
-    </section>
+        </section>
 
-    <!-- tour content -->
-    <section class="tour-content">
-        <!-- main content -->
-        <div class="tour-content__container">
-            <!-- sub menu -->
-            <div class="tour-content__sub-menu">
-                <ul class="tour-content__sub-menu-list">
-                    <li class="tour-content__sub-menu-item">Giới thiệu</li>
-                    <li class="tour-content__sub-menu-item">Nội dung khác</li>
-                </ul>
+        <!-- gallery -->
+        <section class="tour-gallery">
+            <div class="tour-gallery__container">
+                <div class="tour-gallery__main-item">
+                    <img src="../images/tour-1.jpg" alt="">
+                </div>
+                <div class="tour-gallery__sub-item">
+                    <img src="../images/tour-1.1.jpg" alt="">
+                </div>
+                <div class="tour-gallery__sub-item">
+                    <img src="../images/tour-1.2.jpg" alt="">
+                </div>
+                <div class="tour-gallery__sub-item">
+                    <img src="../images/tour-1.3.jpg" alt="">
+                </div>
+                <div class="tour-gallery__sub-item">
+                    <img src="https://images.unsplash.com/photo-1614088459293-5669fadc3448?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
             </div>
+            <div class="tour-gallery__button">
+                <button class="view-all-btn">Xem tất cả hình ảnh</button>
+            </div>
+        </section>
 
-            <!-- tour details -->
-            <div class="tour-content__details">
-                <div class="tour-content__accordion">
-                    <!-- tour intro -->
-                    <div class="tour-content__accordion-item">
-                        <div class="tour-content__accordion-header">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button">
-                                    Giới thiệu
-                                </button>
-                            </h2>
-                        </div>
-                        <div class="tour-content__accordion-body">
-                            <div class="tour-content__content-container">
-                                <p class="tour-content__text">Khám phá vẻ đẹp hoang sơ và bình yên của vịnh Vũng Rô cùng hành trình 2 ngày 1 đêm đầy trải nghiệm thú vị. Tour dành cho những ai yêu thích biển đảo, muốn tắm biển, lặn ngắm san hô và tìm hiểu văn hóa – lịch sử miền Trung.</p>
-                                <h3 class="tour-content__sub-title">Vũng Rô</h3>
-                                <p class="tour-content__text">Nơi lưu giữ những dấu tích lịch sử về tàu không số và đường mòn Hồ Chí Minh trên biển. Quý khách tìm hiểu về nghề nuôi tôm hùm và cuộc sống bình dị của ngư dân địa phương, đồng thời chiêm ngưỡng khung cảnh vịnh biển yên bình.</p>
-                                <img src="../images/tour-1.jpg" alt="Vũng Rô">
-                                
-                                <h3 class="tour-content__sub-title">Đảo Hòn Nưa</h3>
-                                <p class="tour-content__text">Viên ngọc xanh giữa vịnh Vũng Rô, nơi quý khách có thể tắm biển, thư giãn và tận hưởng không khí trong lành. Hòn Nưa còn nổi bật với những lồng nhum, ốc biển và hoạt động chèo thuyền thúng độc đáo.</p>
-                                <img src="../images/tour-1.1.jpg" alt="Đảo Hòn Nưa">
-                                
-                                <h3 class="tour-content__sub-title">Bè nổi & Bữa trưa địa phương</h3>
-                                <p class="tour-content__text">Trải nghiệm ẩm thực dân dã với hải sản tươi ngon trên bè nổi giữa biển, vừa thưởng thức vừa nghỉ ngơi thư giãn.</p>
-                                
-                                <h3 class="tour-content__sub-title">Hải Đăng – Mũi Điện</h3>
-                                <p class="tour-content__text">Điểm cực Đông của Tổ Quốc, nơi đón ánh bình minh đầu tiên của Việt Nam. Quý khách có thể ngắm toàn cảnh biển Đông, núi non và cảm nhận khoảnh khắc thiêng liêng tại mốc đất cực Đông.</p>
-                                <img src="../images/tour-1.2.jpg" alt="Hải Đăng - Mũi Điện">
-                                
-                                <h3 class="tour-content__sub-title">Bãi Môn</h3>
-                                <p class="tour-content__text">Bãi biển cát trắng mịn, nước biển trong xanh, lý tưởng để tắm biển, chụp ảnh và thư giãn.</p>
-                                <img src="../images/tour-1.3.jpg" alt="Bãi Môn">
+        <!-- tour content -->
+        <section class="tour-content">
+            <!-- main content -->
+            <div class="tour-content__container">
+                <!-- sub menu -->
+                <div class="tour-content__sub-menu">
+                    <ul class="tour-content__sub-menu-list">
+                        <li class="tour-content__sub-menu-item">Giới thiệu</li>
+                        <li class="tour-content__sub-menu-item">Nội dung khác</li>
+                    </ul>
+                </div>
+
+                <!-- tour details -->
+                <div class="tour-content__details">
+                    <div class="tour-content__accordion">
+                        <!-- tour intro -->
+                        <div class="tour-content__accordion-item">
+                            <div class="tour-content__accordion-header">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button">
+                                        Giới thiệu
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="tour-content__accordion-body">
+                                <div class="tour-content__content-container">
+                                    <p class="tour-content__text">Khám phá vẻ đẹp hoang sơ và bình yên của vịnh Vũng Rô cùng hành trình 2 ngày 1 đêm đầy trải nghiệm thú vị. Tour dành cho những ai yêu thích biển đảo, muốn tắm biển, lặn ngắm san hô và tìm hiểu văn hóa – lịch sử miền Trung.</p>
+                                    <h3 class="tour-content__sub-title">Vũng Rô</h3>
+                                    <p class="tour-content__text">Nơi lưu giữ những dấu tích lịch sử về tàu không số và đường mòn Hồ Chí Minh trên biển. Quý khách tìm hiểu về nghề nuôi tôm hùm và cuộc sống bình dị của ngư dân địa phương, đồng thời chiêm ngưỡng khung cảnh vịnh biển yên bình.</p>
+                                    <img src="../images/tour-1.jpg" alt="Vũng Rô">
+                                    
+                                    <h3 class="tour-content__sub-title">Đảo Hòn Nưa</h3>
+                                    <p class="tour-content__text">Viên ngọc xanh giữa vịnh Vũng Rô, nơi quý khách có thể tắm biển, thư giãn và tận hưởng không khí trong lành. Hòn Nưa còn nổi bật với những lồng nhum, ốc biển và hoạt động chèo thuyền thúng độc đáo.</p>
+                                    <img src="../images/tour-1.1.jpg" alt="Đảo Hòn Nưa">
+                                    
+                                    <h3 class="tour-content__sub-title">Bè nổi & Bữa trưa địa phương</h3>
+                                    <p class="tour-content__text">Trải nghiệm ẩm thực dân dã với hải sản tươi ngon trên bè nổi giữa biển, vừa thưởng thức vừa nghỉ ngơi thư giãn.</p>
+                                    
+                                    <h3 class="tour-content__sub-title">Hải Đăng – Mũi Điện</h3>
+                                    <p class="tour-content__text">Điểm cực Đông của Tổ Quốc, nơi đón ánh bình minh đầu tiên của Việt Nam. Quý khách có thể ngắm toàn cảnh biển Đông, núi non và cảm nhận khoảnh khắc thiêng liêng tại mốc đất cực Đông.</p>
+                                    <img src="../images/tour-1.2.jpg" alt="Hải Đăng - Mũi Điện">
+                                    
+                                    <h3 class="tour-content__sub-title">Bãi Môn</h3>
+                                    <p class="tour-content__text">Bãi biển cát trắng mịn, nước biển trong xanh, lý tưởng để tắm biển, chụp ảnh và thư giãn.</p>
+                                    <img src="../images/tour-1.3.jpg" alt="Bãi Môn">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- tour schedule -->
-                    <div class="tour-schedule__accordion-item">
-                        <div class="tour-schedule__accordion-header">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button">
-                                    Lịch trình
-                                </button>
-                            </h2>
-                        </div>
-                        <div class="tour-schedule__accordion-body">
-                            <div class="tour-schedule__container">
-                                <div class="tour-schedule__row">
-                                    <div class="tour-schedule__icon">
-                                        <i class="fa-solid fa-clock"></i>
-                                        <div class="tour-schedule__vertical-line"></div>
+                        <!-- tour schedule -->
+                        <div class="tour-schedule__accordion-item">
+                            <div class="tour-schedule__accordion-header">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button">
+                                        Lịch trình
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="tour-schedule__accordion-body">
+                                <div class="tour-schedule__container">
+                                    <div class="tour-schedule__row">
+                                        <div class="tour-schedule__icon">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <div class="tour-schedule__vertical-line"></div>
+                                        </div>
+                                        <div class="tour-schedule__description">
+                                            <h3 class="tour-schedule__title">Ngày 1: Tuy Hòa – Vũng Rô – Đảo Hòn Nưa</h3>
+                                            <p class="tour-schedule__text"><span>07h00: &nbsp;</span>Xe và hướng dẫn viên đón khách tại khách sạn trong thành phố Tuy Hòa. Khởi hành đến Vũng Rô – nơi lưu giữ những dấu tích lịch sử về tàu không số và đường mòn Hồ Chí Minh trên biển. Quý khách tìm hiểu về nghề nuôi tôm hùm và cuộc sống bình dị của ngư dân địa phương.</p>
+                                            <p class="tour-schedule__text"><span>08h30: &nbsp;</span>Lên cano khởi hành ra Đảo Hòn Nưa – viên ngọc xanh giữa vịnh Vũng Rô. Thỏa thích tắm biển trong làn nước trong vắt, mát lạnh và tận hưởng không gian biển đảo thanh bình.</p>
+                                            <p class="tour-schedule__text"><span>11h00: &nbsp;</span>Trở lại bè nổi, thưởng thức bữa trưa với các món ăn dân dã đặc trưng, nghỉ ngơi thư giãn.</p>
+                                            <p class="tour-schedule__text"><span>13h30: &nbsp;</span>Quay trở về đất liền. Tham quan Hải Đăng – Mũi Điện, điểm cực Đông của Tổ Quốc, nơi đón ánh bình minh đầu tiên của Việt Nam. Sau đó tự do tắm biển tại Bãi Môn, với bãi cát trắng mịn và nước biển trong xanh.</p>
+                                            <p class="tour-schedule__text"><span>17h00: &nbsp;</span>Nhận phòng khách sạn tại Tuy Hòa, ăn tối và tự do khám phá thành phố về đêm.</p>
+                                        </div>
                                     </div>
-                                    <div class="tour-schedule__description">
-                                        <h3 class="tour-schedule__title">Ngày 1: Tuy Hòa – Vũng Rô – Đảo Hòn Nưa</h3>
-                                        <p class="tour-schedule__text"><span>07h00: &nbsp;</span>Xe và hướng dẫn viên đón khách tại khách sạn trong thành phố Tuy Hòa. Khởi hành đến Vũng Rô – nơi lưu giữ những dấu tích lịch sử về tàu không số và đường mòn Hồ Chí Minh trên biển. Quý khách tìm hiểu về nghề nuôi tôm hùm và cuộc sống bình dị của ngư dân địa phương.</p>
-                                        <p class="tour-schedule__text"><span>08h30: &nbsp;</span>Lên cano khởi hành ra Đảo Hòn Nưa – viên ngọc xanh giữa vịnh Vũng Rô. Thỏa thích tắm biển trong làn nước trong vắt, mát lạnh và tận hưởng không gian biển đảo thanh bình.</p>
-                                        <p class="tour-schedule__text"><span>11h00: &nbsp;</span>Trở lại bè nổi, thưởng thức bữa trưa với các món ăn dân dã đặc trưng, nghỉ ngơi thư giãn.</p>
-                                        <p class="tour-schedule__text"><span>13h30: &nbsp;</span>Quay trở về đất liền. Tham quan Hải Đăng – Mũi Điện, điểm cực Đông của Tổ Quốc, nơi đón ánh bình minh đầu tiên của Việt Nam. Sau đó tự do tắm biển tại Bãi Môn, với bãi cát trắng mịn và nước biển trong xanh.</p>
-                                        <p class="tour-schedule__text"><span>17h00: &nbsp;</span>Nhận phòng khách sạn tại Tuy Hòa, ăn tối và tự do khám phá thành phố về đêm.</p>
-                                    </div>
-                                </div>
-                                <div class="tour-schedule__row">
-                                    <div class="tour-schedule__icon">
-                                        <i class="fa-solid fa-clock"></i>
-                                        <div class="tour-schedule__vertical-line"></div>
-                                    </div>
-                                    <div class="tour-schedule__description">
-                                        <h3 class="tour-schedule__title">Ngày 2: Vũng Rô – Bãi Môn – Trở về Tuy Hòa</h3>
-                                        <p class="tour-schedule__text"><span>Sáng: &nbsp;</span>Thưởng thức bữa sáng tại khách sạn, sau đó tự do tắm biển, nghỉ ngơi hoặc tham gia các hoạt động ngoài trời.</p>
-                                        <p class="tour-schedule__text"><span>10h00: &nbsp;</span>Khởi hành đến Vũng Rô để khám phá tiếp những cảnh đẹp và lịch sử của vùng biển này. Quý khách có thể tham gia hoạt động câu cá, chụp ảnh lưu niệm hoặc đơn giản là tận hưởng không gian biển yên bình.</p>
-                                        <p class="tour-schedule__text"><span>12h00: &nbsp;</span>Ăn trưa tại nhà hàng địa phương, sau đó lên xe trở về Tuy Hòa. Trên đường đi, quý khách có thể dừng chân check-in những cảnh đẹp quanh đường về.</p>
-                                        <p class="tour-schedule__text"><span>15h00: &nbsp;</span>Kết thúc hành trình, trả khách tại khách sạn hoặc điểm hẹn ban đầu, chia tay và hẹn gặp lại.</p>
+                                    <div class="tour-schedule__row">
+                                        <div class="tour-schedule__icon">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <div class="tour-schedule__vertical-line"></div>
+                                        </div>
+                                        <div class="tour-schedule__description">
+                                            <h3 class="tour-schedule__title">Ngày 2: Vũng Rô – Bãi Môn – Trở về Tuy Hòa</h3>
+                                            <p class="tour-schedule__text"><span>Sáng: &nbsp;</span>Thưởng thức bữa sáng tại khách sạn, sau đó tự do tắm biển, nghỉ ngơi hoặc tham gia các hoạt động ngoài trời.</p>
+                                            <p class="tour-schedule__text"><span>10h00: &nbsp;</span>Khởi hành đến Vũng Rô để khám phá tiếp những cảnh đẹp và lịch sử của vùng biển này. Quý khách có thể tham gia hoạt động câu cá, chụp ảnh lưu niệm hoặc đơn giản là tận hưởng không gian biển yên bình.</p>
+                                            <p class="tour-schedule__text"><span>12h00: &nbsp;</span>Ăn trưa tại nhà hàng địa phương, sau đó lên xe trở về Tuy Hòa. Trên đường đi, quý khách có thể dừng chân check-in những cảnh đẹp quanh đường về.</p>
+                                            <p class="tour-schedule__text"><span>15h00: &nbsp;</span>Kết thúc hành trình, trả khách tại khách sạn hoặc điểm hẹn ban đầu, chia tay và hẹn gặp lại.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- tour notice and terms -->
-                    <div class="tour-notice__accordion-item">
-                        <div class="tour-notice__accordion-header">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button">
-                                    Chú ý và điều khoản
-                                </button>
-                            </h2>
-                        </div>
-                        <div class="tour-notice__accordion-body">
-                            <div class="tour-notice__container">
-                                <!-- Tour price info  -->
-                                <div class="tour-price-info">
-                                    <table border="1" class="tour-price-info__table">
-                                        <thead>
-                                            <th>Số lượng khách</th>
-                                            <th>Giá tour</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1 khách trở lên</td>
-                                                <td>825.000đ/khách</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2 khách trở lên</td>
-                                                <td>1.650.000đ/khách</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                        
+                        <!-- tour notice and terms -->
+                        <div class="tour-notice__accordion-item">
+                            <div class="tour-notice__accordion-header">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button">
+                                        Chú ý và điều khoản
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="tour-notice__accordion-body">
+                                <div class="tour-notice__container">
+                                    <!-- Tour price info  -->
+                                    <div class="tour-price-info">
+                                        <table border="1" class="tour-price-info__table">
+                                            <thead>
+                                                <th>Số lượng khách</th>
+                                                <th>Giá tour</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1 khách trở lên</td>
+                                                    <td>825.000đ/khách</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2 khách trở lên</td>
+                                                    <td>1.650.000đ/khách</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                <!-- Services included -->
-                                <div class="tour-services-included">
-                                    <h3 class="tour-services-included__title">Dịch vụ bao gồm</h3>
-                                    <table border="1" class="tour-services-included__table">
-                                        <tr>
-                                            <td>Xe vận chuyển chất lượng cao điều hòa xuyên suốt</td>
-                                            <td>Quà tặng du lịch</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ăn các bữa ăn theo chương trình</td>
-                                            <td>Thiết bị thám hiểm</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hướng dẫn viên nhiệt tình, kinh nghiệm</td>
-                                            <td>Bảo hiểm du lịch (20.000.000vnđ/vụ)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Porters chuyên nghiệp vận chuyển, gửi hàng hóa</td>
-                                        </tr>
-                                    </table>
-                                </div>
+                                    <!-- Services included -->
+                                    <div class="tour-services-included">
+                                        <h3 class="tour-services-included__title">Dịch vụ bao gồm</h3>
+                                        <table border="1" class="tour-services-included__table">
+                                            <tr>
+                                                <td>Xe vận chuyển chất lượng cao điều hòa xuyên suốt</td>
+                                                <td>Quà tặng du lịch</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ăn các bữa ăn theo chương trình</td>
+                                                <td>Thiết bị thám hiểm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hướng dẫn viên nhiệt tình, kinh nghiệm</td>
+                                                <td>Bảo hiểm du lịch (20.000.000vnđ/vụ)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Porters chuyên nghiệp vận chuyển, gửi hàng hóa</td>
+                                            </tr>
+                                        </table>
+                                    </div>
 
-                                <!-- notices -->
-                                <div class="tour-notice">
-                                    <h3 class="tour-notice__title">Lưu ý</h3>
-                                    <table border="1" class="tour-notice__notice-table">
-                                        <tr>
-                                            <td>Tour hoạt động</td>
-                                            <td>Quanh năm trừ những ngày bão lũ</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Thời gian hành trình tour</td>
-                                            <td>1 ngày</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Mức độ mạo hiểm</td>
-                                            <td>Trung bình (8km), phù hợp với người năng động</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Khởi hành</td>
-                                            <td>Hàng ngày</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Số lượng khách</td>
-                                            <td>Từ 2 khách - 30 khách</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Giới hạn độ tuổi tham gia tour</td>
-                                            <td>Từ 8 tuổi trở lên</td>
-                                        </tr>
-                                    </table>
+                                    <!-- notices -->
+                                    <div class="tour-notice">
+                                        <h3 class="tour-notice__title">Lưu ý</h3>
+                                        <table border="1" class="tour-notice__notice-table">
+                                            <tr>
+                                                <td>Tour hoạt động</td>
+                                                <td>Quanh năm trừ những ngày bão lũ</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thời gian hành trình tour</td>
+                                                <td>1 ngày</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mức độ mạo hiểm</td>
+                                                <td>Trung bình (8km), phù hợp với người năng động</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Khởi hành</td>
+                                                <td>Hàng ngày</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Số lượng khách</td>
+                                                <td>Từ 2 khách - 30 khách</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Giới hạn độ tuổi tham gia tour</td>
+                                                <td>Từ 8 tuổi trở lên</td>
+                                            </tr>
+                                        </table>
 
-                                    <table border="1" class="tour-notice__prepare-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Chúng tôi sẽ cung cấp</th>
-                                                <th>Bạn cần chuẩn bị</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Thiết bị thám hiểm hang động và thiết bị an toàn</td>
-                                                <td>1 bộ quần áo dài nhanh khô, thuận tiện trong chuyến đi</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Giày đi bộ (size 36 đến 46)</td>
-                                                <td>Khăn tắm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bữa trưa và nước</td>
-                                                <td>1 đôi giày leo núi chuyên dụng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Hướng dẫn viên</td>
-                                                <td>1 bộ quần áo để thay trong chuyến đi, 1 đôi vớ, tất dài và giày</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Đội ngũ đầu bếp</td>
-                                                <td>Đồ dùng cá nhân: kem chống nắng, mũ, máy ảnh, đồ lót, đồ dùng vệ sinh</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <table border="1" class="tour-notice__prepare-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Chúng tôi sẽ cung cấp</th>
+                                                    <th>Bạn cần chuẩn bị</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Thiết bị thám hiểm hang động và thiết bị an toàn</td>
+                                                    <td>1 bộ quần áo dài nhanh khô, thuận tiện trong chuyến đi</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Giày đi bộ (size 36 đến 46)</td>
+                                                    <td>Khăn tắm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bữa trưa và nước</td>
+                                                    <td>1 đôi giày leo núi chuyên dụng</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hướng dẫn viên</td>
+                                                    <td>1 bộ quần áo để thay trong chuyến đi, 1 đôi vớ, tất dài và giày</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Đội ngũ đầu bếp</td>
+                                                    <td>Đồ dùng cá nhân: kem chống nắng, mũ, máy ảnh, đồ lót, đồ dùng vệ sinh</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+            </div>
+
+            <!-- sidebar -->
+            <div class="tour-content__sidebar">
+                <!-- tour overview -->
+                <div class="tour-content__price-info">
+                    <h3 class="tour-content__price-title">Giá tour trọn gói</h3>
+                    <div class="tour-content__price"><span style="color: #F57C00; font-size: 24px; margin-right: 5px;">750.000</span>VND/khách</div>
+                    <div class="tour-content__old-price">1.000.000 VND</div>
+
+                    <div class="divider"></div>
+
+                    <div class="tour-content__depart-info">
+                        <div class="tour-content__depart-info-place"><i class="fa-solid fa-plane-departure"></i>Khởi hành từ: <span class="info">TP. Hồ Chí Minh</span></div>
+                        <div class="tour-content__depart-info-destination"><i class="fa-solid fa-location-dot"></i>Điểm đến: <span class="info">Phú Yên</span></div>
+                        <div class="tour-content__depart-info-duration"><i class="fa-solid fa-calendar"></i>Thời gian: <span class="info">2 ngày 1 đêm</span></div>
+                        <div class="tour-content__depart-info-date"><i class="fa-solid fa-calendar"></i>Ngày xuất phát: <span class="info">15/11/2025</span></div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="tour-content__gifts">
+                        <p><i class="fa-solid fa-gift"></i>Tặng 1 tấm ảnh lớn tập thể Đoàn (từ 20 khách)</p>
+                        <p><i class="fa-solid fa-gift"></i>Tặng áo cờ đỏ sao vàng chinh phục Mũi Cực Đông</p>
+                        <p><i class="fa-solid fa-gift"></i>Quà tặng hoạt náo trên xe</p>
+                        <p><i class="fa-solid fa-gift"></i>Vé check in Ô Loan Chill</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <button class="tour-content__contact-now-btn">Liên hệ ngay</button>
+                </div>
+
+                <!-- hotline -->
+                <div class="tour-content__contact">
+                    <h3 class="tour-content__contact-title">Hotline hỗ trợ</h3>
+                    <button class="tour-content__contact-phone">0909 123 456</button>
+                    <p>Hoặc để lại thông tin tư vấn</p>
+                    <div class="tour-content__email-input">
+                        <input class="tour-content__contact-input" type="text" name="" id="emailQuick" placeholder="Nhập email của bạn">
+                        <button id="emailSubmitBtn" class="tour-content__contact-submit-btn">Gửi</button>
+                        <small class="error-msg"></small>
+                    </div>
+                    <p>Chúng tôi sẽ liên hệ với bạn trong vài giờ khi nhận thông tin</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- related tours -->
+        <section class="related-tours">
+            <h2 class="related-tours__title">Tour liên quan</h2>
+            <div class="related-tours__list-container">
+                <div class="related-tours__card">
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <!-- Row 1 -->
+            <div class="gallery__flow gallery__flow-row-1">
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/1.jpg" alt="Gallery 1">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/1.jpg" alt="Gallery 2">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/1.jpg" alt="Gallery 3">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/2.jpg" alt="Gallery 4">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 5">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 6">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/3.jpg" alt="Gallery 7">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 8">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 9">
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/1.jpg" alt="Gallery 1">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/1.jpg" alt="Gallery 2">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/1.jpg" alt="Gallery 3">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/2.jpg" alt="Gallery 4">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 5">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 6">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/3.jpg" alt="Gallery 7">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 8">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 9">
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="gallery__flow gallery__flow-row-2">
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/4.jpg" alt="Gallery 1">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/4.jpg" alt="Gallery 2">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/4.jpg" alt="Gallery 3">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/5.jpg" alt="Gallery 4">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/5.jpg" alt="Gallery 5">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/5.jpg" alt="Gallery 6">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/6.jpg" alt="Gallery 7">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/6.jpg" alt="Gallery 8">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/6.jpg" alt="Gallery 9">
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/4.jpg" alt="Gallery 1">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/4.jpg" alt="Gallery 2">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/4.jpg" alt="Gallery 3">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/5.jpg" alt="Gallery 4">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/5.jpg" alt="Gallery 5">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/5.jpg" alt="Gallery 6">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/6.jpg" alt="Gallery 7">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/6.jpg" alt="Gallery 8">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/6.jpg" alt="Gallery 9">
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="gallery__flow gallery__flow-row-3">
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/7.jpg" alt="Gallery 1">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/7.jpg" alt="Gallery 2">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/7.jpg" alt="Gallery 3">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/8.jpg" alt="Gallery 4">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/8.jpg" alt="Gallery 5">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/8.jpg" alt="Gallery 6">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/9.jpg" alt="Gallery 7">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/9.jpg" alt="Gallery 8">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/7.jpg" alt="Gallery 1">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/7.jpg" alt="Gallery 2">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/7.jpg" alt="Gallery 3">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/8.jpg" alt="Gallery 4">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/8.jpg" alt="Gallery 5">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/8.jpg" alt="Gallery 6">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/activity/9.jpg" alt="Gallery 7">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/food/9.jpg" alt="Gallery 8">
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact">
+        <div class="contact__quote-container">
+            <span class="contact__quote"
+            >Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+            để giúp mọi thứ tốt hơn !?</span
+            >
+            <button class="contact__get-tours-btn primary-btn">
+            Xem các tour
+            </button>
+        </div>
+        <div class="contact__form-container">
+            <form id="contactForm" action="">
+            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+            <p class="contact__form-sub-content">
+                Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+            </p>
+            
+            <div class="contact__name-input">
+                <label for="">Họ và tên *</label>
+                <input
+                id = "fullName" 
+                type="text"
+                placeholder="Nhập họ và tên"
+                class="contact__form-input"
+                />
+                <small class="error-msg"></small>
             </div>
             
-        </div>
+            <div class="contact__depacture-date-input">
+                <label for="">Ngày đi (dự kiến) *</label>
+                <input
+                id="departureDate" 
+                type="date"
+                placeholder="Chọn ngày đi dự kiến"
+                class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+            </div>
 
-        <!-- sidebar -->
-        <div class="tour-content__sidebar">
-            <!-- tour overview -->
-            <div class="tour-content__price-info">
-                <h3 class="tour-content__price-title">Giá tour trọn gói</h3>
-                <div class="tour-content__price"><span style="color: #F57C00; font-size: 24px; margin-right: 5px;">750.000</span>VND/khách</div>
-                <div class="tour-content__old-price">1.000.000 VND</div>
-
-                <div class="divider"></div>
-
-                <div class="tour-content__depart-info">
-                    <div class="tour-content__depart-info-place"><i class="fa-solid fa-plane-departure"></i>Khởi hành từ: <span class="info">TP. Hồ Chí Minh</span></div>
-                    <div class="tour-content__depart-info-destination"><i class="fa-solid fa-location-dot"></i>Điểm đến: <span class="info">Phú Yên</span></div>
-                    <div class="tour-content__depart-info-duration"><i class="fa-solid fa-calendar"></i>Thời gian: <span class="info">2 ngày 1 đêm</span></div>
-                    <div class="tour-content__depart-info-date"><i class="fa-solid fa-calendar"></i>Ngày xuất phát: <span class="info">15/11/2025</span></div>
+            <div class="contact__contact-input">
+                <div class="contact__phone-input">
+                <label for="">Số điện thoại *</label>
+                <input
+                    id="phone" 
+                    type="text"
+                    placeholder="Nhập số điện thoại"
+                    class="contact__form-input"
+                />
+                <small class="error-msg"></small>
                 </div>
 
-                <div class="divider"></div>
+                <div class="contact__email-input">
+                <label for="">Email *</label>
+                <input
+                    id="email" 
+                    type="email"
+                    placeholder="Nhập email"
+                    class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+                </div>
+            </div>
 
-                <div class="tour-content__gifts">
-                    <p><i class="fa-solid fa-gift"></i>Tặng 1 tấm ảnh lớn tập thể Đoàn (từ 20 khách)</p>
-                    <p><i class="fa-solid fa-gift"></i>Tặng áo cờ đỏ sao vàng chinh phục Mũi Cực Đông</p>
-                    <p><i class="fa-solid fa-gift"></i>Quà tặng hoạt náo trên xe</p>
-                    <p><i class="fa-solid fa-gift"></i>Vé check in Ô Loan Chill</p>
+            <div class="contact__guest-number-input">
+                <div class="contact__adult-number-input">
+                <label for="">Người lớn</label>
+                <input
+                    id="adults" 
+                    type="number"
+                    placeholder="Người lớn"
+                    class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+                </div>
+                <div class="contact__children-number-input">
+                <label for="">Trẻ em</label>
+                <input
+                    id="children" 
+                    type="number"
+                    placeholder="Trẻ em"
+                    class="contact__form-input"
+                />
+                <small class="error-msg"></small>
+                </div>
+            </div>
+
+            <div class="contact__content-input">
+                <label for="">Nội dung</label>
+                <textarea
+                id="content"
+                cols="30"
+                rows="3"
+                placeholder="Nhập nội dung cần liên hệ"
+                class="contact__form-input"
+                ></textarea>
+            </div>
+
+            <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
+            </form>
+        </div>
+        </section>
+        <!-- contact popup -->
+        <div id="successPopup" class="contact__popup">
+            <div class="contact__popup-content">
+                <p class="contact__popup-message">
+                <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
+                <i class="fa-regular fa-circle-check"></i> 
+                <br> 
+                Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+                </p>
+                <button id="closePopup">Đóng</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="ft">
+        <div class="container">
+            <div class="ft-wrap">
+
+                <div class="ft-logo">
+                    <a href="">
+                        <img src="/images/logo.png" alt="Logo">
+                    </a>
                 </div>
 
-                <div class="divider"></div>
-
-                <button class="tour-content__contact-now-btn">Liên hệ ngay</button>
-            </div>
-
-            <!-- hotline -->
-            <div class="tour-content__contact">
-                <h3 class="tour-content__contact-title">Hotline hỗ trợ</h3>
-                <button class="tour-content__contact-phone">0909 123 456</button>
-                <p>Hoặc để lại thông tin tư vấn</p>
-                <div class="tour-content__email-input">
-                    <input class="tour-content__contact-input" type="text" name="" id="emailQuick" placeholder="Nhập email của bạn">
-                    <button id="emailSubmitBtn" class="tour-content__contact-submit-btn">Gửi</button>
-                    <small class="error-msg"></small>
+                <div class="ft-menu">
+                    <ul class="menu">
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Tour thiết kế sẵn</a></li>
+                        <li><a href="">Tour cá nhân hóa</a></li>
+                        <li><a href="">Dịch vụ</a></li>
+                        <li><a href="">Sản phẩm địa phương</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
                 </div>
-                <p>Chúng tôi sẽ liên hệ với bạn trong vài giờ khi nhận thông tin</p>
+
+                <div class="ft-if">
+                    <div class="ft-if-it">
+                        <span class="t-text">ĐỊA CHỈ</span>
+                        <div class="t-gr">
+                            <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank">
+                                Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ft-if-it">
+                        <span class="t-text">LIÊN HỆ</span>
+                        <div class="t-gr">
+                            <a href="tel:0393728287">Hotline: 0393728287</a>
+                        </div>
+                    </div>
+                    <div class="ft-if-it">
+                        <span class="t-text">EMAIL</span>
+                        <div class="t-gr">
+                            <a href="mailto:tramhanhphuc.f4@gmail.com">tramhanhphuc.f4@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ft-sc">
+                    <div class="i-list">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook" width="28" height="29"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram" width="28" height="29"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-bot">
+                <div class="ft-sign">
+                    <span class="t-text">@All Right Reserved</span>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- related tours -->
-    <section class="related-tours">
-        <h2 class="related-tours__title">Tour liên quan</h2>
-        <div class="related-tours__list-container">
-            <div class="related-tours__card">
-            </div>
-        </div>
-    </section>
-
-    <!-- gallery -->
-    <!-- <section class="gallery"></section> -->
-
-    <!-- contact -->
-    <section class="contact">
-    <div class="contact__quote-container">
-        <span class="contact__quote"
-        >Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
-        để giúp mọi thứ tốt hơn !?</span
-        >
-        <button class="contact__get-tours-btn primary-btn">
-        Xem các tour
-        </button>
-    </div>
-    <div class="contact__form-container">
-        <form id="contactForm" action="">
-        <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-        <p class="contact__form-sub-content">
-            Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
-        </p>
-        
-        <div class="contact__name-input">
-            <label for="">Họ và tên *</label>
-            <input
-            id = "fullName" 
-            type="text"
-            placeholder="Nhập họ và tên"
-            class="contact__form-input"
-            />
-            <small class="error-msg"></small>
-        </div>
-        
-        <div class="contact__depacture-date-input">
-            <label for="">Ngày đi (dự kiến) *</label>
-            <input
-            id="departureDate" 
-            type="date"
-            placeholder="Chọn ngày đi dự kiến"
-            class="contact__form-input"
-            />
-            <small class="error-msg"></small>
-        </div>
-
-        <div class="contact__contact-input">
-            <div class="contact__phone-input">
-            <label for="">Số điện thoại *</label>
-            <input
-                id="phone" 
-                type="text"
-                placeholder="Nhập số điện thoại"
-                class="contact__form-input"
-            />
-            <small class="error-msg"></small>
-            </div>
-
-            <div class="contact__email-input">
-            <label for="">Email *</label>
-            <input
-                id="email" 
-                type="email"
-                placeholder="Nhập email"
-                class="contact__form-input"
-            />
-            <small class="error-msg"></small>
-            </div>
-        </div>
-
-        <div class="contact__guest-number-input">
-            <div class="contact__adult-number-input">
-            <label for="">Người lớn</label>
-            <input
-                id="adults" 
-                type="number"
-                placeholder="Người lớn"
-                class="contact__form-input"
-            />
-            <small class="error-msg"></small>
-            </div>
-            <div class="contact__children-number-input">
-            <label for="">Trẻ em</label>
-            <input
-                id="children" 
-                type="number"
-                placeholder="Trẻ em"
-                class="contact__form-input"
-            />
-            <small class="error-msg"></small>
-            </div>
-        </div>
-
-        <div class="contact__content-input">
-            <label for="">Nội dung</label>
-            <textarea
-            id="content"
-            cols="30"
-            rows="3"
-            placeholder="Nhập nội dung cần liên hệ"
-            class="contact__form-input"
-            ></textarea>
-        </div>
-
-        <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
-        </form>
-    </div>
-    </section>
-    <!-- contact popup -->
-    <div id="successPopup" class="contact__popup">
-        <div class="contact__popup-content">
-            <p class="contact__popup-message">
-            <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
-            <i class="fa-regular fa-circle-check"></i> 
-            <br> 
-            Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
-            </p>
-            <button id="closePopup">Đóng</button>
-        </div>
+    </footer>
+    <div class="back-to-top backToTop">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
     </div>
 
     <script src="../js/detailed-tour-page.js"></script>
     <script src="../js/form-validation.js"></script>
+    <script src="../js/header-hero.js"></script>
+    <script src="../js/about-us.js" defer></script>
+    <script src="/js/js.js"></script>
 
 </body>
 </html>

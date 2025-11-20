@@ -1,21 +1,7 @@
-/* temporary navbar */
-.navbar {
-    width: 100%;
-    height: 99px;
-    background-color: transparent;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    background-color: grey;
-    margin: 10px 0;
-}
-
 /* header */
 .header__banner {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     background-image: url("../images/tour-banner.png");
     background-repeat: no-repeat;
     background-position: center;
