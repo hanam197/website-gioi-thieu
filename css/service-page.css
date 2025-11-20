@@ -1,4 +1,9 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SVN-Poppins', sans-serif;
+}
 
 .service-page-header {
 text-align: center;
@@ -46,26 +51,34 @@ color:white;
     margin-top: 10px;
 }
 
-.call {
+.button-call {
 color:#ffffff; /*màu chữ*/
-  background-color: #4e5f39; /*màu nút*/
-  text-decoration: none; /*bỏ underline*/
-  padding: 10px 16px 10px 16px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-  margin-top: 16px;
-  display: block;
-  width:fit-content;
+background-color: #8AA831;
+    /*màu nút*/
+    text-decoration: none;
+    /*bỏ underline*/
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 16px;
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    line-height: 1;
+}
+
+.button-call:hover{
+  background-color: #F57C00;
 }
 
 .content-service-card-item {
     background-color:  #f2fae9;
     border-radius: 12px;
     overflow:hidden;
+    padding-bottom: 10px;
 }
 
 .content-service-card-item-info {
-    padding: 12px 10px;
+    padding: 12px 20px;
 }
