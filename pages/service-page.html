@@ -7,9 +7,63 @@
     <title>Dịch vụ</title>
     <link rel="stylesheet" type="text/css" href="../css/service-page.css" />
     <link rel="stylesheet" type="text/css" href="../css/blog-page.css" />
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Font Awesome for caret icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <!-- Mobile menu button -->
+                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
+                    <span class="nav-toggle-icon"></span>
+                    <span class="nav-toggle-label">Menu</span>
+                </button>
+
+                <!-- Menu trái -->
+                <div class="nav-left nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="/pages/about-us.html">Giới thiệu</a></li>
+                        <li class="has-submenu">
+                            <a href="/pages/tour.html" aria-expanded="false" aria-controls="tour-submenu">Tour <i
+                                    class="fa-solid fa-caret-down caret" aria-hidden="true"></i></a>
+                            <ul class="submenu" id="tour-submenu">
+                                <li><a href="/pages/tour.html">Tour ngắn ngày</a></li>
+                                <li><a href="/pages/tour.html">Tour dài ngày</a></li>
+                                <li><a href="/pages/tour.html">Workshop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
+                        <li><a href="/pages/service-page.html">Các dịch vụ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logo ở giữa -->
+                <div class="logo">
+                    <a href="/pages/home-page.html">
+                        <img src="/images/logo.png" alt="Happy Station - Trạm hạnh phúc" width="150">
+                    </a>
+                </div>
+
+                <!-- Menu phải -->
+                <div class="nav-right">
+                    <ul>
+                        <li class="hide-mobile"><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
+                        <li class="hide-mobile"><a href="/pages/contact.html">Liên hệ</a></li>
+                        <li><button type="button" class="search-toggle" aria-label="Tìm kiếm">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            </button></li>
+                        <li class="primary-btn"><a href="tel:0393728287"><span>Liên hệ ngay</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
     <main>
         <div class="service-page-header">
             <h1>DỊCH VỤ</h1>
@@ -128,6 +182,68 @@
         </section>
 
     </main>
+    <footer class="ft">
+        <div class="container">
+            <div class="ft-wrap">
+
+                <div class="ft-logo">
+                    <a href="/pages/home-page.html">
+                        <img src="/images/logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="ft-menu">
+                    <ul>
+                        <li><a href="/pages/about-us.html">Về chúng tôi</a></li>
+                        <li><a href="/pages/tour.html">Tour thiết kế sẵn</a></li>
+                        <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
+                        <li><a href="/pages/service-page.html">Dịch vụ</a></li>
+                        <li><a href="/pages/contact.html">Liên hệ</a></li>
+                        <li><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
+                    </ul>
+                </div>
+
+                <div class="ft-if">
+                    <div class="ft-if-it">
+                        <span class="t-text">ĐỊA CHỈ</span>
+                        <div class="t-gr">
+                            <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank">
+                                Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ft-if-it">
+                        <span class="t-text">LIÊN HỆ</span>
+                        <div class="t-gr">
+                            <a href="tel:0393728287">Hotline: 0393728287</a>
+                        </div>
+                    </div>
+                    <div class="ft-if-it">
+                        <span class="t-text">EMAIL</span>
+                        <div class="t-gr">
+                            <a href="mailto:tramhanhphuc.f4@gmail.com">tramhanhphuc.f4@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ft-sc">
+                    <div class="i-list">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook" width="28" height="29"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram" width="28" height="29"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-bot">
+                <div class="ft-sign">
+                    <span class="t-text">@All Right Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

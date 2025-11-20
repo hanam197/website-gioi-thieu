@@ -2,155 +2,161 @@
 <html lang="vi">
 
 <head>
+    <!-- Meta ================================================== -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ - Happy Sation</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <!-- SEO ================================================== -->
+    <title>Happy Station - Contact</title>
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <meta name="description"
+        content="Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề tài chính có đang khiến bạn căng thẳng.. Bạn có nghĩ đến lúc cho thân  tâm – trí được phục hồi để giúp mọi thứ tốt hơn!? Chúng tôi sẽ cá nhân hóa lộ trình theo tình trạng sức khỏe và tinh thần của BẠN. Hãy sạc thêm năng lượng bình an và hạnh phúc cho con đường phía trước">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <link rel="stylesheet" href="/css/home-page.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Font Awesome for caret icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body data-rsssl=1
-    class="home wp-singular page-template page-template-page-template page-template-home-template page-template-page-templatehome-template-php page page-id-7 wp-custom-logo wp-theme-monatheme desktop-detect theme-monatheme woocommerce-no-js">
+<body class="body-container">
     <header class="header">
         <div class="container">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="">
-                    <img src="https://happystation.vn/wp-content/uploads/2025/04/z5977869934236_75dd2eeadbd293120bc6fddddd2bf1ab-1.png"
-                        alt="Happy Station - Trạm hạnh phúc" width="150">
-                </a>
-            </div>
+            <nav class="nav" aria-label="Main navigation">
+                <!-- Mobile menu button -->
+                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
+                    <span class="nav-toggle-icon"></span>
+                    <span class="nav-toggle-label">Menu</span>
+                </button>
 
-            <!-- Nút menu mobile -->
-            <div class="burger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                <!-- Menu trái -->
+                <div class="nav-left nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="/pages/about-us.html">Giới thiệu</a></li>
+                        <li class="has-submenu">
+                            <a href="/pages/tour.html" aria-expanded="false" aria-controls="tour-submenu">Tour <i
+                                    class="fa-solid fa-caret-down caret" aria-hidden="true"></i></a>
+                            <ul class="submenu" id="tour-submenu">
+                                <li><a href="/pages/tour.html">Tour ngắn ngày</a></li>
+                                <li><a href="/pages/tour.html">Tour dài ngày</a></li>
+                                <li><a href="/pages/tour.html">Workshop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
+                        <li><a href="/pages/service-page.html">Các dịch vụ</a></li>
+                    </ul>
+                </div>
 
-            <!-- Menu chính -->
-            <nav class="nav">
-                <ul>
-                    <li><a href="">Giới thiệu</a></li>
-                    <li>
-                        <a href="">Tour</a>
-                        <ul>
-                            <li><a href="">Tour ngắn ngày</a></li>
-                            <li><a href="">Tour dài ngày</a></li>
-                            <li><a href="">Workshop</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Tour cá nhân hóa</a></li>
-                    <li><a href="">Các dịch vụ</a></li>
-                    <li><a href="">Tin tức & khám phá</a></li>
-                    <li><a href="">Liên hệ</a></li>
-                </ul>
+                <!-- Logo ở giữa -->
+                <div class="logo">
+                    <a href="/pages/home-page.html">
+                        <img src="/images/logo.png" alt="Happy Station - Trạm hạnh phúc" width="150">
+                    </a>
+                </div>
+
+                <!-- Menu phải -->
+                <div class="nav-right">
+                    <ul>
+                        <li class="hide-mobile"><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
+                        <li class="hide-mobile"><a href="/pages/contact.html">Liên hệ</a></li>
+                        <li><button type="button" class="search-toggle" aria-label="Tìm kiếm">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            </button></li>
+                        <li class="primary-btn"><a href="tel:0393728287"><span>Liên hệ ngay</span></a></li>
+                    </ul>
+                </div>
             </nav>
-
-            <!-- Nút liên hệ -->
-            <div class="contact">
-                <a href="tel:0393728287"> Liên hệ ngay</a>
-            </div>
-        </div>
-
-        <!-- Ô tìm kiếm -->
-        <div class="search-box" id="searchBox" style="display:none;">
-            <form method="get" action="">
-                <input type="search" name="s" placeholder="Tìm kiếm...">
-                <button type="submit">🔍</button>
-            </form>
         </div>
     </header>
 
     <main>
-        <section class="ct-sec ss-pd-b">
-            <div class="bg">
-                <img src="https://happystation.vn/wp-content/uploads/2024/12/bg-contact-1.jpg" alt="">
+        <!-- <section class="header__banner">
+            <nav class="navbar"></nav>
+            <div class="header__container">
+                <h1 class="header__title">Liên hệ</h1>
+                <p class="header__breadcrumb">Homepage > Liên hệ</p>
             </div>
+        </section> -->
 
-            <div class="container">
-                <div class="ct-wrap">
-                    <div class="ct-row row">
-
-                        <div class="ct-content-block col col-6">
-                            <div class="content-main">
-                                <div class="mona-content">
-                                    <p>Bạn có nghĩ đến lúc cho <span style="color: #89a831;">Thân – Tâm – Trí</span>
-                                        được phục hồi để giúp mọi thứ tốt hơn !?</p>
-                                </div>
-                            </div>
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="contact__quote-container">
+                <p class="contact__quote">
+                    Bạn có nghĩ đến lúc cho <span>Thân - Tâm - Trí</span> được phục hồi để giúp mọi
+                    thứ tốt hơn !?
+                </p>
+                <button class="contact__get-tours-btn">Xem các tour</button>
+            </div>
+            <div class="contact__form-container">
+                <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+                <p class="contact__form-sub-content">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
+                <form>
+                    <div class="contact__form-group">
+                        <label>Họ và tên *</label>
+                        <input type="text" placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="contact__form-group">
+                        <label>Ngày đi (dự kiến)</label>
+                        <input type="date" placeholder="Chọn ngày đi dự kiến">
+                    </div>
+                    <div class="contact__form-row">
+                        <div class="contact__form-group">
+                            <label>Số điện thoại *</label>
+                            <input type="text" placeholder="Nhập số điện thoại">
                         </div>
-
-                        <div class="ct-form-block col col-6">
-                            <div class="ct-form">
-                                <div class="ct-form-heading titleAni">
-                                    <h2 class="title-sec title-pri">Liên Hệ Happy Station</h2>
-                                    <p class="txt">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
-                                </div>
-
-                                <form action="/#wpcf7-f5-p7-o1" method="post" class="wpcf7-form">
-                                    <div class="form-group row">
-                                        <div class="group col col">
-                                            <span class="label-ip imp">Họ và tên</span>
-                                            <div class="ip">
-                                                <input type="text" name="fullname-user" placeholder="Nhập họ và tên">
-                                            </div>
-                                        </div>
-
-                                        <div class="group col col-6">
-                                            <span class="label-ip">Email</span>
-                                            <div class="ip">
-                                                <input type="email" name="email-user" placeholder="Nhập email">
-                                            </div>
-                                        </div>
-
-                                        <div class="group col col-6">
-                                            <span class="label-ip imp">Số điện thoại</span>
-                                            <div class="ip">
-                                                <input type="tel" name="tel-user" placeholder="Nhập số điện thoại">
-                                            </div>
-                                        </div>
-
-                                        <div class="group col col">
-                                            <span class="label-ip">Nội dung</span>
-                                            <div class="ip">
-                                                <textarea name="content-user"
-                                                    placeholder="Nhập nội dung anh/chị cần hỗ trợ"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <button class="btn" type="submit"><span class="inner">GỬI THÔNG TIN LIÊN
-                                            HỆ</span></button>
-                                </form>
-                            </div>
+                        <div class="contact__form-group">
+                            <label>Email *</label>
+                            <input type="email" placeholder="Nhập email">
                         </div>
                     </div>
-                </div>
+                    <div class="contact__form-row">
+                        <div class="contact__form-group">
+                            <label>Số lượng người lớn</label>
+                            <input type="number" placeholder="Người lớn">
+                        </div>
+                        <div class="contact__form-group">
+                            <label>Trẻ em</label>
+                            <input type="number" placeholder="Trẻ em">
+                        </div>
+                    </div>
+                    <div class="contact__form-group">
+                        <label>Nội dung</label>
+                        <textarea rows="3" placeholder="Nhập nội dung cần liên hệ"></textarea>
+                    </div>
+                    <button type="submit" class="contact__form-btn">Nhận tư vấn</button>
+                </form>
             </div>
         </section>
+
+
     </main>
 
-    <!-- Footer -->
+
+
     <footer class="ft">
         <div class="container">
             <div class="ft-wrap">
 
                 <div class="ft-logo">
-                    <a href="">
-                        <img src="https://happystation.vn/wp-content/uploads/2025/04/z5977869934236_75dd2eeadbd293120bc6fddddd2bf1ab-1-1.png"
-                            alt="Logo">
+                    <a href="/pages/home-page.html">
+                        <img src="/images/logo.png" alt="Logo">
                     </a>
                 </div>
 
                 <div class="ft-menu">
-                    <ul class="menu">
-                        <li><a href="">Về chúng tôi</a></li>
-                        <li><a href="">Tour thiết kế sẵn</a></li>
-                        <li><a href="">Tour cá nhân hóa</a></li>
-                        <li><a href="">Dịch vụ</a></li>
-                        <li><a href="">Sản phẩm địa phương</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li><a href="">Tin tức</a></li>
+                    <ul>
+                        <li><a href="/pages/about-us.html">Về chúng tôi</a></li>
+                        <li><a href="/pages/tour.html">Tour thiết kế sẵn</a></li>
+                        <li><a href="/pages/tour.html">Tour cá nhân hóa</a></li>
+                        <li><a href="/pages/service-page.html">Dịch vụ</a></li>
+                        <li><a href="/pages/destinations.html">Sản phẩm địa phương</a></li>
+                        <li><a href="/pages/contact.html">Liên hệ</a></li>
+                        <li><a href="/pages/blog-page.html">Tin tức</a></li>
                     </ul>
                 </div>
 
@@ -158,7 +164,7 @@
                     <div class="ft-if-it">
                         <span class="t-text">ĐỊA CHỈ</span>
                         <div class="t-gr">
-                            <a href="https://maps.app.goo.gl/ivh5jk6rCZ7PTXJHA" target="_blank">
+                            <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank">
                                 Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh
                             </a>
                         </div>
@@ -180,12 +186,10 @@
                 <div class="ft-sc">
                     <div class="i-list">
                         <a href="https://www.facebook.com/" target="_blank">
-                            <img src="https://happystation.vn/wp-content/uploads/2025/01/ft-sc-1.png" alt="Facebook"
-                                width="28" height="29">
+                            <i class="fa-brands fa-facebook" width="28" height="29"></i>
                         </a>
                         <a href="https://www.instagram.com/" target="_blank">
-                            <img src="https://happystation.vn/wp-content/uploads/2025/01/ft-sc-2.png" alt="Instagram"
-                                width="28" height="29">
+                            <i class="fa-brands fa-instagram" width="28" height="29"></i>
                         </a>
                     </div>
                 </div>
@@ -202,6 +206,7 @@
         <div class="triangle"></div>
         <div class="triangle"></div>
     </div>
+    <script src="/js/js.js"></script>
 </body>
 
 </html>

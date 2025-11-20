@@ -869,7 +869,7 @@ section {
 ======================================== */
 .blog-home {
     padding: 3% 7%;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
 }
 
 .blog-list {
@@ -1430,38 +1430,6 @@ section {
 .tram-right-image:hover .tram-image {
     transform: scale(1.05);
 }
-
-/* ========================================
-   11. UTILITY CLASSES
-======================================== */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.col {
-    flex: 1;
-}
-
-.col-6 {
-    flex: 0 0 50%;
-}
-
-.col-5 {
-    flex: 0 0 41.6667%;
-}
-
-.col-7 {
-    flex: 0 0 58.3333%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 
 
 /* SERVICES INTRO SECTION */

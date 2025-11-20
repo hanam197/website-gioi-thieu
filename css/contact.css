@@ -1,0 +1,364 @@
+/* header
+.header__banner {
+    width: 100vw;
+    height: 60vh;
+    background-image: url("../images/tour-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.header__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.header__breadcrumb {
+    text-align: center;
+    font-weight: 700;
+} */
+
+
+
+
+
+
+/* ========================================
+   8. CONTACT SECTION
+======================================== */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 5% 7%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url("../images/tour-banner.png");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    min-height: auto;
+}
+
+.contact__quote-container {
+    width: 40%;
+    flex-shrink: 0;
+}
+
+.contact__quote {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.contact__quote span {
+    color: var(--secondary-color);
+}
+
+.contact__get-tours-btn {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.contact__get-tours-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.contact__form-container {
+    width: 45%;
+    flex-shrink: 0;
+    background-color: white;
+    padding: 2.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    color: var(--text-dark);
+}
+
+.contact__form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact__form-sub-content {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.contact__form-group {
+    margin-bottom: 1.2rem;
+}
+
+.contact__form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.contact__form-group input,
+.contact__form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact__form-group input:focus,
+.contact__form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(78, 95, 57, 0.1);
+}
+
+.contact__form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact__form-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact__form-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .contact {
+        padding: 4% 5%;
+        gap: 2rem;
+    }
+
+    .contact__quote-container {
+        width: 45%;
+    }
+
+    .contact__quote {
+        font-size: 2rem;
+    }
+
+    .contact__form-container {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .contact__form-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet: 781px - 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .contact {
+        flex-direction: column;
+        padding: 3rem 5%;
+        gap: 2.5rem;
+    }
+
+    .contact__quote-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact__quote {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact__get-tours-btn {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.95rem;
+    }
+
+    .contact__form-container {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .contact__form-title {
+        font-size: 1.5rem;
+    }
+
+    .contact__form-group {
+        margin-bottom: 1rem;
+    }
+
+    .contact__form-row {
+        gap: 0.8rem;
+    }
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        padding: 3rem 4%;
+        gap: 2.5rem;
+    }
+
+    .contact__quote-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact__quote {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact__get-tours-btn {
+        padding: 0.9rem 1.8rem;
+        font-size: 0.95rem;
+    }
+
+    .contact__form-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .contact__form-title {
+        font-size: 1.5rem;
+    }
+
+    .contact__form-group {
+        margin-bottom: 1rem;
+    }
+
+    .contact__form-row {
+        gap: 0.8rem;
+    }
+}
+
+/* Mobile: 480px - 767px */
+@media (max-width: 480px) {
+    .contact {
+        padding: 2.5rem 4%;
+        gap: 2rem;
+    }
+
+    .contact__quote {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .contact__get-tours-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    .contact__form-container {
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .contact__form-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .contact__form-sub-content {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .contact__form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .contact__form-group input,
+    .contact__form-group textarea {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+
+    .contact__form-row {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .contact__form-btn {
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small mobile: < 360px */
+@media (max-width: 360px) {
+    .contact {
+        padding: 2rem 3%;
+        gap: 1.5rem;
+    }
+
+    .contact__quote {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact__form-container {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .contact__form-title {
+        font-size: 1.1rem;
+    }
+
+    .contact__form-group input,
+    .contact__form-group textarea {
+        padding: 0.6rem;
+    }
+}
