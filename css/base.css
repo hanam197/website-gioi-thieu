@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
+    --primary-color: #8AA831;
+    --secondary-color: #F57C00;
+    --sub-color: #E0E0E0;
+    --default-border-radius: 12px;
 }
 
 h1, h2, h3 {
@@ -19,7 +23,7 @@ a {
 }
 
 .primary-btn {
-    background-color: #1E88E5;
+    background-color: var(--primary-color);
     border-radius: 50px;
     padding: 10px 15px;
     text-align: center;
@@ -31,13 +35,234 @@ a {
     cursor: pointer;
 }
 
-
-
 .primary-btn:hover {
     background-color: #F57C00;
 }
 
-.current {
-    background-color: #1E88E5;
+.current-pagination-item {
+    background-color: var(--primary-color);
     color: white;
+}
+
+/* ================ contact ================ */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 7%;
+    background-image: url("../images/banner-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact__quote-container {
+    width: 40%;
+}
+
+.contact__quote {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.contact .contact__form-container {
+    width: 40%;
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+}
+
+.contact__form-title, 
+.contact__form-sub-content, 
+.contact__name-input, 
+.contact__depacture-date-input, 
+.contact__phone-input, 
+.contact__email-input,  
+.contact__adult-number-input, 
+.contact__children-number-input, 
+.contact__content-input, 
+.contact__content-input, 
+.contact__get-tours-btn {
+    margin-bottom: 15px;
+}
+
+.contact__form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact__form-container form input, 
+.contact__form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.contact__form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact__contact-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__guest-number-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__contact-input div,
+.contact__guest-number-input div {
+    width: 48%;
+}
+
+.contact__form-btn {
+    width: 100%;
+}
+
+/* ========= contact form popup =========== */
+.contact__popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 450px;
+    height: 250px;
+    text-align: center;
+}
+
+.contact__popup-content span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact__popup-content i {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.contact__popup-content button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contact__popup-content button:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.error-msg {
+    font-size: 0.9rem;
+    color: red;
+    display: none;
+}
+
+/* ========= RESPONSIVE ========== */
+/* ---------- TABLET ---------- */
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding: 5%, 3%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact__quote-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact .contact__quote {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .contact .contact__form-container {
+        width: 100%;
+    }
+
+    .contact .contact__get-tours-btn {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 3%;
+        height: inherit;
+    }
+
+    .contact__quote-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contact .contact__form-container {
+        width: 100%;
+    }
+
+    .contact .contact__form-container .contact__contact-input {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contact .contact__form-container .contact__contact-input .contact__phone-input,
+    .contact .contact__form-container .contact__contact-input .contact__email-input {
+        width: 100%;
+    }
+
+    .contact .contact__quote {
+        font-size: 20px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .contact .contact__get-tours-btn {
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
 }

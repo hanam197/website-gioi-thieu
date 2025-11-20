@@ -1,14 +1,107 @@
+// Banner Slider Auto-rotation with Hover Pause
+(function() {
+  let bannerSlider = null;
+  let slides = null;
+  let currentSlide = 0;
+  let autoPlayInterval = null;
+  const autoPlayDelay = 5000; // 5 seconds
+
+  function initBannerSlider() {
+    bannerSlider = document.querySelector('.banner-slider');
+    if (!bannerSlider) return;
+
+    slides = bannerSlider.querySelectorAll('.slide');
+    if (slides.length === 0) return;
+
+    // Set first slide as active
+    slides[0].classList.add('active');
+
+    // Start auto-play
+    startAutoPlay();
+
+    // Pause on hover, resume on mouse leave
+    bannerSlider.addEventListener('mouseenter', stopAutoPlay);
+    bannerSlider.addEventListener('mouseleave', startAutoPlay);
+  }
+
+  function showSlide(index) {
+    // Remove active class from all slides
+    slides.forEach(slide => slide.classList.remove('active'));
+    
+    // Ensure index is within bounds
+    if (index >= slides.length) {
+      currentSlide = 0;
+    } else if (index < 0) {
+      currentSlide = slides.length - 1;
+    } else {
+      currentSlide = index;
+    }
+
+    // Add active class to current slide
+    slides[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function startAutoPlay() {
+    if (autoPlayInterval) return; // Don't start if already running
+    
+    autoPlayInterval = setInterval(nextSlide, autoPlayDelay);
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initBannerSlider);
+})();
+
+// Banner Overlay & Header Background Management
+(function() {
+  const body = document.body;
+  const bannerHome = document.querySelector('.banner-home');
+  
+  if (!bannerHome) return;
+
+  const bannerHeight = bannerHome.offsetHeight;
+
+  function updateBannerState() {
+    if (window.scrollY > bannerHeight * 0.5) {
+      // Scroll past banner - add dark overlay
+      body.classList.add('banner-scrolled');
+    } else {
+      // Still in banner area - light overlay
+      body.classList.remove('banner-scrolled');
+    }
+  }
+
+  // Update on scroll
+  window.addEventListener('scroll', updateBannerState, { passive: true });
+  
+  // Initial check
+  updateBannerState();
+})();
+
+
 // Handle both header scroll state and mobile menu
 (function () {
   var header = null;
   var nav = null;
   var menuButton = null;
-  var scrollThreshold = 30;
+  var scrollThreshold = 80; // Trigger when scrolled down at least 80px
 
   function onScroll() {
     if (!header) return;
-    if (window.scrollY > scrollThreshold) header.classList.add('scrolled');
-    else header.classList.remove('scrolled');
+    if (window.scrollY > scrollThreshold) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
   }
 
   function toggleMenu() {
@@ -54,6 +147,11 @@
     nav = document.querySelector('.nav-menu');
     menuButton = document.querySelector('.nav-toggle');
 
+    if (!header) {
+      console.warn('Header element not found!');
+      return;
+    }
+
     // Setup event listeners
     onScroll(); // Initial scroll check
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -69,7 +167,7 @@
         nav.setAttribute('aria-expanded', 'false');
       }
     });
-  });
+
     // Initialize back to top functionality
     const backToTop = document.querySelector('.back-to-top');
     if (backToTop) {
@@ -92,4 +190,6 @@
                 behavior: 'smooth'
             });
         });
-    }});
+    }
+  });
+})();
