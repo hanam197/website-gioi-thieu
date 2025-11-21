@@ -29,7 +29,7 @@
 
 /* show a subtle bottom border when header is overlaying the hero (no scroll) */
 .header:not(.scrolled) {
-  border-bottom-color: rgba(255,255,255,0.20);
+  border-bottom-color: rgba(255, 255, 255, 0.20);
 }
 
 /* Adjust page padding based on header height */
@@ -38,7 +38,8 @@ body {
 }
 
 .container {
-  width: 90%; /* use 90% of viewport width */
+  width: 90%;
+  /* use 90% of viewport width */
   max-width: none;
   margin: 10px auto;
   padding: 0 auto;
@@ -48,7 +49,7 @@ body {
 /* ========== NAV DÙNG GRID (LEFT - CENTER - RIGHT) ========== */
 .nav {
   display: grid;
-  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr);
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
   gap: 20px;
   height: 100%;
@@ -93,7 +94,8 @@ body {
   font-size: 16px;
   letter-spacing: 0.2px;
   transition: color .18s, transform .12s;
-  position: relative; /* for underline animation */
+  position: relative;
+  /* for underline animation */
 }
 
 .nav-left a:hover,
@@ -116,6 +118,7 @@ body {
   transition: transform .18s ease, opacity .18s ease;
   opacity: 0;
 }
+
 .nav-left a:hover::after,
 .nav-right a:not(.contact a):hover::after,
 .nav-left a:focus::after,
@@ -129,6 +132,7 @@ body {
 .header:not(.scrolled) .nav-right a::after {
   background: #89a831
 }
+
 .header.scrolled .nav-left a::after,
 .header.scrolled .nav-right a::after {
   background: var(--color-primary);
@@ -143,13 +147,13 @@ body {
 }
 
 /* rotate caret when submenu is expanded (mobile or desktop aria state) */
-.has-submenu[aria-expanded="true"] > a .caret {
+.has-submenu[aria-expanded="true"]>a .caret {
   transform: rotate(180deg);
 }
 
 /* rotate caret on hover and when focused for keyboard users */
-.has-submenu:hover > a .caret,
-.has-submenu:focus-within > a .caret {
+.has-submenu:hover>a .caret,
+.has-submenu:focus-within>a .caret {
   transform: rotate(180deg);
 }
 
@@ -192,7 +196,7 @@ body {
   display: block;
   opacity: 1;
   transform: translateY(0);
-  
+
 }
 
 .submenu li {
@@ -211,18 +215,23 @@ body {
 }
 
 /* ========== ICON SEARCH & CONTACT ========== */
-.search-toggle{
+.search-toggle {
   background: transparent;
   border: none;
   padding: 0;
   margin: 0;
   cursor: pointer;
-  color: inherit; /* inherit color from nav state */
+  color: inherit;
+  /* inherit color from nav state */
 }
 
-.search-toggle:focus{ outline: 2px solid rgba(137,168,49,0.18); outline-offset: 2px; border-radius: 50%; }
+.search-toggle:focus {
+  outline: 2px solid rgba(137, 168, 49, 0.18);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
 
-.search-toggle i{
+.search-toggle i {
   font-size: 18px;
   display: inline-block;
   width: 40px;
@@ -235,12 +244,12 @@ body {
   transition: background .15s, color .15s, transform .12s;
 }
 
-.search-toggle:hover i{
+.search-toggle:hover i {
   background: #89a831;
   color: #fff;
 }
 
-.contact a {
+/* .contact a {
   display: inline-block;
   padding: 10px 16px;
   border-radius: 24px;
@@ -254,7 +263,7 @@ body {
 .contact a:hover {
   background: #89a831;
   color: #fff;
-}
+} */
 
 
 
@@ -371,7 +380,8 @@ body {
 
   .contact a::before {
     font-family: "Font Awesome 6 Free";
-    content: "\f095";  /* Phone icon */
+    content: "\f095";
+    /* Phone icon */
     font-weight: 900;
     font-size: 18px;
   }
@@ -404,8 +414,7 @@ body {
     transform: translateX(0);
   }
 
-  .nav-left ul
-  .nav-right ul {
+  .nav-left ul .nav-right ul {
     flex-direction: column;
     gap: 16px;
   }

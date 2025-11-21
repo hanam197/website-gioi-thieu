@@ -21,7 +21,9 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -135,6 +137,10 @@ a {
     display: block;
 }
 
+.contact__quote span {
+    color: var(--secondary-color);
+}
+
 .contact .contact__form-container {
     width: 40%;
     background-color: white;
@@ -143,16 +149,35 @@ a {
     border-radius: 20px;
 }
 
-.contact__form-title, 
-.contact__form-sub-content, 
-.contact__name-input, 
-.contact__depacture-date-input, 
-.contact__phone-input, 
-.contact__email-input,  
-.contact__adult-number-input, 
-.contact__children-number-input, 
-.contact__content-input, 
-.contact__content-input, 
+.contact__get-tours-btn {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.contact__get-tours-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.contact__form-title,
+.contact__form-sub-content,
+.contact__name-input,
+.contact__depacture-date-input,
+.contact__phone-input,
+.contact__email-input,
+.contact__adult-number-input,
+.contact__children-number-input,
+.contact__content-input,
+.contact__content-input,
 .contact__get-tours-btn {
     margin-bottom: 15px;
 }
@@ -163,7 +188,7 @@ a {
     font-weight: bold;
 }
 
-.contact__form-container form input, 
+.contact__form-container form input,
 .contact__form-container form textarea {
     width: 100%;
     padding: 10px;
@@ -196,6 +221,21 @@ a {
 
 .contact__form-btn {
     width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact__form-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
 }
 
 /* ========= contact form popup =========== */
@@ -265,7 +305,7 @@ a {
         justify-content: center;
     }
 
-    .contact__quote-container{
+    .contact__quote-container {
         width: 100%;
         display: flex;
         align-items: center;
@@ -276,7 +316,7 @@ a {
         text-align: center;
         margin: 0;
     }
-    
+
     .contact .contact__form-container {
         width: 100%;
     }
@@ -297,13 +337,13 @@ a {
         height: inherit;
     }
 
-    .contact__quote-container{
+    .contact__quote-container {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    
+
     .contact .contact__form-container {
         width: 100%;
     }

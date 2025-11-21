@@ -1,3 +1,13 @@
+document.getElementById('closePopup').addEventListener('click', () => {
+    document.getElementById('successPopup').style.display = 'none';
+});
+
+document.getElementById('successPopup').addEventListener('click', event => {
+    if (event.target === event.currentTarget) {
+        event.currentTarget.style.display = 'none';
+    }
+});
+
 document.getElementById('submitBtn').addEventListener('click', handleSubmit);
 
 const emailSubmitBtn = document.getElementById('emailSubmitBtn');
@@ -8,7 +18,6 @@ if (emailSubmitBtn) {
 // MAIN SUBMIT HANDLER
 function handleSubmit(event) {
     event.preventDefault();
-
     resetErrors();
 
     const formData = getFormData();
@@ -17,32 +26,33 @@ function handleSubmit(event) {
     if (!isValid) return;
 
     showPopup();
-    document.getElementById('successPopup').style.flexDirection = 'column';
     document.getElementById('contactForm').reset();
 }
 
 // EMAIL SUBMIT ONLY HANDLER
 function handleEmailQuick(event) {
     event.preventDefault();
-
     resetErrors();
 
-    const email = document.getElementById('emailQuick').value.trim();
+    const emailQuickInput = document.getElementById('emailQuick');
+    if (!emailQuickInput) return; // Kiểm tra element tồn tại
+
+    const email = emailQuickInput.value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (email === "") {
-        valid = showError('emailQuick', "Vui lòng nhập email.");
+        showError('emailQuick', "Vui lòng nhập email.");
         return;
     } else if (!emailPattern.test(email)) {
-        valid = showError('emailQuick', "Email không hợp lệ.");
+        showError('emailQuick', "Email không hợp lệ.");
         return;
     }
-    
-    showPopup();
 
-    document.getElementById('contactForm').reset();
+    showPopup();
+    emailQuickInput.value = ''; // Reset chỉ input email
 }
 
-// GET ALL VALUES
+// Các hàm còn lại giữ nguyên...
 function getFormData() {
     return {
         fullName: document.getElementById('fullName').value.trim(),
@@ -54,7 +64,6 @@ function getFormData() {
     };
 }
 
-// VALIDATION LOGIC
 function validateForm(data) {
     let valid = true;
 
@@ -86,28 +95,25 @@ function validateForm(data) {
         valid = showError('children', "Số lượng khách không hợp lệ.");
     } else if (numOfAdults > 0 && numOfChildren < 0) {
         valid = showError('children', "Số lượng khách không hợp lệ.");
-    } else if (numOfChildren > 0 && numOfAdults < 0) {
-        
     }
 
     return valid;
 }
 
-// SHOW ERROR
 function showError(id, message) {
     const input = document.getElementById(id);
-    const msg = input.parentElement.querySelector('.error-msg');
+    if (!input) return false;
 
+    const msg = input.parentElement.querySelector('.error-msg');
     if (!msg) return false;
 
     msg.style.display = "block";
     msg.textContent = message;
     input.style.borderColor = "red";
 
-    return false; 
+    return false;
 }
 
-// RESET ERRORS
 function resetErrors() {
     document.querySelectorAll(".error-msg").forEach(e => {
         e.style.display = "none";
@@ -119,17 +125,6 @@ function resetErrors() {
     });
 }
 
-// POPUP HANDLERS
 function showPopup() {
     document.getElementById('successPopup').style.display = 'flex';
 }
-
-document.getElementById('closePopup').addEventListener('click', () => {
-    document.getElementById('successPopup').style.display = 'none';
-});
-
-document.getElementById('successPopup').addEventListener('click', event => {
-    if (event.target === event.currentTarget) {
-        event.currentTarget.style.display = 'none';
-    }
-});

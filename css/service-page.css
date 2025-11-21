@@ -1,84 +1,132 @@
+:root {
+    --primary-color: #8aa831;
+    --secondary-color: #f57c00;
+    --sub-color: #e0e0e0;
+    --text-dark: #4e5f39;
+    --text-light: #666;
+    --default-border-radius: 12px;
+    --section-spacing: 3%;
+    --overlay-left: 0.2;
+    --overlay-mid: 0.1;
+    --overlay-right: 0;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'SVN-Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SVN-Poppins", sans-serif;
 }
 
 .service-page-header {
-text-align: center;
-background-image:url('../images/banner-3.jpg');
-background-size:cover;
-height: 400px;
-display:flex;
-flex-direction: column;
-justify-content: center;
-color:white;
+  text-align: center;
+  background-image: url("../images/banner-3.jpg");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
 .link {
-    text-decoration: none;
-    color:white;
+  text-decoration: none;
+  color: white;
 }
 
 .service-card {
-    display:grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-    padding: 60px 200px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 60px 200px;
 }
 
 .content-service-card-name {
-    margin-top: 5px;
-    font-weight: bold;
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 .content-service-card-title {
-    margin-top: 5px;
-    color:#89a831;
-    font-weight: bold;
-    font-size: 20px;
+  margin-top: 5px;
+  color: #89a831;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .content-service-card-description {
-    color: #848383;
-    margin-top: 10px;
+  color: #848383;
+  margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
 .content-service-card-schedule {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .button-call {
-color:#ffffff; /*màu chữ*/
-background-color: #8AA831;
-    /*màu nút*/
-    text-decoration: none;
-    /*bỏ underline*/
-    border-radius: 50px;
-    text-transform: uppercase;
-    margin-top: 16px;
-    display: block;
-    width: fit-content;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem;
-    line-height: 1;
+  color: #ffffff; /*màu chữ*/
+  background-color: #8aa831;
+  /*màu nút*/
+  text-decoration: none;
+  /*bỏ underline*/
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  display: block;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  line-height: 1;
 }
 
-.button-call:hover{
-  background-color: #F57C00;
+.button-call:hover {
+  background-color: #f57c00;
 }
 
 .content-service-card-item {
-    background-color:  #f2fae9;
-    border-radius: 12px;
-    overflow:hidden;
-    padding-bottom: 10px;
+  background-color: #f2fae9;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .content-service-card-item-info {
-    padding: 12px 20px;
+  padding: 12px 20px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .service-card {
+    padding: 60px 20px;
+    grid-template-columns: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .service-card {
+    padding: 60px 20px;
+    grid-template-columns: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .service-card {
+    padding: 60px 40px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .service-card {
+    padding: 60px 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+

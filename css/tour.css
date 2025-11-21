@@ -10,6 +10,13 @@
     margin-bottom: 50px;
 }
 
+.tours__title {
+    /* container for title elements; prevents empty ruleset */
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
 .tours__title .line {
     width: 100%;
     height: 1px;
@@ -48,7 +55,8 @@
 .tours__cards .card-list {
     width: 100%;
     display: flex;
-    flex-wrap: wrap; /* move to a new row if they don’t fit on the same row */
+    flex-wrap: wrap;
+    /* move to a new row if they don’t fit on the same row */
     gap: 40px 20px;
     align-items: center;
     margin-bottom: 50px;
@@ -61,6 +69,7 @@
     flex-direction: column;
     justify-content: flex-start;
     border-radius: var(--default-border-radius);
+    transition: all 0.3s ease;
 }
 
 .tours__card-header {
@@ -85,9 +94,9 @@
     padding: 10px 20px;
 }
 
-.tours__tour-name, 
-.tours__tour-time, 
-.tours__tour-content, 
+.tours__tour-name,
+.tours__tour-time,
+.tours__tour-content,
 .tours__tour-price {
     margin-bottom: 10px;
 }
@@ -133,7 +142,7 @@
     color: white;
 }
 
-.tours__pagination-item > span {
+.tours__pagination-item>span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -198,8 +207,8 @@
 }
 
 .banner__signature-name {
-    text-transform: uppercase; 
-    color: var(--secondary-color); 
+    text-transform: uppercase;
+    color: var(--secondary-color);
     font-weight: bold;
     font-size: 18px;
 }
@@ -281,6 +290,7 @@
 /* ========== responsive ============ */
 /* ---------- TABLET ---------- */
 @media screen and (max-width: 1024px) {
+
     /* main title */
     .header__banner {
         height: 30vh;
@@ -335,6 +345,7 @@
 
 /* ---------- MOBILE ---------- */
 @media screen and (max-width: 768px) {
+
     /* main title */
     .header__banner {
         height: 30vh;
@@ -382,7 +393,7 @@
     }
 
     .tours__card {
-        width: 100%; 
+        width: 100%;
     }
 
     .tours__card-body {

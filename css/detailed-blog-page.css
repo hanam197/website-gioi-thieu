@@ -1,45 +1,86 @@
-
 h1,
 h2,
 h3 {
-   font-family: "SVN-Poppins", sans-serif;
+  font-family: "SVN-Poppins", sans-serif;
 }
 
 .detailed-blog-image {
-    height: 400px;
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    }
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
 
-article {
-    padding: 30px 25%;
+.detailed-blog-page {
+  padding: 30px 25%;
 }
 
 .detailed-blog-title {
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    line-height: 1.5;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  line-height: 1.5;
 }
 
 .detailed-blog-content {
-    line-height: 2;
+  line-height: 2;
 }
 
 .detailed-blog-sub-title {
-    font-size: 26px;
-    margin-top: 40px;
-    margin-bottom: 16px;
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 16px;
 }
 
 .detailed-blog-highlight {
-    color: #4e5f39;
-    border-left: 6px solid #89a831;
-    line-height: 1.8;
-    padding-left: 17px;
-    word-spacing: 3px;
-    padding-top: 4px;
+  color: #4e5f39;
+  border-left: 6px solid #89a831;
+  line-height: 1.8;
+  padding-left: 17px;
+  word-spacing: 3px;
+  padding-top: 4px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .detailed-blog-page {
+    padding: 30px;
+  }
+
+  .detailed-blog-image {
+    height: 200px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .detailed-blog-page {
+    padding: 30px;
+  }
+
+  .detailed-blog-image {
+    height: 200px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .detailed-blog-page {
+    padding: 80px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .detailed-blog-page {
+    padding: 120px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
