@@ -64,6 +64,7 @@
             </nav>
         </div>
     </header>
+
     <!-- Hero Section -->
     <section class="hero">
         <img class="hero__image" src="../images/about-us/hero.jpg" alt="Hero Background">
@@ -176,7 +177,7 @@
     </section>
 
     <!-- Services Intro Section -->
-    <section class="services-intro">
+    <div class="services-intro">
         <img class="services-intro__image" src="../images/about-us/scence/5.jpg" alt="Services Background">
         <div class="services-intro__content">
             <div class="services-intro__quote-container">
@@ -198,15 +199,13 @@
                     Bạn. Hãy sạc thêm năng lượng <span style="color: var(--secondary-color);">bình an và hạnh
                         phúc</span> cho con đường phía trước
                 </p>
-                <a href="./service-page.html">
-                    <button class="services-intro__services-btn">Tất Cả Dịch Vụ</button>
-                </a>
+                <a href="./service-page.html" class="services-intro__services-btn">Tất Cả Dịch Vụ</a>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Image Carousel -->
-    <section class="image-carousel">
+    <div class="image-carousel">
         <div class="image-carousel__wrapper">
             <button class="image-carousel__btn image-carousel__btn--prev" aria-label="Previous slide">
                 <i class="fa-solid fa-angle-left"></i>
@@ -230,10 +229,10 @@
                 <i class="fa-solid fa-angle-right"></i>
             </button>
         </div>
-    </section>
+    </div>
 
     <!-- Gallery Section -->
-    <section class="gallery">
+    <div class="gallery">
         <!-- Row 1 -->
         <div class="gallery__flow gallery__flow-row-1">
             <div class="gallery__item">
@@ -410,16 +409,15 @@
                 <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Contact Section -->
     <section class="contact">
         <div class="contact__quote-container">
             <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
                 để giúp mọi thứ tốt hơn !?</span>
-            <button class="contact__get-tours-btn primary-btn">
-                <a href="../pages/tour.html" style="width: 100%;">Xem các tour</a>
-            </button>
+            <a class="contact__get-tours-btn primary-btn" href="../pages/tour.html">Xem các tour</a>
+
         </div>
         <div class="contact__form-container">
             <form id="contactForm" action="">
