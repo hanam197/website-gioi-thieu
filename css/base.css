@@ -20,7 +20,9 @@ body {
     font-size: 1rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -134,6 +136,10 @@ a {
     display: block;
 }
 
+.contact__quote span {
+    color: var(--secondary-color);
+}
+
 .contact .contact__form-container {
     width: 40%;
     background-color: white;
@@ -142,16 +148,16 @@ a {
     border-radius: 20px;
 }
 
-.contact__form-title, 
-.contact__form-sub-content, 
-.contact__name-input, 
-.contact__depacture-date-input, 
-.contact__phone-input, 
-.contact__email-input,  
-.contact__adult-number-input, 
-.contact__children-number-input, 
-.contact__content-input, 
-.contact__content-input, 
+.contact__form-title,
+.contact__form-sub-content,
+.contact__name-input,
+.contact__depacture-date-input,
+.contact__phone-input,
+.contact__email-input,
+.contact__adult-number-input,
+.contact__children-number-input,
+.contact__content-input,
+.contact__content-input,
 .contact__get-tours-btn {
     margin-bottom: 15px;
 }
@@ -162,7 +168,7 @@ a {
     font-weight: bold;
 }
 
-.contact__form-container form input, 
+.contact__form-container form input,
 .contact__form-container form textarea {
     width: 100%;
     padding: 10px;
@@ -264,7 +270,7 @@ a {
         justify-content: center;
     }
 
-    .contact__quote-container{
+    .contact__quote-container {
         width: 100%;
         display: flex;
         align-items: center;
@@ -275,7 +281,7 @@ a {
         text-align: center;
         margin: 0;
     }
-    
+
     .contact .contact__form-container {
         width: 100%;
     }
@@ -296,13 +302,13 @@ a {
         height: inherit;
     }
 
-    .contact__quote-container{
+    .contact__quote-container {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    
+
     .contact .contact__form-container {
         width: 100%;
     }
