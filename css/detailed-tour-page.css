@@ -221,6 +221,18 @@
     margin-bottom: 30px;
 }
 
+.tour-price-info__table th,
+.tour-price-info__table td,
+.tour-services-included__table th,
+.tour-services-included__table td,
+.tour-notice__notice-table th,
+.tour-notice__notice-table td,
+.tour-notice__prepare-table th,
+.tour-notice__prepare-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
 .tour-price-info__table tr,
 .tour-services-included__table tr,
 .tour-notice__notice-table tr,
