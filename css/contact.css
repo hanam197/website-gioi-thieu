@@ -72,7 +72,7 @@
 .contact__get-tours-btn {
     padding: 1rem 2rem;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -84,7 +84,7 @@
 }
 
 .contact__get-tours-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -150,7 +150,7 @@
     width: 100%;
     padding: 1rem;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -161,7 +161,7 @@
 }
 
 .contact__form-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transform: translateY(-2px);
 }
 
