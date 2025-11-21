@@ -154,6 +154,7 @@ body {
 .content-description {
   line-height: 1.5;
   margin-bottom: 21px;
+  margin-top: 21px;
   color: #848383;
 }
 
@@ -228,6 +229,11 @@ body {
   /* ẩn nội dung bị tràn ra ngoài vùng hiển thị */
 }
 
+.content-card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 .content-wrap {
   display: flex;
   flex-direction: row;
@@ -261,7 +267,6 @@ body {
 .blog-container-2 .content-title {
   margin-bottom: 40px;
 }
-
 
 /* Header tour */
 .tours__title-container {
@@ -299,7 +304,6 @@ body {
   background-color: var(--text-light);
 }
 
-
 .tours__category {
   color: var(--secondary-color);
 }
@@ -307,9 +311,6 @@ body {
 .tours__title-name {
   color: var(--primary-color);
 }
-
-
-
 
 /* ================ contact ================ */
 .contact {
@@ -558,7 +559,7 @@ body {
   }
 
   .content-card-item {
-    width: calc((100% - 30px)/2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
