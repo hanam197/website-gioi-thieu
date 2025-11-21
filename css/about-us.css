@@ -3,21 +3,6 @@
     --section-spacing: 3%;
 }
 
-@font-face {
-    font-family: 'SVN-Poppins';
-    src: local('Poppins'), local('Arial');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-family: 'SVN-Poppins', 'Poppins', Arial, sans-serif;
-    color: var(--text-dark);
-    line-height: 1.6;
-    background-color: white;
-    font-size: 1rem;
-}
-
 /* HERO SECTION */
 .hero {
     background-size: cover;
@@ -671,11 +656,6 @@ body {
     object-fit: cover;
     border-radius: var(--default-border-radius);
 }
-
-/* CONTACT SECTION */
-
-
-
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {

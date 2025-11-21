@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tour thiết kế sẵn - Tour dài ngày</title>
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/tour.css" />
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/about-us.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="icon" type="image/png" href="/images/logo.png">
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-    </style>
-    <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <!-- Font Awesome for caret icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav" aria-label="Main navigation">
-          <!-- Mobile menu button -->
-          <button
-            class="nav-toggle"
-            aria-controls="nav-menu"
-            aria-expanded="false"
-            type="button"
-          >
-            <span class="nav-toggle-icon"></span>
-            <span class="nav-toggle-label">Menu</span>
-          </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour thiết kế sẵn - Tour dài ngày</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/tour.css" />
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/about-us.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+  </style>
+  <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Font Awesome for caret icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <!-- Mobile menu button -->
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
+          <span class="nav-toggle-icon"></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
 
           <!-- Menu trái -->
           <div class="nav-left nav-menu" id="nav-menu">
-            <div class="mobile-menu-header">
-              <img src="/images/logo.png" alt="Happy Station - Trạm hạnh phúc">
-            </div>
             <ul>
               <li><a href="/pages/about-us.html">Giới thiệu</a></li>
               <li class="has-submenu">
@@ -56,37 +50,15 @@
               </li>
               <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
               <li><a href="/pages/service-page.html">Các dịch vụ</a></li>
-              <li class="mobile-only"><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
-              <li class="mobile-only"><a href="/pages/contact.html">Liên hệ</a></li>
             </ul>
-            <div class="mobile-menu-footer">
-              <a href="tel:0393728287" class="mobile-contact-btn">
-                <i class="fa-solid fa-phone"></i>
-                <span>Liên hệ ngay</span>
-              </a>
-              <div class="ft-sc">
-                <div class="i-list">
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fa-brands fa-facebook" width="28" height="29"></i>
-                  </a>
-                  <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fa-brands fa-instagram" width="28" height="29"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <!-- Logo ở giữa -->
-          <div class="logo">
-            <a href="/pages/home-page.html">
-              <img
-                src="/images/logo.png"
-                alt="Happy Station - Trạm hạnh phúc"
-                width="150"
-              />
-            </a>
-          </div>
+        <!-- Logo ở giữa -->
+        <div class="logo">
+          <a href="/pages/home-page.html">
+            <img src="/images/logo.png" alt="Happy Station - Trạm hạnh phúc" width="150" />
+          </a>
+        </div>
 
           <!-- Menu phải -->
           <div class="nav-right">
@@ -98,19 +70,16 @@
                 <a href="/pages/contact.html">Liên hệ</a>
               </li>
               <li>
-                <div class="search-container">
-                  <input 
-                    type="text" 
-                    class="search-input" 
-                    placeholder="Tìm kiếm..." 
-                    id="searchInput"
-                    autocomplete="off"
-                  >
-                  <button type="button" class="search-toggle" aria-label="Tìm kiếm">
-                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                  </button>
-                  <div class="search-results" id="searchResults"></div>
-                </div>
+                <button
+                  type="button"
+                  class="search-toggle"
+                  aria-label="Tìm kiếm"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    aria-hidden="true"
+                  ></i>
+                </button>
               </li>
               <li class="primary-btn">
                 <a href="tel:0393728287"><span>Liên hệ ngay</span></a>
@@ -121,563 +90,303 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <img
-          class="hero__image"
-          src="../images/tour-banner.png"
-          alt="Hero Background"
-        />
-        <div class="hero__content">
-          <h1 class="hero__title">Tour dài ngày</h1>
-          <p class="hero__breadcrumb">
-            <a href="./home-page.html">Trang chủ</a>
-            > 
-            <a href="./tour.html">Tour thiết kế sẵn</a>
-            > Tour dài ngày
+  <main>
+    <section class="hero">
+      <img class="hero__image" src="../images/tour-banner.png" alt="Hero Background" />
+      <div class="hero__content">
+        <h1 class="hero__title">Tour dài ngày</h1>
+        <p class="hero__breadcrumb">
+          <a href="./home-page.html">Trang chủ</a>
+          >
+          <a href="./tour.html">Tour thiết kế sẵn</a>
+          > Tour dài ngày
+        </p>
+      </div>
+    </section>
+
+    <!-- tours -->
+    <section class="tours">
+      <!-- popular tours -->
+      <div class="tours__title-container">
+        <div class="tours__title">
+          <h4 class="tours__category" style="text-transform: uppercase">
+            tour dài ngày
+          </h4>
+          <div class="line"></div>
+          <h2 class="tours__title-name" style="text-transform: uppercase">
+            Hành trình thú vị
+          </h2>
+        </div>
+      </div>
+
+      <div class="tours__list-container">
+        <div class="tours__cards page active" data-page="1">
+          <div class="card-list"></div>
+        </div>
+
+        <div class="tours__cards page" data-page="2">
+          <div class="card-list"></div>
+        </div>
+
+        <div class="tours__cards page" data-page="3">
+          <div class="card-list"></div>
+        </div>
+
+        <ul class="tours__pagination"></ul>
+      </div>
+    </section>
+
+    <!-- Services Intro Section -->
+    <div class="services-intro">
+      <img class="services-intro__image" src="../images/about-us/scence/5.jpg" alt="Services Background">
+      <div class="services-intro__content">
+        <div class="services-intro__quote-container">
+          <p class="services-intro__quote">
+            Hành trình <span style="color: var(--secondary-color);">chữa lành</span>: Con đường dẫn đến sức khỏe
+            toàn diện của bạn
           </p>
-        </div>
-      </section>
-
-      <!-- tours -->
-      <section class="tours">
-        <!-- popular tours -->
-        <div class="tours__title-container">
-          <div class="tours__title">
-            <h4 class="tours__category" style="text-transform: uppercase">
-              tour dài ngày
-            </h4>
-            <div class="line"></div>
-            <h2 class="tours__title-name" style="text-transform: uppercase">
-              Hành trình thú vị
-            </h2>
+          <div class="services-intro__signature-container">
+            <span class="services-intro__signature-name">Happy Station</span>
           </div>
         </div>
-
-        <div class="tours__list-container">
-          <div class="tours__cards page active" data-page="1">
-            <div class="card-list"></div>
-          </div>
-
-          <div class="tours__cards page" data-page="2">
-            <div class="card-list"></div>
-          </div>
-
-          <div class="tours__cards page" data-page="3">
-            <div class="card-list"></div>
-          </div>
-
-          <ul class="tours__pagination"></ul>
+        <div class="services-intro__intro-container">
+          <span class="services-intro__title">Các Dịch Vụ</span>
+          <p class="services-intro__intro">
+            Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề tài chính có đang khiến bạn trở nên
+            căng thẳng.. Bạn có nghĩ đến lúc cho <span style="color: var(--secondary-color);">thân - tâm -
+              trí</span> được phục hồi để giúp mọi thứ tốt hơn !? Chúng tôi sẽ cá nhân hóa <span
+              style="color: var(--secondary-color);">lộ trình theo tình trạng</span> sức khỏe và tinh thần của
+            Bạn. Hãy sạc thêm năng lượng <span style="color: var(--secondary-color);">bình an và hạnh
+              phúc</span> cho con đường phía trước
+          </p>
+          <a href="./service-page.html" class="services-intro__services-btn">Tất Cả Dịch Vụ</a>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- Services Intro Section -->
-      <section class="services-intro">
-        <img
-          class="services-intro__image"
-          src="../images/about-us/scence/5.jpg"
-          alt="Services Background"
-        />
-        <div class="services-intro__content">
-          <div class="services-intro__quote-container">
-            <p class="services-intro__quote">
-              Hành trình
-              <span style="color: var(--secondary-color)">chữa lành</span>: Con
-              đường dẫn đến sức khỏe toàn diện của bạn
-            </p>
-            <div class="services-intro__signature-container">
-              <span class="services-intro__signature-name">Happy Station</span>
+    <!-- Image Carousel -->
+    <div class="image-carousel">
+      <div class="image-carousel__wrapper">
+        <button class="image-carousel__btn image-carousel__btn--prev" aria-label="Previous slide">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <div class="image-carousel__container">
+          <div class="image-carousel__slides">
+            <div class="image-carousel__slide active">
+              <img class="image-carousel__slide-image" src="../images/about-us/carousel/1.avif" alt="Slide 1">
+            </div>
+            <div class="image-carousel__slide">
+              <img class="image-carousel__slide-image" src="../images/about-us/carousel/2.jpg" alt="Slide 2">
+            </div>
+            <div class="image-carousel__slide">
+              <img class="image-carousel__slide-image" src="../images/about-us/carousel/3.jpg" alt="Slide 3">
             </div>
           </div>
-          <div class="services-intro__intro-container">
-            <span class="services-intro__title">Các Dịch Vụ</span>
-            <p class="services-intro__intro">
-              Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề
-              tài chính có đang khiến bạn trở nên căng thẳng.. Bạn có nghĩ đến
-              lúc cho
-              <span style="color: var(--secondary-color)"
-                >thân - tâm - trí</span
-              >
-              được phục hồi để giúp mọi thứ tốt hơn !? Chúng tôi sẽ cá nhân hóa
-              <span style="color: var(--secondary-color)"
-                >lộ trình theo tình trạng</span
-              >
-              sức khỏe và tinh thần của Bạn. Hãy sạc thêm năng lượng
-              <span style="color: var(--secondary-color)"
-                >bình an và hạnh phúc</span
-              >
-              cho con đường phía trước
-            </p>
-            <a href="./service-page.html">
-              <button class="services-intro__services-btn">
-                Tất Cả Dịch Vụ
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Image Carousel -->
-      <section class="image-carousel">
-        <div class="image-carousel__wrapper">
-          <button
-            class="image-carousel__btn image-carousel__btn--prev"
-            aria-label="Previous slide"
-          >
-            <i class="fa-solid fa-angle-left"></i>
-          </button>
-
-          <div class="image-carousel__container">
-            <div class="image-carousel__slides">
-              <div class="image-carousel__slide active">
-                <img
-                  class="image-carousel__slide-image"
-                  src="../images/about-us/carousel/1.avif"
-                  alt="Slide 1"
-                />
-              </div>
-              <div class="image-carousel__slide">
-                <img
-                  class="image-carousel__slide-image"
-                  src="../images/about-us/carousel/2.jpg"
-                  alt="Slide 2"
-                />
-              </div>
-              <div class="image-carousel__slide">
-                <img
-                  class="image-carousel__slide-image"
-                  src="../images/about-us/carousel/3.jpg"
-                  alt="Slide 3"
-                />
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="image-carousel__btn image-carousel__btn--next"
-            aria-label="Next slide"
-          >
-            <i class="fa-solid fa-angle-right"></i>
-          </button>
-        </div>
-      </section>
-
-      <!-- Gallery Section -->
-      <section class="gallery">
-        <!-- Row 1 -->
-        <div class="gallery__flow gallery__flow-row-1">
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/1.jpg"
-              alt="Gallery 1"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/1.jpg"
-              alt="Gallery 2"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/1.jpg"
-              alt="Gallery 3"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/2.jpg"
-              alt="Gallery 4"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/2.jpg"
-              alt="Gallery 5"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/3.jpg"
-              alt="Gallery 6"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/3.jpg"
-              alt="Gallery 7"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/2.jpg"
-              alt="Gallery 8"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/3.jpg"
-              alt="Gallery 9"
-            />
-          </div>
-
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/1.jpg"
-              alt="Gallery 1"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/1.jpg"
-              alt="Gallery 2"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/1.jpg"
-              alt="Gallery 3"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/2.jpg"
-              alt="Gallery 4"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/2.jpg"
-              alt="Gallery 5"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/3.jpg"
-              alt="Gallery 6"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/3.jpg"
-              alt="Gallery 7"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/2.jpg"
-              alt="Gallery 8"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/3.jpg"
-              alt="Gallery 9"
-            />
-          </div>
         </div>
 
-        <!-- Row 2 -->
-        <div class="gallery__flow gallery__flow-row-2">
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/4.jpg"
-              alt="Gallery 1"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/4.jpg"
-              alt="Gallery 2"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/4.jpg"
-              alt="Gallery 3"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/5.jpg"
-              alt="Gallery 4"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/5.jpg"
-              alt="Gallery 5"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/5.jpg"
-              alt="Gallery 6"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/6.jpg"
-              alt="Gallery 7"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/6.jpg"
-              alt="Gallery 8"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/6.jpg"
-              alt="Gallery 9"
-            />
-          </div>
+        <button class="image-carousel__btn image-carousel__btn--next" aria-label="Next slide">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
 
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/4.jpg"
-              alt="Gallery 1"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/4.jpg"
-              alt="Gallery 2"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/4.jpg"
-              alt="Gallery 3"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/5.jpg"
-              alt="Gallery 4"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/5.jpg"
-              alt="Gallery 5"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/5.jpg"
-              alt="Gallery 6"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/6.jpg"
-              alt="Gallery 7"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/6.jpg"
-              alt="Gallery 8"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/6.jpg"
-              alt="Gallery 9"
-            />
-          </div>
+    <!-- Gallery Section -->
+    <div class="gallery">
+      <!-- Row 1 -->
+      <div class="gallery__flow gallery__flow-row-1">
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/1.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/1.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/1.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/2.jpg" alt="Gallery 4">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 5">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 6">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/3.jpg" alt="Gallery 7">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 8">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 9">
         </div>
 
-        <!-- Row 3 -->
-        <div class="gallery__flow gallery__flow-row-3">
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/7.jpg"
-              alt="Gallery 1"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/7.jpg"
-              alt="Gallery 2"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/7.jpg"
-              alt="Gallery 3"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/8.jpg"
-              alt="Gallery 4"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/8.jpg"
-              alt="Gallery 5"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/8.jpg"
-              alt="Gallery 6"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/9.jpg"
-              alt="Gallery 7"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/9.jpg"
-              alt="Gallery 8"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/9.jpg"
-              alt="Gallery 9"
-            />
-          </div>
-
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/7.jpg"
-              alt="Gallery 1"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/7.jpg"
-              alt="Gallery 2"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/7.jpg"
-              alt="Gallery 3"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/8.jpg"
-              alt="Gallery 4"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/8.jpg"
-              alt="Gallery 5"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/8.jpg"
-              alt="Gallery 6"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/activity/9.jpg"
-              alt="Gallery 7"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/food/9.jpg"
-              alt="Gallery 8"
-            />
-          </div>
-          <div class="gallery__item">
-            <img
-              class="gallery__item-image"
-              src="../images/about-us/scence/9.jpg"
-              alt="Gallery 9"
-            />
-          </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/1.jpg" alt="Gallery 1">
         </div>
-      </section>
-
-      <!-- contact -->
-      <section class="contact">
-        <div class="contact__quote-container">
-          <span class="contact__quote"
-            >Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
-            để giúp mọi thứ tốt hơn !?</span
-          >
-          <button class="contact__get-tours-btn primary-btn">
-            <a href="../pages/tour.html" style="width: 100%">Xem các tour</a>
-          </button>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/1.jpg" alt="Gallery 2">
         </div>
-        <div class="contact__form-container">
-          <form id="contactForm" action="">
-            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-            <p class="contact__form-sub-content">
-              Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
-            </p>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/1.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/2.jpg" alt="Gallery 4">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 5">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 6">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/3.jpg" alt="Gallery 7">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/2.jpg" alt="Gallery 8">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/3.jpg" alt="Gallery 9">
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="gallery__flow gallery__flow-row-2">
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/4.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/4.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/4.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/5.jpg" alt="Gallery 4">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/5.jpg" alt="Gallery 5">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/5.jpg" alt="Gallery 6">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/6.jpg" alt="Gallery 7">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/6.jpg" alt="Gallery 8">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/6.jpg" alt="Gallery 9">
+        </div>
+
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/4.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/4.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/4.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/5.jpg" alt="Gallery 4">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/5.jpg" alt="Gallery 5">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/5.jpg" alt="Gallery 6">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/6.jpg" alt="Gallery 7">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/6.jpg" alt="Gallery 8">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/6.jpg" alt="Gallery 9">
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="gallery__flow gallery__flow-row-3">
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/7.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/7.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/7.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/8.jpg" alt="Gallery 4">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/8.jpg" alt="Gallery 5">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/8.jpg" alt="Gallery 6">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/9.jpg" alt="Gallery 7">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/9.jpg" alt="Gallery 8">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
+        </div>
+
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/7.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/7.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/7.jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/8.jpg" alt="Gallery 4">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/8.jpg" alt="Gallery 5">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/8.jpg" alt="Gallery 6">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/activity/9.jpg" alt="Gallery 7">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/food/9.jpg" alt="Gallery 8">
+        </div>
+        <div class="gallery__item">
+          <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="contact__quote-container">
+        <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+          để giúp mọi thứ tốt hơn !?</span>
+        <a href="../pages/tour.html" class="contact__get-tours-btn primary-btn">Xem các tour</a>
+      </div>
+      <div class="contact__form-container">
+        <form id="contactForm" action="#">
+          <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+          <p class="contact__form-sub-content">
+            Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+          </p>
 
             <div class="contact__name-input">
-              <label for="">Họ và tên *</label>
+              <label for="fullName">Họ và tên *</label>
               <input
                 id="fullName"
                 type="text"
@@ -688,11 +397,10 @@
             </div>
 
             <div class="contact__depacture-date-input">
-              <label for="">Ngày đi (dự kiến) *</label>
+              <label for="departureDate">Ngày đi (dự kiến) *</label>
               <input
                 id="departureDate"
                 type="date"
-                placeholder="Chọn ngày đi dự kiến"
                 class="contact__form-input"
               />
               <small class="error-msg"></small>
@@ -700,7 +408,7 @@
 
             <div class="contact__contact-input">
               <div class="contact__phone-input">
-                <label for="">Số điện thoại *</label>
+                <label for="phone">Số điện thoại *</label>
                 <input
                   id="phone"
                   type="text"
@@ -711,7 +419,7 @@
               </div>
 
               <div class="contact__email-input">
-                <label for="">Email *</label>
+                <label for="email">Email *</label>
                 <input
                   id="email"
                   type="email"
@@ -724,7 +432,7 @@
 
             <div class="contact__guest-number-input">
               <div class="contact__adult-number-input">
-                <label for="">Người lớn</label>
+                <label for="adults">Người lớn</label>
                 <input
                   id="adults"
                   type="number"
@@ -734,7 +442,7 @@
                 <small class="error-msg"></small>
               </div>
               <div class="contact__children-number-input">
-                <label for="">Trẻ em</label>
+                <label for="children">Trẻ em</label>
                 <input
                   id="children"
                   type="number"
@@ -746,7 +454,7 @@
             </div>
 
             <div class="contact__content-input">
-              <label for="">Nội dung</label>
+              <label for="content">Nội dung</label>
               <textarea
                 id="content"
                 cols="30"
@@ -756,79 +464,81 @@
               ></textarea>
             </div>
 
-            <button id="submitBtn" class="contact__form-btn primary-btn">
-              Nhận tư vấn
-            </button>
-          </form>
-        </div>
-      </section>
-      <!-- contact popup -->
-      <div id="successPopup" class="contact__popup">
-        <div class="contact__popup-content">
-          <p class="contact__popup-message">
-            <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
-            <i class="fa-regular fa-circle-check"></i>
-            <br />
-            Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
-          </p>
-          <button id="closePopup">Đóng</button>
-        </div>
+          <button id="submitBtn" class="contact__form-btn primary-btn">
+            Nhận tư vấn
+          </button>
+        </form>
       </div>
-    </main>
+    </section>
+    <!-- contact popup -->
+    <div id="successPopup" class="contact__popup">
+      <div class="contact__popup-content">
+        <p class="contact__popup-message">
+          <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
+          <i class="fa-regular fa-circle-check"></i>
+          <br />
+          Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+        </p>
+        <button id="closePopup">Đóng</button>
+      </div>
+    </div>
+  </main>
 
     <footer class="ft">
       <div class="container">
         <div class="ft-wrap">
-          <!-- Left: Logo and Description -->
-          <div class="ft-left">
-            <h3 class="ft-left-title">About us</h3>
-            <div class="ft-logo">
-              <a href="/pages/home-page.html">
-                <img src="/images/logo.png" alt="Happy Station" />
-              </a>
-            </div>
-            <p class="ft-description">Nơi giúp bạn phục hồi sức khỏe tâm thần, thư giãn toàn diện và tìm lại bình an trong cuộc sống. Trạm Hạnh Phúc mang đến những trải nghiệm chữa lành tâm hồn.</p>
+          <div class="ft-logo">
+            <a href="/pages/home-page.html">
+              <img src="/images/logo.png" alt="Logo" />
+            </a>
           </div>
-
-          <!-- Center: Menu -->
           <div class="ft-menu">
-            <h3 class="ft-menu-title">Quick Links</h3>
-            <ul>
+            <ul class="menu">
               <li><a href="/pages/about-us.html">Về chúng tôi</a></li>
               <li><a href="/pages/tour.html">Tour thiết kế sẵn</a></li>
-              <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
+              <li><a href="/pages/tour.html">Địa điểm nổi bật</a></li>
               <li><a href="/pages/service-page.html">Dịch vụ</a></li>
               <li><a href="/pages/contact.html">Liên hệ</a></li>
-              <li><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
+              <li><a href="/pages/blog-page.html">Tin tức</a></li>
             </ul>
           </div>
 
-          <!-- Right: Contact and Social -->
-          <div class="ft-right">
-            <div class="ft-contact-title">CONTACT WITH US</div>
-            <div class="ft-if">
-              <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank" class="ft-contact-item">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <span>Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh</span>
-              </a>
-              <a href="tel:0393728287" class="ft-contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <span>0393728287</span>
-              </a>
-              <a href="mailto:tramhanhphuc.f4@gmail.com" class="ft-contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span>tramhanhphuc.f4@gmail.com</span>
-              </a>
-            </div>
-            <div class="ft-sc">
-              <div class="i-list">
-                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-                  <i class="fa-brands fa-instagram"></i>
+          <div class="ft-if">
+            <div class="ft-if-it">
+              <span class="t-text">ĐỊA CHỈ</span>
+              <div class="t-gr">
+                <a
+                  href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA"
+                  target="_blank"
+                >
+                  Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh
                 </a>
               </div>
+            </div>
+            <div class="ft-if-it">
+              <span class="t-text">LIÊN HỆ</span>
+              <div class="t-gr">
+                <a href="tel:0393728287">Hotline: 0393728287</a>
+              </div>
+            </div>
+            <div class="ft-if-it">
+              <span class="t-text">EMAIL</span>
+              <div class="t-gr">
+                <a href="mailto:tramhanhphuc.f4@gmail.com"
+                  >tramhanhphuc.f4@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="ft-sc">
+            <div class="i-list">
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook" width="28" height="29"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram" width="28" height="29"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -845,10 +555,11 @@
       <div class="triangle"></div>
     </div>
 
-    <script src="../js/multiday-tour-page.js"></script>
-    <script src="../js/form-validation.js"></script>
-    <script src="../js/header-hero.js"></script>
-    <script src="../js/about-us.js" defer></script>
-    <script src="/js/js.js"></script>
-  </body>
+  <script src="../js/multiday-tour-page.js"></script>
+  <script src="../js/form-validation.js"></script>
+  <script src="../js/header-hero.js"></script>
+  <script src="../js/about-us.js" defer></script>
+  <script src="/js/js.js"></script>
+</body>
+
 </html>

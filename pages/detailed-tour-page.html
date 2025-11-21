@@ -111,8 +111,7 @@
                 <a href="/pages/tour.html">Tour thiết kế sẵn</a>
                 <span>></span>
                 <a href="/pages/tour.html">Tour dài ngày</a>
-                <span>></span>
-                <span href="">Chi tiết tour</span>
+                <span>> Chi tiết tour</span>
             </div>
             <h1 class="heading__tour-title">Tour Đảo Hòn Nưa – Vũng Rô – Hải Đăng – Bãi Môn (2N1Đ)</h1>
             <div class="heading__tour-info">
@@ -297,10 +296,12 @@
                                 <div class="tour-notice__container">
                                     <!-- Tour price info  -->
                                     <div class="tour-price-info">
-                                        <table border="1" class="tour-price-info__table">
+                                        <table class="tour-price-info__table">
                                             <thead>
-                                                <th>Số lượng khách</th>
-                                                <th>Giá tour</th>
+                                                <tr>
+                                                    <th>Số lượng khách</th>
+                                                    <th>Giá tour</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
@@ -318,7 +319,7 @@
                                     <!-- Services included -->
                                     <div class="tour-services-included">
                                         <h3 class="tour-services-included__title">Dịch vụ bao gồm</h3>
-                                        <table border="1" class="tour-services-included__table">
+                                        <table class="tour-services-included__table">
                                             <tr>
                                                 <td>Xe vận chuyển chất lượng cao điều hòa xuyên suốt</td>
                                                 <td>Quà tặng du lịch</td>
@@ -340,7 +341,7 @@
                                     <!-- notices -->
                                     <div class="tour-notice">
                                         <h3 class="tour-notice__title">Lưu ý</h3>
-                                        <table border="1" class="tour-notice__notice-table">
+                                        <table class="tour-notice__notice-table">
                                             <tr>
                                                 <td>Tour hoạt động</td>
                                                 <td>Quanh năm trừ những ngày bão lũ</td>
@@ -367,7 +368,7 @@
                                             </tr>
                                         </table>
 
-                                        <table border="1" class="tour-notice__prepare-table">
+                                        <table class="tour-notice__prepare-table">
                                             <thead>
                                                 <tr>
                                                     <th>Chúng tôi sẽ cung cấp</th>
@@ -452,8 +453,8 @@
                     <button class="tour-content__contact-phone">0909 123 456</button>
                     <p>Hoặc để lại thông tin tư vấn</p>
                     <div class="tour-content__email-input">
-                        <input class="tour-content__contact-input" type="text" name="" id="emailQuick"
-                        placeholder="Nhập email của bạn">
+                        <input class="tour-content__contact-input" type="text" id="emailQuick"
+                            placeholder="Nhập email của bạn">
                         <button id="emailSubmitBtn" class="tour-content__contact-submit-btn">Gửi</button>
                         <small class="error-msg"></small>
                     </div>
@@ -472,7 +473,7 @@
         </section>
 
         <!-- Gallery Section -->
-        <section class="gallery">
+        <div class="gallery">
             <!-- Row 1 -->
             <div class="gallery__flow gallery__flow-row-1">
                 <div class="gallery__item">
@@ -649,74 +650,70 @@
                     <img class="gallery__item-image" src="../images/about-us/scence/9.jpg" alt="Gallery 9">
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- contact -->
         <section class="contact">
-            <div class="contact__quote-container">
-                <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
-                    để giúp mọi thứ tốt hơn !?</span>
-                <button class="contact__get-tours-btn primary-btn">
-                    <a href="../pages/tour.html" style="width: 100%;">Xem các tour</a>
-                </button>
+        <div class="contact__quote-container">
+            <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+            để giúp mọi thứ tốt hơn !?</span>
+            <a href="../pages/tour.html" class="contact__get-tours-btn primary-btn">Xem các tour</a>
+        </div>
+        <div class="contact__form-container">
+            <form id="contactForm" action="#">
+            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+            <p class="contact__form-sub-content">
+                Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+            </p>
+
+            <div class="contact__name-input">
+                <label for="fullName">Họ và tên *</label>
+                <input id="fullName" type="text" placeholder="Nhập họ và tên" class="contact__form-input" />
+                <small class="error-msg"></small>
             </div>
-            <div class="contact__form-container">
-                <form id="contactForm" action="">
-                    <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-                    <p class="contact__form-sub-content">
-                        Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
-                    </p>
 
-                    <div class="contact__name-input">
-                        <label for="">Họ và tên *</label>
-                        <input id="fullName" type="text" placeholder="Nhập họ và tên" class="contact__form-input" />
-                        <small class="error-msg"></small>
-                    </div>
-
-                    <div class="contact__depacture-date-input">
-                        <label for="">Ngày đi (dự kiến) *</label>
-                        <input id="departureDate" type="date" placeholder="Chọn ngày đi dự kiến"
-                            class="contact__form-input" />
-                        <small class="error-msg"></small>
-                    </div>
-
-                    <div class="contact__contact-input">
-                        <div class="contact__phone-input">
-                            <label for="">Số điện thoại *</label>
-                            <input id="phone" type="text" placeholder="Nhập số điện thoại"
-                                class="contact__form-input" />
-                            <small class="error-msg"></small>
-                        </div>
-
-                        <div class="contact__email-input">
-                            <label for="">Email *</label>
-                            <input id="email" type="email" placeholder="Nhập email" class="contact__form-input" />
-                            <small class="error-msg"></small>
-                        </div>
-                    </div>
-
-                    <div class="contact__guest-number-input">
-                        <div class="contact__adult-number-input">
-                            <label for="">Người lớn</label>
-                            <input id="adults" type="number" placeholder="Người lớn" class="contact__form-input" />
-                            <small class="error-msg"></small>
-                        </div>
-                        <div class="contact__children-number-input">
-                            <label for="">Trẻ em</label>
-                            <input id="children" type="number" placeholder="Trẻ em" class="contact__form-input" />
-                            <small class="error-msg"></small>
-                        </div>
-                    </div>
-
-                    <div class="contact__content-input">
-                        <label for="">Nội dung</label>
-                        <textarea id="content" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ"
-                            class="contact__form-input"></textarea>
-                    </div>
-
-                    <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
-                </form>
+            <div class="contact__depacture-date-input">
+                <label for="departureDate">Ngày đi (dự kiến) *</label>
+                <input id="departureDate" type="date" class="contact__form-input" />
+                <small class="error-msg"></small>
             </div>
+
+            <div class="contact__contact-input">
+                <div class="contact__phone-input">
+                <label for="phone">Số điện thoại *</label>
+                <input id="phone" type="text" placeholder="Nhập số điện thoại" class="contact__form-input" />
+                <small class="error-msg"></small>
+                </div>
+
+                <div class="contact__email-input">
+                <label for="email">Email *</label>
+                <input id="email" type="email" placeholder="Nhập email" class="contact__form-input" />
+                <small class="error-msg"></small>
+                </div>
+            </div>
+
+            <div class="contact__guest-number-input">
+                <div class="contact__adult-number-input">
+                <label for="adults">Người lớn</label>
+                <input id="adults" type="number" placeholder="0" class="contact__form-input" />
+                <small class="error-msg"></small>
+                </div>
+                <div class="contact__children-number-input">
+                <label for="children">Trẻ em</label>
+                <input id="children" type="number" placeholder="0" class="contact__form-input" />
+                <small class="error-msg"></small>
+                </div>
+            </div>
+
+            <div class="contact__content-input">
+                <label for="content">Nội dung</label>
+                <textarea id="content" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ"
+                class="contact__form-input"></textarea>
+            </div>
+
+            <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
+            </form>
+        </div>
         </section>
         <!-- contact popup -->
         <div id="successPopup" class="contact__popup">
