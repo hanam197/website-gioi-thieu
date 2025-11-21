@@ -646,14 +646,14 @@
           </button>
         </div>
         <div class="contact__form-container">
-          <form id="contactForm" action="">
+          <form id="contactForm" action="#">
             <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
             <p class="contact__form-sub-content">
               Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
             </p>
 
             <div class="contact__name-input">
-              <label for="">Họ và tên *</label>
+              <label for="fullName">Họ và tên *</label>
               <input
                 id="fullName"
                 type="text"
@@ -664,11 +664,10 @@
             </div>
 
             <div class="contact__depacture-date-input">
-              <label for="">Ngày đi (dự kiến) *</label>
+              <label for="departureDate">Ngày đi (dự kiến) *</label>
               <input
                 id="departureDate"
                 type="date"
-                placeholder="Chọn ngày đi dự kiến"
                 class="contact__form-input"
               />
               <small class="error-msg"></small>
@@ -676,7 +675,7 @@
 
             <div class="contact__contact-input">
               <div class="contact__phone-input">
-                <label for="">Số điện thoại *</label>
+                <label for="phone">Số điện thoại *</label>
                 <input
                   id="phone"
                   type="text"
@@ -687,7 +686,7 @@
               </div>
 
               <div class="contact__email-input">
-                <label for="">Email *</label>
+                <label for="email">Email *</label>
                 <input
                   id="email"
                   type="email"
@@ -700,7 +699,7 @@
 
             <div class="contact__guest-number-input">
               <div class="contact__adult-number-input">
-                <label for="">Người lớn</label>
+                <label for="adults">Người lớn</label>
                 <input
                   id="adults"
                   type="number"
@@ -710,7 +709,7 @@
                 <small class="error-msg"></small>
               </div>
               <div class="contact__children-number-input">
-                <label for="">Trẻ em</label>
+                <label for="children">Trẻ em</label>
                 <input
                   id="children"
                   type="number"
@@ -722,7 +721,7 @@
             </div>
 
             <div class="contact__content-input">
-              <label for="">Nội dung</label>
+              <label for="content">Nội dung</label>
               <textarea
                 id="content"
                 cols="30"
