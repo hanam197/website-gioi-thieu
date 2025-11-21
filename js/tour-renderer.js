@@ -18,16 +18,16 @@
       // Generate HTML for each tour
       const toursHTML = toursToShow.map(tour => `
         <div class="prod-item">
-          <a class="prod-thumb" href="">
+          <a class="prod-thumb" href="../pages/detailed-tour-page.html">
             <img src="${tour.image}" alt="${tour.name}">
           </a>
           <div class="prod-content">
-            <h3><a href="">${tour.name}</a></h3>
+            <h3><a href="../pages/detailed-tour-page.html">${tour.name}</a></h3>
             <p class="info"><a href="#">${tour.time}</a></p>
             <p class="desc">${tour.meta}</p>
             <div class="prod-action">
               <span class="price-discount">${tour.price}</span>
-              <a class="btn" href="#">ĐẶT TOUR</a>
+              <a class="btn" href="../pages/detailed-tour-page.html">ĐẶT TOUR</a>
             </div>
           </div>
         </div>
