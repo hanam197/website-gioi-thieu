@@ -38,9 +38,8 @@
               <a href="/pages/tour.html" aria-expanded="false" aria-controls="tour-submenu">Tour <i
                   class="fa-solid fa-caret-down caret" aria-hidden="true"></i></a>
               <ul class="submenu" id="tour-submenu">
-                <li><a href="/pages/tour.html">Tour ngắn ngày</a></li>
-                <li><a href="/pages/tour.html">Tour dài ngày</a></li>
-                <li><a href="/pages/tour.html">Workshop</a></li>
+                <li><a href="/pages/day-tour-page.html">Tour ngắn ngày</a></li>
+                <li><a href="/pages/multiday-tour-page.html">Tour dài ngày</a></li>
               </ul>
             </li>
             <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
@@ -71,16 +70,20 @@
   </header>
 
   <main>
-    <section class="header__banner">
-      <nav class="navbar"></nav>
-      <div class="header__container">
-        <h1 class="header__title">Tour thiết kế sẵn</h1>
-        <p class="header__breadcrumb">Homepage > Tour thiết kế sẵn</p>
-      </div>
+    <section class="hero">
+        <img class="hero__image" src="../images/tour-banner.png" alt="Hero Background">
+        <div class="hero__content">
+            <h1 class="hero__title">Tour thiết kế sẵn</h1>
+            <p class="hero__breadcrumb">
+                <a href="./home-page.html">Trang chủ</a>
+                > Tour thiết kế sẵn
+            </p>
+        </div>
     </section>
 
     <!-- tours -->
     <section class="tours">
+      <!-- popular tours -->
       <div class="tours__title-container">
         <div class="tours__title">
           <h4 class="tours__category" style="text-transform: uppercase">
@@ -114,38 +117,65 @@
         </div>
 
         <ul class="tours__pagination">
-          <li class="tours__pagination-item current-pagination-item">
-            <span>1</span>
-          </li>
-          <li class="tours__pagination-item"><span>2</span></li>
-          <li class="tours__pagination-item"><span>3</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- banner -->
-    <section class="banner">
-      <div class="banner__content">
-        <div class="banner__quote-container">
-          <p class="banner__quote">
-            Hành trình <span style="color: #f57c00">chữa lành</span>: Con
-            đường dẫn đến sức khỏe toàn diện của bạn
-          </p>
-          <p class="banner__signature-name"><i class="fa-solid fa-minus"></i>&nbsp; Happy Station</p>
+    <!-- Services Intro Section -->
+    <section class="services-intro">
+        <img class="services-intro__image" src="../images/about-us/scence/5.jpg" alt="Services Background">
+        <div class="services-intro__content">
+            <div class="services-intro__quote-container">
+                <p class="services-intro__quote">
+                    Hành trình <span style="color: var(--secondary-color);">chữa lành</span>: Con đường dẫn đến sức khỏe
+                    toàn diện của bạn
+                </p>
+                <div class="services-intro__signature-container">
+                    <span class="services-intro__signature-name">Happy Station</span>
+                </div>
+            </div>
+            <div class="services-intro__intro-container">
+                <span class="services-intro__title">Các Dịch Vụ</span>
+                <p class="services-intro__intro">
+                    Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề tài chính có đang khiến bạn trở nên
+                    căng thẳng.. Bạn có nghĩ đến lúc cho <span style="color: var(--secondary-color);">thân - tâm -
+                        trí</span> được phục hồi để giúp mọi thứ tốt hơn !? Chúng tôi sẽ cá nhân hóa <span
+                        style="color: var(--secondary-color);">lộ trình theo tình trạng</span> sức khỏe và tinh thần của
+                    Bạn. Hãy sạc thêm năng lượng <span style="color: var(--secondary-color);">bình an và hạnh
+                        phúc</span> cho con đường phía trước
+                </p>
+                <a href="./service-page.html">
+                    <button class="services-intro__services-btn">Tất Cả Dịch Vụ</button>
+                </a>
+            </div>
         </div>
-        <div class="banner__intro-container">
-          <h3 class="banner__title">Các dịch vụ</h3>
-          <p class="banner__intro">
-            Mỗi ngày bạn có đang chìm trong áp lực của công việc, các vấn đề
-            tài chính có đang khiến bạn trở nên căng thẳng.. Bạn có nghĩ đến
-            lúc cho thân – tâm – trí được phục hồi để giúp mọi thứ tốt hơn !?
-            Chúng tôi sẽ cá nhân hóa lộ trình theo tình trạng sức khỏe và tinh
-            thần của BẠN. Hãy sạc thêm năng lượng bình an và hạnh phúc cho con
-            đường phía trước
-          </p>
-          <button class="banner__btn">Tất cả dịch vụ</button>
+    </section>
+
+    <!-- Image Carousel -->
+    <section class="image-carousel">
+        <div class="image-carousel__wrapper">
+            <button class="image-carousel__btn image-carousel__btn--prev" aria-label="Previous slide">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+
+            <div class="image-carousel__container">
+                <div class="image-carousel__slides">
+                    <div class="image-carousel__slide active">
+                        <img class="image-carousel__slide-image" src="../images/about-us/carousel/1.avif" alt="Slide 1">
+                    </div>
+                    <div class="image-carousel__slide">
+                        <img class="image-carousel__slide-image" src="../images/about-us/carousel/2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="image-carousel__slide">
+                        <img class="image-carousel__slide-image" src="../images/about-us/carousel/3.jpg" alt="Slide 3">
+                    </div>
+                </div>
+            </div>
+
+            <button class="image-carousel__btn image-carousel__btn--next" aria-label="Next slide">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </div>
-      </div>
     </section>
 
     <!-- Gallery Section -->
@@ -373,12 +403,12 @@
           <div class="contact__guest-number-input">
             <div class="contact__adult-number-input">
               <label for="">Người lớn</label>
-              <input id="adults" type="number" placeholder="Người lớn" class="contact__form-input" />
+              <input id="adults" type="number" placeholder="0" class="contact__form-input" />
               <small class="error-msg"></small>
             </div>
             <div class="contact__children-number-input">
               <label for="">Trẻ em</label>
-              <input id="children" type="number" placeholder="Trẻ em" class="contact__form-input" />
+              <input id="children" type="number" placeholder="0" class="contact__form-input" />
               <small class="error-msg"></small>
             </div>
           </div>
