@@ -1,16 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-}
-
 :root {
-    --primary-color: #8aa831;
-    --secondary-color: #f57c00;
-    --sub-color: #e0e0e0;
-    --text-dark: #4e5f39;
-    --text-light: #666;
     --default-border-radius: 12px;
     --section-spacing: 3%;
 }
@@ -22,12 +10,6 @@
     font-style: normal;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
     font-family: 'SVN-Poppins', 'Poppins', Arial, sans-serif;
     color: var(--text-dark);
@@ -36,26 +18,17 @@ body {
     font-size: 1rem;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 /* HERO SECTION */
 .hero {
     background-size: cover;
     background-position: center;
     height: 500px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .hero__image {
@@ -191,7 +164,7 @@ a {
 
 /* MISSION SECTION */
 .mission {
-    background: #edefeb;
+    background: var(--sub-background-color);
     padding: var(--section-spacing) 0;
 }
 
@@ -637,7 +610,7 @@ a {
 
 /* GALLERY SECTION */
 .gallery {
-    background-color: var(--sub-color);
+    background-color: var(--sub-background-color);
     padding: var(--section-spacing) 0;
     overflow: hidden;
     width: 100vw;
@@ -700,116 +673,11 @@ a {
 }
 
 /* CONTACT SECTION */
-.contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5% 7%;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../images/about-us/scence/5.jpg');
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: darken;
-    color: white;
-}
 
-.contact__quote-container {
-    width: 40%;
-}
 
-.contact__quote {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    line-height: 1.3;
-}
 
-.contact__quote span {
-    color: var(--secondary-color);
-}
 
-.contact__get-tours-btn {
-    padding: 1rem 2rem;
-    border: none;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact__get-tours-btn:hover {
-    background-color: var(--secondary-color);
-}
-
-.contact__form-container {
-    width: 45%;
-    background-color: white;
-    padding: 2.5rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 20px;
-    color: var(--text-dark);
-}
-
-.contact__form-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.contact__form-sub-content {
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
-}
-
-.contact__form-group {
-    margin-bottom: 1.2rem;
-}
-
-.contact__form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.contact__form-group input,
-.contact__form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 1rem;
-}
-
-.contact__form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.contact__form-btn {
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact__form-btn:hover {
-    background-color: var(--secondary-color);
-}
-
-/* RESPONSIVE - GLOBAL */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
     .hero__title {
         font-size: 2.5rem;

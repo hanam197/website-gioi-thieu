@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="/images/logo.png">
     <title>Điểm Du Lịch - Happy Station</title>
     <link rel="stylesheet" href="../css/destinations.css">
-    <!-- <link rel="stylesheet" href="../css/base.css"> -->
+    <link rel="stylesheet" href="/css/base.css">
     <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -34,9 +34,8 @@
                             <a href="/pages/tour.html" aria-expanded="false" aria-controls="tour-submenu">Tour <i
                                     class="fa-solid fa-caret-down caret" aria-hidden="true"></i></a>
                             <ul class="submenu" id="tour-submenu">
-                                <li><a href="/pages/tour.html">Tour ngắn ngày</a></li>
-                                <li><a href="/pages/tour.html">Tour dài ngày</a></li>
-                                <li><a href="/pages/tour.html">Workshop</a></li>
+                                <li><a href="/pages/day-tour-page.html">Tour ngắn ngày</a></li>
+                                <li><a href="/pages/multiday-tour-page.html">Tour dài ngày</a></li>
                             </ul>
                         </li>
                         <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
@@ -70,7 +69,9 @@
         <img class="hero__image" src="../images/destinations/hero.jpg" alt="Hero Background">
         <div class="hero__content">
             <h1 class="hero__title">Điểm Du Lịch Phú Yên</h1>
-            <p class="hero__breadcrumb">Trang chủ > Điểm Du Lịch</p>
+            <p class="hero__breadcrumb">
+                <a href="./home-page.html">Trang chủ</a> > Điểm Du Lịch
+            </p>
         </div>
     </section>
 
@@ -521,59 +522,86 @@
     <!-- Contact Section -->
     <section class="contact">
         <div class="contact__quote-container">
-            <p class="contact__quote">
-                Bạn có nghĩ đến lúc cho <span>Thân - Tâm - Trí</span> được phục hồi để giúp mọi
-                thứ tốt hơn !?
-            </p>
-            <button class="contact__get-tours-btn">Xem các tour</button>
+            <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+                để giúp mọi thứ tốt hơn !?</span>
+            <button class="contact__get-tours-btn primary-btn">
+                <a href="../pages/tour.html" style="width: 100%;">Xem các tour</a>
+            </button>
         </div>
-
         <div class="contact__form-container">
-            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-            <p class="contact__form-sub-content">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
+            <form id="contactForm" action="">
+                <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+                <p class="contact__form-sub-content">
+                    Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+                </p>
 
-            <form>
-                <div class="contact__form-group">
-                    <label>Họ và tên *</label>
-                    <input type="text" placeholder="Nhập họ và tên">
+                <div class="contact__name-input">
+                    <label for="">Họ và tên *</label>
+                    <input id="fullName" type="text" placeholder="Nhập họ và tên" class="contact__form-input" />
+                    <small class="error-msg"></small>
                 </div>
 
-                <div class="contact__form-group">
-                    <label>Ngày đi (dự kiến)</label>
-                    <input type="date" placeholder="Chọn ngày đi dự kiến">
+                <div class="contact__depacture-date-input">
+                    <label for="">Ngày đi (dự kiến) *</label>
+                    <input id="departureDate" type="date" placeholder="Chọn ngày đi dự kiến"
+                        class="contact__form-input" />
+                    <small class="error-msg"></small>
                 </div>
 
-                <div class="contact__form-row">
-                    <div class="contact__form-group">
-                        <label>Số điện thoại *</label>
-                        <input type="text" placeholder="Nhập số điện thoại">
+                <div class="contact__contact-input">
+                    <div class="contact__phone-input">
+                        <label for="">Số điện thoại *</label>
+                        <input id="phone" type="text" placeholder="Nhập số điện thoại" class="contact__form-input" />
+                        <small class="error-msg"></small>
                     </div>
-                    <div class="contact__form-group">
-                        <label>Email *</label>
-                        <input type="email" placeholder="Nhập email">
-                    </div>
-                </div>
 
-                <div class="contact__form-row">
-                    <div class="contact__form-group">
-                        <label>Số lượng người lớn</label>
-                        <input type="number" placeholder="Người lớn">
-                    </div>
-                    <div class="contact__form-group">
-                        <label>Trẻ em</label>
-                        <input type="number" placeholder="Trẻ em">
+                    <div class="contact__email-input">
+                        <label for="">Email *</label>
+                        <input id="email" type="email" placeholder="Nhập email" class="contact__form-input" />
+                        <small class="error-msg"></small>
                     </div>
                 </div>
 
-                <div class="contact__form-group">
-                    <label>Nội dung</label>
-                    <textarea rows="3" placeholder="Nhập nội dung cần liên hệ"></textarea>
+                <div class="contact__guest-number-input">
+                    <div class="contact__adult-number-input">
+                        <label for="">Người lớn</label>
+                        <input id="adults" type="number" placeholder="Người lớn" class="contact__form-input" />
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="contact__children-number-input">
+                        <label for="">Trẻ em</label>
+                        <input id="children" type="number" placeholder="Trẻ em" class="contact__form-input" />
+                        <small class="error-msg"></small>
+                    </div>
                 </div>
 
-                <button type="submit" class="contact__form-btn">Nhận tư vấn</button>
+                <div class="contact__content-input">
+                    <label for="">Nội dung</label>
+                    <textarea id="content" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ"
+                        class="contact__form-input"></textarea>
+                </div>
+
+                <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
             </form>
         </div>
     </section>
+
+    <!-- contact popup -->
+    <div id="successPopup" class="contact__popup">
+        <div class="contact__popup-content">
+            <p class="contact__popup-message">
+                <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
+                <i class="fa-regular fa-circle-check"></i>
+                <br>
+                Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+            </p>
+            <button id="closePopup">Đóng</button>
+        </div>
+    </div>
+
+
+
+
 
     <footer class="ft">
         <div class="container">
@@ -637,7 +665,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="back-to-top backToTop">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+    </div>
+
     <script src="../js/destinations.js"></script>
+    <script src="/js/js.js"></script>
+    <script src="../js/form-validation.js"></script>
+
 </body>
 
 </html>

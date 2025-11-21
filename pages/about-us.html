@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/images/logo.png">
     <title>About Us - Happy Station</title>
-    <!-- <link rel="stylesheet" href="../css/base.css"> -->
     <link rel="stylesheet" href="../css/about-us.css">
     <script src="https://kit.fontawesome.com/c39bd3b109.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- Font Awesome for caret icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -34,9 +34,8 @@
                             <a href="/pages/tour.html" aria-expanded="false" aria-controls="tour-submenu">Tour <i
                                     class="fa-solid fa-caret-down caret" aria-hidden="true"></i></a>
                             <ul class="submenu" id="tour-submenu">
-                                <li><a href="/pages/tour.html">Tour ngắn ngày</a></li>
-                                <li><a href="/pages/tour.html">Tour dài ngày</a></li>
-                                <li><a href="/pages/tour.html">Workshop</a></li>
+                                <li><a href="/pages/day-tour-page.html">Tour ngắn ngày</a></li>
+                                <li><a href="/pages/multiday-tour-page.html">Tour dài ngày</a></li>
                             </ul>
                         </li>
                         <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
@@ -70,7 +69,10 @@
         <img class="hero__image" src="../images/about-us/hero.jpg" alt="Hero Background">
         <div class="hero__content">
             <h1 class="hero__title">Về chúng tôi</h1>
-            <p class="hero__breadcrumb">Trang chủ > Về chúng tôi</p>
+            <p class="hero__breadcrumb">
+                <a href="./home-page.html">Trang chủ</a>
+                > Về chúng tôi
+            </p>
         </div>
     </section>
 
@@ -196,7 +198,9 @@
                     Bạn. Hãy sạc thêm năng lượng <span style="color: var(--secondary-color);">bình an và hạnh
                         phúc</span> cho con đường phía trước
                 </p>
-                <button class="services-intro__services-btn">Tất Cả Dịch Vụ</button>
+                <a href="./service-page.html">
+                    <button class="services-intro__services-btn">Tất Cả Dịch Vụ</button>
+                </a>
             </div>
         </div>
     </section>
@@ -411,59 +415,83 @@
     <!-- Contact Section -->
     <section class="contact">
         <div class="contact__quote-container">
-            <p class="contact__quote">
-                Bạn có nghĩ đến lúc cho <span>Thân - Tâm - Trí</span> được phục hồi để giúp mọi
-                thứ tốt hơn !?
-            </p>
-            <button class="contact__get-tours-btn">Xem các tour</button>
+            <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
+                để giúp mọi thứ tốt hơn !?</span>
+            <button class="contact__get-tours-btn primary-btn">
+                <a href="../pages/tour.html" style="width: 100%;">Xem các tour</a>
+            </button>
         </div>
-
         <div class="contact__form-container">
-            <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
-            <p class="contact__form-sub-content">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
+            <form id="contactForm" action="">
+                <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
+                <p class="contact__form-sub-content">
+                    Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+                </p>
 
-            <form>
-                <div class="contact__form-group">
-                    <label>Họ và tên *</label>
-                    <input type="text" placeholder="Nhập họ và tên">
+                <div class="contact__name-input">
+                    <label for="">Họ và tên *</label>
+                    <input id="fullName" type="text" placeholder="Nhập họ và tên" class="contact__form-input" />
+                    <small class="error-msg"></small>
                 </div>
 
-                <div class="contact__form-group">
-                    <label>Ngày đi (dự kiến)</label>
-                    <input type="date" placeholder="Chọn ngày đi dự kiến">
+                <div class="contact__depacture-date-input">
+                    <label for="">Ngày đi (dự kiến) *</label>
+                    <input id="departureDate" type="date" placeholder="Chọn ngày đi dự kiến"
+                        class="contact__form-input" />
+                    <small class="error-msg"></small>
                 </div>
 
-                <div class="contact__form-row">
-                    <div class="contact__form-group">
-                        <label>Số điện thoại *</label>
-                        <input type="text" placeholder="Nhập số điện thoại">
+                <div class="contact__contact-input">
+                    <div class="contact__phone-input">
+                        <label for="">Số điện thoại *</label>
+                        <input id="phone" type="text" placeholder="Nhập số điện thoại" class="contact__form-input" />
+                        <small class="error-msg"></small>
                     </div>
-                    <div class="contact__form-group">
-                        <label>Email *</label>
-                        <input type="email" placeholder="Nhập email">
-                    </div>
-                </div>
 
-                <div class="contact__form-row">
-                    <div class="contact__form-group">
-                        <label>Số lượng người lớn</label>
-                        <input type="number" placeholder="Người lớn">
-                    </div>
-                    <div class="contact__form-group">
-                        <label>Trẻ em</label>
-                        <input type="number" placeholder="Trẻ em">
+                    <div class="contact__email-input">
+                        <label for="">Email *</label>
+                        <input id="email" type="email" placeholder="Nhập email" class="contact__form-input" />
+                        <small class="error-msg"></small>
                     </div>
                 </div>
 
-                <div class="contact__form-group">
-                    <label>Nội dung</label>
-                    <textarea rows="3" placeholder="Nhập nội dung cần liên hệ"></textarea>
+                <div class="contact__guest-number-input">
+                    <div class="contact__adult-number-input">
+                        <label for="">Người lớn</label>
+                        <input id="adults" type="number" placeholder="Người lớn" class="contact__form-input" />
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="contact__children-number-input">
+                        <label for="">Trẻ em</label>
+                        <input id="children" type="number" placeholder="Trẻ em" class="contact__form-input" />
+                        <small class="error-msg"></small>
+                    </div>
                 </div>
 
-                <button type="submit" class="contact__form-btn">Nhận tư vấn</button>
+                <div class="contact__content-input">
+                    <label for="">Nội dung</label>
+                    <textarea id="content" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ"
+                        class="contact__form-input"></textarea>
+                </div>
+
+                <button id="submitBtn" class="contact__form-btn primary-btn">Nhận tư vấn</button>
             </form>
         </div>
     </section>
+
+    <!-- contact popup -->
+    <div id="successPopup" class="contact__popup">
+        <div class="contact__popup-content">
+            <p class="contact__popup-message">
+                <span>Cảm ơn bạn đã liên hệ với chúng tôi!</span>
+                <i class="fa-regular fa-circle-check"></i>
+                <br>
+                Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+            </p>
+            <button id="closePopup">Đóng</button>
+        </div>
+    </div>
+    </main>
 
     <footer class="ft">
         <div class="container">
@@ -474,15 +502,14 @@
                         <img src="/images/logo.png" alt="Logo">
                     </a>
                 </div>
-
                 <div class="ft-menu">
-                    <ul>
+                    <ul class="menu">
                         <li><a href="/pages/about-us.html">Về chúng tôi</a></li>
                         <li><a href="/pages/tour.html">Tour thiết kế sẵn</a></li>
-                        <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
+                        <li><a href="/pages/tour.html">Địa điểm nổi bật</a></li>
                         <li><a href="/pages/service-page.html">Dịch vụ</a></li>
                         <li><a href="/pages/contact.html">Liên hệ</a></li>
-                        <li><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
+                        <li><a href="/pages/blog-page.html">Tin tức</a></li>
                     </ul>
                 </div>
 
@@ -526,8 +553,82 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="../js/about-us.js" defer></script>
+
+
+        <!-- Footer -->
+        <footer class="ft">
+            <div class="container">
+                <div class="ft-wrap">
+
+                    <div class="ft-logo">
+                        <a href="/pages/home-page.html">
+                            <img src="/images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="ft-menu">
+                        <ul>
+                            <li><a href="/pages/about-us.html">Về chúng tôi</a></li>
+                            <li><a href="/pages/tour.html">Tour thiết kế sẵn</a></li>
+                            <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
+                            <li><a href="/pages/service-page.html">Dịch vụ</a></li>
+                            <li><a href="/pages/contact.html">Liên hệ</a></li>
+                            <li><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="ft-if">
+                        <div class="ft-if-it">
+                            <span class="t-text">ĐỊA CHỈ</span>
+                            <div class="t-gr">
+                                <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank">
+                                    Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ft-if-it">
+                            <span class="t-text">LIÊN HỆ</span>
+                            <div class="t-gr">
+                                <a href="tel:0393728287">Hotline: 0393728287</a>
+                            </div>
+                        </div>
+                        <div class="ft-if-it">
+                            <span class="t-text">EMAIL</span>
+                            <div class="t-gr">
+                                <a href="mailto:tramhanhphuc.f4@gmail.com">tramhanhphuc.f4@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ft-sc">
+                        <div class="i-list">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook" width="28" height="29"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram" width="28" height="29"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-bot">
+                    <div class="ft-sign">
+                        <span class="t-text">@All Right Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="back-to-top backToTop">
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+        </div>
+
+        <script src="../js/about-us.js" defer></script>
+        <script src="/js/js.js"></script>
+        <script src="../js/form-validation.js"></script>
+
 </body>
 
 </html>
