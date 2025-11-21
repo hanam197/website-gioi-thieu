@@ -1,5 +1,9 @@
 document.getElementById('submitBtn').addEventListener('click', handleSubmit);
-document.getElementById('emailSubmitBtn').addEventListener('click', handleEmailQuick);
+
+const emailSubmitBtn = document.getElementById('emailSubmitBtn');
+if (emailSubmitBtn) {
+    emailSubmitBtn.addEventListener('click', handleEmailQuick);
+}
 
 // MAIN SUBMIT HANDLER
 function handleSubmit(event) {
@@ -13,6 +17,7 @@ function handleSubmit(event) {
     if (!isValid) return;
 
     showPopup();
+    document.getElementById('successPopup').style.flexDirection = 'column';
     document.getElementById('contactForm').reset();
 }
 
@@ -33,6 +38,7 @@ function handleEmailQuick(event) {
     }
     
     showPopup();
+
     document.getElementById('contactForm').reset();
 }
 
@@ -70,12 +76,18 @@ function validateForm(data) {
     else if (!emailPattern.test(data.email))
         valid = showError('email', "Email không hợp lệ.");
 
-    if (data.adults === "" && data.children === "") {
+    const numOfAdults = Number(data.adults);
+    const numOfChildren = Number(data.children);
+    if (numOfAdults === "" && numOfChildren === "") {
         valid = showError('adults', "Vui lòng nhập số lượng khách.");
         valid = showError('children', "Vui lòng nhập số lượng khách.");
-    } else if (Number(data.adults) <= 0 && Number(data.children) <= 0) {
+    } else if (numOfAdults <= 0 && numOfChildren <= 0) {
         valid = showError('adults', "Số lượng khách không hợp lệ.");
         valid = showError('children', "Số lượng khách không hợp lệ.");
+    } else if (numOfAdults > 0 && numOfChildren < 0) {
+        valid = showError('children', "Số lượng khách không hợp lệ.");
+    } else if (numOfChildren > 0 && numOfAdults < 0) {
+        
     }
 
     return valid;

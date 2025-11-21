@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.style.opacity = 0;
         lightbox.style.visibility = 'hidden';
         lightbox.style.transition = 'opacity 0.3s';
-        lightbox.style.zIndex = 1000;
+        lightbox.style.zIndex = 1200;
         document.body.appendChild(lightbox);
 
         // Image
@@ -168,6 +168,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
 
                 container.appendChild(card);
+            });
+
+            document.querySelectorAll('.related-tours__card-book-btn').forEach(btn => {
+                btn.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    console.log("Scrolled to:", window.scrollY);
+                });
             });
         })
         .catch(err => console.error("Error loading tour list:", err));
