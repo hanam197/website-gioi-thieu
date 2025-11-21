@@ -5,7 +5,7 @@
     <!-- Meta ================================================== -->
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/images/logo.png">
 
 
@@ -63,10 +63,10 @@
                         <div class="ft-sc">
                             <div class="i-list">
                                 <a href="https://www.facebook.com/" target="_blank">
-                                    <i class="fa-brands fa-facebook" width="28" height="29"></i>
+                                    <i class="fa-brands fa-facebook"></i>
                                 </a>
                                 <a href="https://www.instagram.com/" target="_blank">
-                                    <i class="fa-brands fa-instagram" width="28" height="29"></i>
+                                    <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
                         </div>
@@ -156,9 +156,7 @@
                         Hành trình thú vị
                     </h2>
                 </div>
-                <button class="primary-btn">
-                    <a href="../pages/tour.html">Tất cả các tour</a>
-                </button>
+                <a href="../pages/tour.html" class="primary-btn">Tất cả các tour</a>
             </div>
             <div class="prod-list">
             </div>
@@ -209,6 +207,7 @@
 
     <!-- Services Intro Section -->
     <section class="services-intro">
+        <h2 class="sr-only">Các Dịch Vụ</h2>
         <img class="services-intro__image" src="../images/about-us/scence/5.jpg" alt="Services Background">
         <div class="services-intro__content">
             <div class="services-intro__quote-container">
@@ -230,15 +229,14 @@
                     Bạn. Hãy sạc thêm năng lượng <span style="color: var(--secondary-color);">bình an và hạnh
                         phúc</span> cho con đường phía trước
                 </p>
-                <a href="./service-page.html">
-                    <button class="services-intro__services-btn">Tất Cả Dịch Vụ</button>
-                </a>
+                <a href="./service-page.html" class="services-intro__services-btn">Tất Cả Dịch Vụ</a>
             </div>
         </div>
     </section>
 
     <!-- Image Carousel -->
     <section class="image-carousel">
+        <h2 class="sr-only">Hình ảnh du lịch</h2>
         <div class="image-carousel__wrapper">
             <button class="image-carousel__btn image-carousel__btn--prev" aria-label="Previous slide">
                 <i class="fa-solid fa-angle-left"></i>
@@ -423,6 +421,7 @@
 
     <!-- Gallery Section -->
     <section class="gallery">
+        <h2 class="sr-only">Bộ sưu tập hình ảnh</h2>
         <!-- Row 1 -->
         <div class="gallery__flow gallery__flow-row-1">
             <div class="gallery__item">
@@ -607,59 +606,56 @@
         <div class="contact__quote-container">
             <span class="contact__quote">Bạn có nghĩ đến lúc cho <span>Thân - Tâm -Trí</span> được phục hồi
                 để giúp mọi thứ tốt hơn !?</span>
-            <button class="contact__get-tours-btn">
-                <a href="../pages/tour.html" style="width: 100%;">Xem các tour</a>
-            </button>
+            <a href="../pages/tour.html" class="contact__get-tours-btn">Xem các tour</a>
         </div>
         <div class="contact__form-container">
-            <form id="contactForm" action="">
+            <form id="contactForm">
                 <h3 class="contact__form-title">Liên hệ với chúng tôi</h3>
                 <p class="contact__form-sub-content">
                     Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
                 </p>
 
                 <div class="contact__name-input">
-                    <label for="">Họ và tên *</label>
-                    <input id="fullName" type="text" placeholder="Nhập họ và tên" class="contact__form-input" />
+                    <label for="fullName">Họ và tên *</label>
+                    <input id="fullName" type="text" placeholder="Nhập họ và tên" class="contact__form-input">
                     <small class="error-msg"></small>
                 </div>
 
                 <div class="contact__depacture-date-input">
-                    <label for="">Ngày đi (dự kiến) *</label>
-                    <input id="departureDate" type="date" placeholder="Chọn ngày đi dự kiến"
-                        class="contact__form-input" />
+                    <label for="departureDate">Ngày đi (dự kiến) *</label>
+                    <input id="departureDate" type="date" class="contact__form-input">
                     <small class="error-msg"></small>
                 </div>
 
                 <div class="contact__contact-input">
                     <div class="contact__phone-input">
-                        <label for="">Số điện thoại *</label>
-                        <input id="phone" type="text" placeholder="Nhập số điện thoại" class="contact__form-input" />
+                        <label for="phone">Số điện thoại *</label>
+                        <input id="phone" type="text" placeholder="Nhập số điện thoại" class="contact__form-input">
                         <small class="error-msg"></small>
                     </div>
 
                     <div class="contact__email-input">
-                        <label for="">Email *</label>
-                        <input id="email" type="email" placeholder="Nhập email" class="contact__form-input" />
+                        <label for="email">Email *</label>
+                        <input id="email" type="email" placeholder="Nhập email" class="contact__form-input">
                         <small class="error-msg"></small>
                     </div>
                 </div>
 
                 <div class="contact__guest-number-input">
                     <div class="contact__adult-number-input">
-                        <label for="">Người lớn</label>
-                        <input id="adults" type="number" placeholder="Người lớn" class="contact__form-input" />
+                        <label for="adults">Người lớn</label>
+                        <input id="adults" type="number" class="contact__form-input">
                         <small class="error-msg"></small>
                     </div>
                     <div class="contact__children-number-input">
-                        <label for="">Trẻ em</label>
-                        <input id="children" type="number" placeholder="Trẻ em" class="contact__form-input" />
+                        <label for="children">Trẻ em</label>
+                        <input id="children" type="number" class="contact__form-input">
                         <small class="error-msg"></small>
                     </div>
                 </div>
 
                 <div class="contact__content-input">
-                    <label for="">Nội dung</label>
+                    <label for="content">Nội dung</label>
                     <textarea id="content" cols="30" rows="3" placeholder="Nhập nội dung cần liên hệ"
                         class="contact__form-input"></textarea>
                 </div>
@@ -681,7 +677,6 @@
             <button id="closePopup">Đóng</button>
         </div>
     </div>
-    </main>
     <footer class="ft">
         <div class="container">
             <div class="ft-wrap">
