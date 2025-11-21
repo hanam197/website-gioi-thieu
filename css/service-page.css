@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #8aa831;
-    --secondary-color: #f57c00;
-    --sub-color: #e0e0e0;
-    --text-dark: #4e5f39;
-    --text-light: #666;
-    --default-border-radius: 12px;
-    --section-spacing: 3%;
-    --overlay-left: 0.2;
-    --overlay-mid: 0.1;
-    --overlay-right: 0;
+  --primary-color: #8aa831;
+  --secondary-color: #f57c00;
+  --sub-color: #e0e0e0;
+  --text-dark: #4e5f39;
+  --text-light: #666;
+  --default-border-radius: 12px;
+  --section-spacing: 3%;
+  --overlay-left: 0.2;
+  --overlay-mid: 0.1;
+  --overlay-right: 0;
 }
 
 * {
@@ -44,6 +44,7 @@
 .content-service-card-name {
   margin-top: 5px;
   font-weight: bold;
+  color: #f57c00;
 }
 
 .content-service-card-title {
@@ -92,6 +93,11 @@
   padding-bottom: 10px;
 }
 
+.content-service-card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 .content-service-card-item-info {
   padding: 12px 20px;
 }
@@ -129,4 +135,3 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
-

@@ -50,6 +50,7 @@
     background-blend-mode: darken;
     color: white;
     min-height: auto;
+    padding-top: 150px;
 }
 
 .contact__quote-container {
