@@ -160,7 +160,7 @@ body {
 .button {
   color: #ffffff;
   /*màu chữ*/
-  background-color: #8aa831;
+  background-color: #f57c00;
   /*màu nút*/
   text-decoration: none;
   /*bỏ underline*/
@@ -175,7 +175,7 @@ body {
 }
 
 .button:hover {
-  background-color: #f57c00;
+  background-color: #8aa831;
 }
 
 .content-card-author {

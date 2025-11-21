@@ -36,6 +36,9 @@
 
                 <!-- Menu trái -->
                 <div class="nav-left nav-menu" id="nav-menu">
+                    <div class="mobile-menu-header">
+                        <img src="/images/logo.png" alt="Happy Station - Trạm hạnh phúc">
+                    </div>
                     <ul>
                         <li><a href="/pages/about-us.html">Giới thiệu</a></li>
                         <li class="has-submenu">
@@ -48,7 +51,25 @@
                         </li>
                         <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
                         <li><a href="/pages/service-page.html">Các dịch vụ</a></li>
+                        <li class="mobile-only"><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
+                        <li class="mobile-only"><a href="/pages/contact.html">Liên hệ</a></li>
                     </ul>
+                    <div class="mobile-menu-footer">
+                        <a href="tel:0393728287" class="mobile-contact-btn">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Liên hệ ngay</span>
+                        </a>
+                        <div class="ft-sc">
+                            <div class="i-list">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fa-brands fa-facebook" width="28" height="29"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fa-brands fa-instagram" width="28" height="29"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Logo ở giữa -->
@@ -63,9 +84,21 @@
                     <ul>
                         <li class="hide-mobile"><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
                         <li class="hide-mobile"><a href="/pages/contact.html">Liên hệ</a></li>
-                        <li><button type="button" class="search-toggle" aria-label="Tìm kiếm">
-                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                            </button></li>
+                        <li>
+                            <div class="search-container">
+                                <input 
+                                    type="text" 
+                                    class="search-input" 
+                                    placeholder="TÌm kiếm..." 
+                                    id="searchInput"
+                                    autocomplete="off"
+                                >
+                                <button type="button" class="search-toggle" aria-label="TÌm kiếm">
+                                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                </button>
+                                <div class="search-results" id="searchResults"></div>
+                            </div>
+                        </li>
                         <li class="primary-btn"><a href="tel:0393728287"><span>Liên hệ ngay</span></a></li>
                     </ul>
                 </div>
@@ -171,55 +204,56 @@
     <footer class="ft">
         <div class="container">
             <div class="ft-wrap">
-
-                <div class="ft-logo">
-                    <a href="/pages/home-page.html">
-                        <img src="/images/logo.png" alt="Logo">
-                    </a>
+                <!-- Left: Logo and Description -->
+                <div class="ft-left">
+                    <h3 class="ft-left-title">About us</h3>
+                    <div class="ft-logo">
+                        <a href="/pages/home-page.html">
+                            <img src="/images/logo.png" alt="Happy Station">
+                        </a>
+                    </div>
+                    <p class="ft-description">Nơi giúp bạn phục hồi sức khỏe tâm thần, thư giãn toàn diện và tìm lại bình an trong cuộc sống. Trạm Hạnh Phúc mang đến những trải nghiệm chữa lành tâm hồn.</p>
                 </div>
 
+                <!-- Center: Menu -->
                 <div class="ft-menu">
+                    <h3 class="ft-menu-title">Quick Links</h3>
                     <ul>
                         <li><a href="/pages/about-us.html">Về chúng tôi</a></li>
                         <li><a href="/pages/tour.html">Tour thiết kế sẵn</a></li>
                         <li><a href="/pages/destinations.html">Địa điểm nổi bật</a></li>
                         <li><a href="/pages/service-page.html">Dịch vụ</a></li>
                         <li><a href="/pages/contact.html">Liên hệ</a></li>
-                        <li><a href="/pages/blog-page.html">Tin tức</a></li>
+                        <li><a href="/pages/blog-page.html">Tin tức & khám phá</a></li>
                     </ul>
                 </div>
 
-                <div class="ft-if">
-                    <div class="ft-if-it">
-                        <span class="t-text">ĐỊA CHỈ</span>
-                        <div class="t-gr">
-                            <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank">
-                                Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh
+                <!-- Right: Contact and Social -->
+                <div class="ft-right">
+                    <div class="ft-contact-title">CONTACT WITH US</div>
+                    <div class="ft-if">
+                        <a href="https://maps.app.goo.gl/gEP1EvWDsUy9ZdHFA" target="_blank" class="ft-contact-item">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Hàn Thuyên, khu phố 6 P, Thủ Đức, Hồ Chí Minh</span>
+                        </a>
+                        <a href="tel:0393728287" class="ft-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0393728287</span>
+                        </a>
+                        <a href="mailto:tramhanhphuc.f4@gmail.com" class="ft-contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>tramhanhphuc.f4@gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="ft-sc">
+                        <div class="i-list">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="ft-if-it">
-                        <span class="t-text">LIÊN HỆ</span>
-                        <div class="t-gr">
-                            <a href="tel:0393728287">Hotline: 0393728287</a>
-                        </div>
-                    </div>
-                    <div class="ft-if-it">
-                        <span class="t-text">EMAIL</span>
-                        <div class="t-gr">
-                            <a href="mailto:tramhanhphuc.f4@gmail.com">tramhanhphuc.f4@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ft-sc">
-                    <div class="i-list">
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <i class="fa-brands fa-facebook" width="28" height="29"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fa-brands fa-instagram" width="28" height="29"></i>
-                        </a>
                     </div>
                 </div>
             </div>

@@ -432,7 +432,7 @@ body {
 .services-intro__services-btn {
     padding: 0.875rem 1.75rem;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -443,7 +443,7 @@ body {
 }
 
 .services-intro__services-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /* IMAGE CAROUSEL SECTION */

@@ -27,7 +27,7 @@
             <p class="desc">${tour.meta}</p>
             <div class="prod-action">
               <span class="price-discount">${tour.price}</span>
-              <a class="btn" href="../pages/detailed-tour-page.html">ĐẶT TOUR</a>
+              <a class="btn primary-btn" href="../pages/detailed-tour-page.html">ĐẶT TOUR</a>
             </div>
           </div>
         </div>

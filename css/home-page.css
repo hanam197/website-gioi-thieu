@@ -330,27 +330,7 @@ section {
     font-size: 18px;
 }
 
-.prod-action .btn {
-    padding: 8px 20px;
-    background: #4e5f39;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.prod-action .btn:hover {
-    background: #89a831;
-    transform: translateY(-2px);
-}
-
-
-
-/* Header tour */
+/* ========== END PRODUCTS ========== */
 .tours__title-container {
     display: flex;
     align-items: center;
@@ -365,7 +345,7 @@ section {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .tours__title-container .primary-btn {
         order: 2;
         width: 100%;
@@ -526,7 +506,7 @@ section {
 .health-content .btn {
     display: inline-block;
     padding: 14px 40px;
-    background: #4e5f39;
+    background: var(--secondary-color);
     color: #fff;
     text-decoration: none;
     border-radius: 30px;
@@ -534,14 +514,14 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    border: 2px solid #4e5f39;
+    border: 2px solid var(--secondary-color);
     cursor: pointer;
     width: fit-content;
 }
 
 .health-content .btn:hover {
-    background: #89a831;
-    border-color: #89a831;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(78, 95, 57, 0.2);
 }
@@ -560,12 +540,12 @@ section {
 /* Responsive */
 @media (max-width: 1200px) {
     .health-row {
-        gap: 50px;
+        gap: 40px;
     }
 
     .health-content .thumb-sub {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -576,24 +556,37 @@ section {
     }
 
     .health-home-sec {
-        padding: 60px 7%;
+        padding: 60px 20px;
+    }
+
+    .health-cont {
+        padding: 0;
     }
 
     .health-content .thumb-sub {
-        width: 160px;
-        height: 160px;
-        bottom: -10px;
-        right: 20px;
+        width: 150px;
+        height: 150px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .health-content {
+        gap: 30px;
+    }
+
+    .thumb-main {
+        max-width: 100%;
+        height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .health-home-sec {
-        padding: 50px 7%;
+        padding: 40px 15px;
     }
 
     .health-row {
-        gap: 30px;
+        gap: 25px;
     }
 
     .health-content span {
@@ -602,7 +595,7 @@ section {
     }
 
     .health-content h2 {
-        font-size: clamp(24px, 4vw, 36px);
+        font-size: clamp(20px, 4vw, 32px);
     }
 
     .health-content p {
@@ -611,48 +604,58 @@ section {
     }
 
     .health-content .btn {
-        font-size: 14px;
-        padding: 12px 32px;
+        font-size: 13px;
+        padding: 10px 24px;
     }
 
     .health-content .thumb-sub {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
         bottom: 0;
-        right: 10px;
+        right: 0;
+        object-fit: cover;
+    }
+
+    .health-content {
+        gap: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .health-home-sec {
-        padding: 40px 7%;
+        padding: 30px 12px;
     }
 
     .health-row {
-        gap: 20px;
+        gap: 15px;
     }
 
     .health-content span {
         font-size: 11px;
+        letter-spacing: 0.5px;
     }
 
     .health-content h2 {
-        font-size: 22px;
+        font-size: clamp(18px, 5vw, 24px);
+        line-height: 1.3;
     }
 
     .health-content p {
         font-size: 13px;
+        line-height: 1.5;
     }
 
     .health-content .btn {
         font-size: 12px;
-        padding: 10px 28px;
+        padding: 8px 16px;
     }
 
     .health-content .thumb-sub {
-        width: 100px;
-        height: 100px;
-        right: 5px;
+        display: none;
+    }
+
+    .health-content {
+        gap: 15px;
     }
 }
 
@@ -773,7 +776,7 @@ section {
 
 .card-overlay .btn {
     display: inline-block;
-    background: #4e5f39;
+    background: var(--secondary-color);
     color: #fff;
     padding: 10px 25px;
     text-decoration: none;
@@ -785,7 +788,7 @@ section {
 }
 
 .card-overlay .btn:hover {
-    background: #89a831;
+    background: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -802,15 +805,15 @@ section {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
+
     .dest-card img {
         height: 240px;
     }
-    
+
     .card-overlay {
         padding: 20px;
     }
-    
+
     .card-overlay h4 {
         font-size: 16px;
     }
@@ -820,18 +823,18 @@ section {
     .top-destinations-sec {
         padding: 50px 7%;
     }
-    
+
     .destinations-slider {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .section-header {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
     }
-    
+
     .dest-card img {
         height: 200px;
     }
@@ -841,23 +844,23 @@ section {
     .top-destinations-sec {
         padding: 40px 7%;
     }
-    
+
     .header-left h2 {
         font-size: 24px;
     }
-    
+
     .header-right p {
         font-size: 14px;
     }
-    
+
     .dest-card img {
         height: 180px;
     }
-    
+
     .card-overlay h4 {
         font-size: 14px;
     }
-    
+
     .card-overlay .btn {
         padding: 8px 20px;
         font-size: 12px;
@@ -996,7 +999,7 @@ section {
 
 .heading-sec .btn {
     padding: 10px 25px;
-    background: #4e5f39;
+    background: var(--secondary-color);
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
@@ -1009,7 +1012,7 @@ section {
 }
 
 .heading-sec .btn:hover {
-    background: #89a831;
+    background: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -1025,7 +1028,7 @@ section {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
+
     .blog-home {
         padding: 60px 7%;
     }
@@ -1035,17 +1038,17 @@ section {
     .blog-home {
         padding: 50px 7%;
     }
-    
+
     .blog-list {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .heading-sec {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .blog-thumb {
         height: 200px;
     }
@@ -1055,35 +1058,35 @@ section {
     .blog-home {
         padding: 40px 7%;
     }
-    
+
     .heading-sec .stt {
         font-size: 12px;
     }
-    
+
     .heading-sec h2 {
         font-size: 24px;
     }
-    
+
     .blog-thumb {
         height: 180px;
     }
-    
+
     .blog-content {
         padding: 20px;
     }
-    
+
     .blog-info {
         font-size: 12px;
     }
-    
+
     .blog-name a {
         font-size: 16px;
     }
-    
+
     .blog-item p.desc {
         font-size: 14px;
     }
-    
+
     .blog-link {
         font-size: 13px;
     }
@@ -1190,7 +1193,7 @@ section {
 .contact__get-tours-btn {
     padding: 1rem 2rem;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -1201,7 +1204,7 @@ section {
 }
 
 .contact__get-tours-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .contact__form-container {
@@ -1253,7 +1256,7 @@ section {
     width: 100%;
     padding: 1rem;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -1264,7 +1267,7 @@ section {
 }
 
 .contact__form-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /* ========================================
@@ -1384,7 +1387,7 @@ section {
 .tram-btn {
     display: inline-block;
     padding: 14px 40px;
-    background: #4e5f39;
+    background: var(--secondary-color);
     color: #ffffff;
     text-decoration: none;
     border-radius: 30px;
@@ -1392,14 +1395,14 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    border: 2px solid #4e5f39;
+    border: 2px solid var(--secondary-color);
     cursor: pointer;
     width: fit-content;
 }
 
 .tram-btn:hover {
-    background: #89a831;
-    border-color: #89a831;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(78, 95, 57, 0.2);
 }
@@ -1468,7 +1471,7 @@ section {
     align-items: flex-start;
     justify-content: space-between;
     padding: 8% 10%;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .services-intro__quote-container {
@@ -1518,7 +1521,7 @@ section {
 .services-intro__services-btn {
     padding: 0.875rem 1.75rem;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
@@ -1529,7 +1532,7 @@ section {
 }
 
 .services-intro__services-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /* IMAGE CAROUSEL SECTION */
@@ -1623,11 +1626,12 @@ section {
    RESPONSIVE DESIGN - OPTIMIZED
 ======================================== */
 @media (max-width: 1200px) {
+
     .mean-row,
     .health-row {
         gap: 40px;
     }
-    
+
     .prod-list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1637,12 +1641,12 @@ section {
     section {
         padding: 50px 7% !important;
     }
-    
+
     .prod-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
+
     .mean-row,
     .health-row {
         flex-direction: column;
@@ -1662,12 +1666,12 @@ section {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .services-intro__content {
         flex-direction: column;
-        padding: 60px 7%;
+        padding: 30px 7%;
     }
-    
+
     .services-intro__quote-container,
     .services-intro__intro-container {
         width: 100%;
@@ -1741,12 +1745,12 @@ section {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .image-carousel {
         margin-top: -8rem;
         padding: 0 2%;
     }
-    
+
     .image-carousel__container {
         width: 100%;
         height: 300px;

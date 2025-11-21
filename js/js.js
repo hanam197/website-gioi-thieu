@@ -124,12 +124,19 @@
     const submenus = document.querySelectorAll('.has-submenu > a');
     submenus.forEach(link => {
       link.addEventListener('click', function(e) {
-        if (window.innerWidth <= 720) {
-          e.preventDefault();
-          const parent = this.parentElement;
-          const isExpanded = parent.getAttribute('aria-expanded') === 'true';
-          parent.setAttribute('aria-expanded', !isExpanded);
-        }
+        e.preventDefault();
+        const parent = this.parentElement;
+        const isExpanded = parent.getAttribute('aria-expanded') === 'true';
+        
+        // Close other submenus
+        document.querySelectorAll('.has-submenu').forEach(item => {
+          if (item !== parent) {
+            item.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Toggle current submenu
+        parent.setAttribute('aria-expanded', !isExpanded);
       });
     });
   }
@@ -190,6 +197,87 @@
                 behavior: 'smooth'
             });
         });
+    }
+
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const searchToggle = document.querySelector('.search-toggle');
+    const searchResults = document.getElementById('searchResults');
+    const searchContainer = document.querySelector('.search-container');
+
+    // Sample search data
+    const searchData = [
+      { title: 'Tour trong ngày', description: 'Khám phá các tour du lịch trong ngày', url: '/pages/day-tour-page.html' },
+      { title: 'Tour dài ngày', description: 'Các tour du lịch nhiều ngày', url: '/pages/multiday-tour-page.html' },
+      { title: 'Địa điểm nổi bật', description: 'Các địa điểm du lịch nổi bật', url: '/pages/destinations.html' },
+      { title: 'Dịch vụ', description: 'Các dịch vụ du lịch của chúng tôi', url: '/pages/service-page.html' },
+      { title: 'Tin tức & khám phá', description: 'Tin tức và bài viết khám phá', url: '/pages/blog-page.html' },
+      { title: 'Giới thiệu', description: 'Giới thiệu về Happy Station', url: '/pages/about-us.html' }
+    ];
+
+    // Toggle search input on icon click
+    if (searchToggle) {
+      searchToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        searchInput.classList.toggle('active');
+        if (searchInput.classList.contains('active')) {
+          searchInput.focus();
+        } else {
+          searchInput.value = '';
+          searchResults.classList.remove('active');
+          searchResults.innerHTML = '';
+        }
+      });
+    }
+
+    // Close search when clicking outside
+    document.addEventListener('click', (e) => {
+      if (searchContainer && !searchContainer.contains(e.target)) {
+        searchInput.classList.remove('active');
+        searchResults.classList.remove('active');
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchInput.classList.contains('active')) {
+        searchInput.classList.remove('active');
+        searchInput.value = '';
+        searchResults.classList.remove('active');
+        searchResults.innerHTML = '';
+      }
+    });
+
+    // Real-time search as user types
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        
+        if (!query) {
+          searchResults.classList.remove('active');
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = searchData.filter(item => 
+          item.title.toLowerCase().includes(query) || 
+          item.description.toLowerCase().includes(query)
+        );
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<div style="padding: 12px; color: #999; text-align: center; font-size: 12px;">Không tìm thấy kết quả</div>';
+          searchResults.classList.add('active');
+          return;
+        }
+
+        searchResults.innerHTML = results.map(result => `
+          <a href="${result.url}">
+            <h4>${result.title}</h4>
+            <p>${result.description}</p>
+          </a>
+        `).join('');
+        searchResults.classList.add('active');
+      });
     }
   });
 })();

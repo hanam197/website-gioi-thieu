@@ -2,20 +2,38 @@
 .ft {
     background: #4e5f39;
     color: #fff;
-    padding: 60px 0 30px;
+    padding: 80px 0 40px;
 }
 
 /* Footer wrap - overall structure */
 .ft-wrap {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 2fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
     margin-bottom: 40px;
+}
+
+/* Left section: Logo and Description */
+.ft-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.ft-left-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F57C00;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 /* Logo styling */
 .ft-logo {
-    max-width: 180px;
+    max-width: 140px;
 }
 
 .ft-logo img {
@@ -24,14 +42,39 @@
     display: block;
 }
 
+/* Description text */
+.ft-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
 /* Footer menu */
+.ft-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+}
+
+.ft-menu-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F57C00;
+    letter-spacing: 1px;
+    margin: 0 0 12px 0;
+}
+
 .ft-menu ul {
-    list-style: circle;
+    list-style: '➜ ';
+    list-style-position: inside;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .ft-menu a {
@@ -45,10 +88,63 @@
     color: #89a831;
 }
 
+/* Right section: Contact */
+.ft-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Contact title */
+.ft-contact-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F57C00;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+}
+
 /* Footer info sections */
 .ft-if {
-    display: grid;
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ft-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    padding: 8px 0;
+}
+
+.ft-contact-item i {
+    font-size: 18px;
+    color: #89a831;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ft-contact-item span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+}
+
+.ft-contact-item:hover {
+    color: #89a831;
+    transform: translateX(4px);
+}
+
+.ft-contact-item:hover i {
+    color: #fff;
 }
 
 .ft-if-it {
@@ -81,42 +177,41 @@
 
 /* Social icons */
 .ft-sc .i-list {
-  display: flex;
-  gap: 16px;
-  justify-content: flex-end;
+    display: flex;
+    gap: 16px;
 }
 
 .ft-sc a {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.25s ease;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s ease;
 }
 
-/* Hiệu ứng hover chung */
+/* Hover effects */
 .ft-sc a:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Màu riêng khi hover từng icon */
+/* Individual icon colors */
 .ft-sc a[href*="facebook"]:hover {
-  background: #1877f2;
+    background: #1877f2;
 }
 
 .ft-sc a[href*="instagram"]:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
-    #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
+        #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .ft-sc i {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 /* Footer bottom */
@@ -181,12 +276,8 @@
         gap: 40px 30px;
     }
 
-    .ft-logo {
-        max-width: 160px;
-    }
-
-    .ft-menu .menu {
-        grid-template-columns: repeat(3, 1fr);
+    .ft-left {
+        grid-column: 1 / -1;
     }
 }
 
@@ -200,10 +291,6 @@
         gap: 30px;
     }
 
-    .ft-menu .menu {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .ft-if {
         gap: 20px;
     }
@@ -214,9 +301,12 @@
 }
 
 @media (max-width: 480px) {
-    .ft-menu .menu {
-        grid-template-columns: 1fr;
-        gap: 12px;
+    .ft-description {
+        font-size: 13px;
+    }
+
+    .ft-menu a {
+        font-size: 14px;
     }
 
     .back-to-top {
