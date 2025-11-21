@@ -381,13 +381,6 @@ body {
     display: none;
   }
 
-  .contact a::before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f095";
-    /* Phone icon */
-    font-weight: 900;
-    font-size: 18px;
-  }
 
   .contact a {
     width: 40px;
